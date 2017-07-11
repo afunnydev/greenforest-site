@@ -1,0 +1,25 @@
+/** 
+ * Title: Main SASS file
+ * Description: Import All Other sass files
+ * Author: Akia Marketing Inc
+ * Version: 0.1 
+**/
+
+@import "variables.scss"; 
+
+// Vendors
+@import "bootstrap.min.scss";
+@import "animate.scss";
+@import "jquery-ui.min.scss";
+@import "owl.carousel.scss";
+@import "font-awesome.min.scss";
+@import "material-design-iconic-font.min.scss";
+@import "nivo-slider.scss";
+@import "slider.scss";
+@import "default.scss";
+@import "meanmenu.scss";
+
+// Specific
+@import "style.scss";
+@import "responsive.scss";
+@import "custom.scss";

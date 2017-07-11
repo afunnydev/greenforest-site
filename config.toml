@@ -1,0 +1,27 @@
+baseURL = "/"
+DefaultContentLanguage = "fr"
+languageCode = "en-us"
+title = "Greenforest - Votre accès fiable et simplifié à du cannabis de haute qualité"
+metaDataFormat = "yaml"
+preserveTaxonomyNames = true
+RemovePathAccents = true
+
+[permalinks]
+  	# createurs = "/:slug/"
+  	singles = "/:slug/"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  # createur = "createurs"
+
+[Languages]
+[Languages.en]
+[Languages.en.Taxonomies]
+category = "categories"
+# creator = "creators"
+
+[Languages.fr]
+[Languages.fr.Taxonomies]
+category = "categories"
+# createur = "createurs"
