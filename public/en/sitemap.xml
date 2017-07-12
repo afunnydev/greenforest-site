@@ -17,6 +17,20 @@
   </url>
   
   <url>
+    <loc>/en/cannabis/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="/cannabis/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/cannabis/"
+                />
+  </url>
+  
+  <url>
     <loc>/en/categories/</loc>
     <priority>0</priority>
     <xhtml:link
@@ -28,6 +42,77 @@
                 rel="alternate"
                 hreflang="en"
                 href="/en/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/contact/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="/contact/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/contact/"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/members/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="/membres/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/members/"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/menu/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="/menu/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/menu/"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/services/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="/services/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/services/"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/singles/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="/singles/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/singles/"
                 />
   </url>
   

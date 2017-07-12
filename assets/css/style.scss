@@ -416,7 +416,7 @@ ul.main-menu li:hover .main-drop {
     padding-bottom: 9px;
 }
 ul.main-drop > li a {
-    color: #333;
+    color: $grey;
     display: block;
     font-size: 14px;
     line-height: 17px;
@@ -436,7 +436,7 @@ ul.main-drop > li > a:hover {
     color: $primary-color;
 }
 .main-menu > li > a {
-    color: #333;
+    color: $grey;
     display: block;
     font-size: 14px;
     font-weight: 600;
@@ -4808,6 +4808,10 @@ a.order-btn-large:hover {
 }
 .contact-email-area {
     padding-top: 95px;
+    margin-bottom: 30px;
+    h3 {
+        margin-top: 15px;
+    }
 }
 .address-wrapper input {
     height: 45px;
