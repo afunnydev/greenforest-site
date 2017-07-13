@@ -17,6 +17,20 @@
   </url>
   
   <url>
+    <loc>/en/produits/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="/produits/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/produits/"
+                />
+  </url>
+  
+  <url>
     <loc>/en/cannabis/</loc>
     <xhtml:link
                 rel="alternate"
@@ -56,6 +70,21 @@
                 rel="alternate"
                 hreflang="en"
                 href="/en/contact/"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/"
                 />
   </url>
   

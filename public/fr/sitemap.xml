@@ -47,6 +47,21 @@
   
   <url>
     <loc>/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="/"
+                />
+  </url>
+  
+  <url>
+    <loc>/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -84,6 +99,20 @@
                 rel="alternate"
                 hreflang="fr"
                 href="/menu/"
+                />
+  </url>
+  
+  <url>
+    <loc>/produits/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/produits/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="/produits/"
                 />
   </url>
   

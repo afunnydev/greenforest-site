@@ -9,7 +9,7 @@ RemovePathAccents = true
 [permalinks]
   	# createurs = "/:slug/"
   	singles = "/:slug/"
-
+  	produits = "/produits/:slug/"
 [taxonomies]
   category = "categories"
   tag = "tags"

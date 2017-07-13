@@ -1,0 +1,481 @@
+{{ partial "head.html" . }}
+
+    {{ partial "header.html" . }}
+
+    <!--Breadcrumb start-->
+    <div class="subpage-main-wrapper about-full">
+        <div class="breadcrumbs-wrapper breadcumbs-bg1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="breadcrumbs breadcrumbs-style1 sep1 posr">
+                            <ul>
+                                <li>
+                                    <div class="breadcrumbs-icon1">
+                                        <a href="/" target="_blank" title="Return to home"><i class="fa fa-home"></i></a>
+                                    </div>
+                                </li>
+                                <li>{{ .Params.titre }}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Breadcrumb end-->
+
+        <div class="compare-area compare-single-productt">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <div class="single-thumbnail-wrapper">
+                            <div class="single-product-tab">
+                                <ul class="single-tab-control" role="tablist">
+                                		{{ range $i, $e := .Params.images }}
+                                    <li class="{{ if eq $i 0}}active{{end}}">
+                                        <a href="#{{$e.id}}" aria-controls="{{$e.id}}" role="tab" data-toggle="tab"><img src="{{$e.url}}" alt="Greenforest" />
+                                        </a>
+                                    </li>
+                                    {{ end }}
+                                </ul>
+                            </div>
+                            <div class="single-cat-main">
+                                <div class="tab-content">
+                                		{{ range $i, $e := .Params.images }}
+                                    <div role="tabpanel" class="tab-pane {{ if eq $i 0}}active{{end}}" id="{{$e.id}}">
+                                        <div class="tab-single-image">
+                                            <a href="{{$e.url}}" class="fancybox" data-fancybox-group="gallery"><img src="{{$e.url}}" alt="{{$.Params.titre}}" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    {{ end }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <div class="compare-content-wrap">
+                            <div class="cmain-heading text-uppercase">
+                                <h3>{{ .Params.titre }}</h3>
+                            </div>
+                            <div class="compare-conpart compare-single-mgr">
+                                <!-- <div class="compare-social">
+                                    <div class="compare-social">
+                                        <button class=" btn btn-default com-tw"><i class="fa fa-twitter"></i> Twitter</button>
+                                        <button class=" btn btn-default com-fb"><i class="fa fa-facebook"></i> Share</button>
+                                        <button class="btn btn-default com-gp"><i class="fa fa-google-plus"></i> Google +</button>
+                                        <button class=" btn btn-default com-pi"><i class="fa fa-pinterest"></i> Pinterest</button>
+                                    </div>
+                                </div> -->
+                                <div class="skill-referance">
+                                    <p> Reference: </p>
+                                    <p><span class="italic">Condition:</span> Nouveau</p>
+                                </div>
+                            </div>
+                            <div class="compare-conpart compare-conpart-text">
+                                <div class="skill-long-text">
+                                    <p>{{.Content}}</p>
+                                </div>
+                            </div>
+                            <div class="compare-conpart-pm compare-bottom">
+                                <div class="old-new-price">
+                                	{{if .Params.onsale }}
+                                    <span>{{ .Params.saleprice }}$</span> <del class="skill-gray">{{ .Params.price }}$</del>
+                                  {{ else }}
+																		<span>{{ .Params.price }}$</span>
+                                  {{ end }}
+                                </div>
+                                <div class="plus-minus-text">Quantity</div>
+                                <div class="skill-plusminus-wrap">
+                                    <div class="skill-plusminus">
+                                        <div class="skill-minus qtybutton">-</div>
+                                        <input type="text" name="#" value="1" class="cart-plus-minus-box" />
+                                        <div class="skill-plus qtybutton">+</div>
+                                    </div>
+                                </div>
+                                <div class="skill-cart-option skill-sep posr">
+                                    <a href="cart.html"><i class="fa fa-shopping-cart"></i> Ajouter au panier</a>
+                                </div>
+                            </div>
+                            <div class="compare-conpart skill-communicate">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-envelope"></i> Send to a friend</a>
+                                    </li>
+                                    <li><a href="#"><i class="fa fa-print"></i> Print</a>
+                                    </li>
+                                    <li><a href="#"><i class="fa fa-heart-o"></i> Add to wishlist</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="color-instock">
+                                <div class="compare-conpart-items">
+                                    <div class="skill-long-items">
+                                        <p><span class="italic skill-items">90 Items</span><span class="skill-instock"> In Stock</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+				{{ if .Params.related}}
+        <!--related product area start-->
+        <div class="featured-product-area single-related-product">
+            <div class="container">
+                <div class="row">
+                    <div class="featured-wrapper">
+                        <div class="col-xs-12">
+                            <div class="home-featured-head text-center">
+                                <div class="section-title title-head">
+                                    <h3>Vous aimerez aussi..</h3>
+                                    <img src="/img/icons/icon-title.png" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="featured-product-wrapper">
+                            <div class="active-featured-owl def-owl">
+                                <div class="col-md-3">
+                                    <div class="single-product single-featured-product">
+                                        <div class="product-wrapper posr">
+                                            <div class="product-label">
+                                                <div class="label-sale">Sale</div>
+                                            </div>
+                                            <div class="priduct-img-wrapper posr">
+                                                <div class="product-img">
+                                                    <a href="single-product.html"><img src="images/product/p13.jpg" alt="" />
+                                                    </a>
+                                                </div>
+                                                <div class="product-inner-text">
+                                                    <div class="product-social-icon social-icon">
+                                                        <ul>
+                                                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a>
+                                                            </li>
+                                                            <li><a href="#"><i class="fa fa-heart-o"></i></a>
+                                                            </li>
+                                                            <li><a href="#"><i class="fa fa-refresh"></i></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="product-btn">
+                                                        <div class="product-qview-search">
+                                                            <a class="btn-def btn-product-qview q-view" data-toggle="modal" data-target=".modal" href="#"><i class=" product-search fa fa-search" ></i> quick View</a>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-review">
+                                                <ul>
+                                                    <li><a href="#"><i class="fa fa-star-o"></i></a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-star-o"></i></a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-star-o"></i></a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-star-o"></i></a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-star-o"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="product-bottom-text posr">
+                                                <div class="product-bottom-title deft-underline2">
+                                                    <a href="single-product.html" title="Mirum est notare"><h4>Mirum est notare</h4></a>
+                                                </div>
+                                                <div class="product-bottom-price">
+                                                    <span>$342.00</span> <del>$360.00</del>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="single-product single-featured-product">
+                                        <div class="product-wrapper posr">
+                                            <div class="product-label">
+                                                <div class="label-sale">Sale</div>
+                                            </div>
+                                            <div class="priduct-img-wrapper posr">
+                                                <div class="product-img">
+                                                    <a href="single-product.html"><img src="images/product/p8.jpg" alt="" />
+                                                    </a>
+                                                </div>
+                                                <div class="product-inner-text">
+                                                    <div class="product-social-icon social-icon">
+                                                        <ul>
+                                                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a>
+                                                            </li>
+                                                            <li><a href="#"><i class="fa fa-heart-o"></i></a>
+                                                            </li>
+                                                            <li><a href="#"><i class="fa fa-refresh"></i></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="product-btn">
+                                                        <div class="product-qview-search">
+                                                            <a class="btn-def btn-product-qview q-view" data-toggle="modal" data-target=".modal" href="#"><i class=" product-search fa fa-search" ></i> quick View</a>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-review">
+                                                <ul>
+                                                    <li><a href="#"><i class="fa fa-star-o"></i></a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-star-o"></i></a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-star-o"></i></a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-star-o"></i></a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-star-o"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="product-bottom-text posr">
+                                                <div class="product-bottom-title deft-underline2">
+                                                    <a href="single-product.html" title="Eodem modo typi"><h4>Eodem modo typi</h4></a>
+                                                </div>
+                                                <div class="product-bottom-price">
+                                                    <span>$450.00</span> <del>$500.00</del>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="single-product single-featured-product">
+                                        <div class="product-wrapper posr">
+                                            <div class="product-label">
+                                                <div class="label-sale">Sale</div>
+                                            </div>
+                                            <div class="priduct-img-wrapper posr">
+                                                <div class="product-img">
+                                                    <a href="single-product.html"><img src="images/product/p10.jpg" alt="" />
+                                                    </a>
+                                                </div>
+                                                <div class="product-inner-text">
+                                                    <div class="product-social-icon social-icon">
+                                                        <ul>
+                                                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a>
+                                                            </li>
+                                                            <li><a href="#"><i class="fa fa-heart-o"></i></a>
+                                                            </li>
+                                                            <li><a href="#"><i class="fa fa-refresh"></i></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="product-btn">
+                                                        <div class="product-qview-search">
+                                                            <a class="btn-def btn-product-qview q-view" data-toggle="modal" data-target=".modal" href="#"><i class=" product-search fa fa-search" ></i> quick View</a>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-review">
+                                                <ul>
+                                                    <li><a href="#"><i class="fa fa-star-o"></i></a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-star-o"></i></a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-star-o"></i></a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-star-o"></i></a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-star-o"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="product-bottom-text posr">
+                                                <div class="product-bottom-title deft-underline2">
+                                                    <a href="single-product.html" title="Mirum est notare"><h4>Mirum est notare</h4></a>
+                                                </div>
+                                                <div class="product-bottom-price">
+                                                    <span>$342.00</span> <del>$360.00</del>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="single-product single-featured-product">
+                                        <div class="product-wrapper posr">
+                                            <div class="product-label">
+                                                <div class="label-sale">Sale</div>
+                                            </div>
+                                            <div class="priduct-img-wrapper posr">
+                                                <div class="product-img">
+                                                    <a href="single-product.html"><img src="images/product/p4.jpg" alt="" />
+                                                    </a>
+                                                </div>
+                                                <div class="product-inner-text">
+                                                    <div class="product-social-icon social-icon">
+                                                        <ul>
+                                                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a>
+                                                            </li>
+                                                            <li><a href="#"><i class="fa fa-heart-o"></i></a>
+                                                            </li>
+                                                            <li><a href="#"><i class="fa fa-refresh"></i></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="product-btn">
+                                                        <div class="product-qview-search">
+                                                            <a class="btn-def btn-product-qview q-view" data-toggle="modal" data-target=".modal" href="#"><i class=" product-search fa fa-search" ></i> quick View</a>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-review">
+                                                <ul>
+                                                    <li><a href="#"><i class="fa fa-star-o"></i></a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-star-o"></i></a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-star-o"></i></a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-star-o"></i></a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-star-o"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="product-bottom-text posr">
+                                                <div class="product-bottom-title deft-underline2">
+                                                    <a href="single-product.html" title="Mirum est notare"><h4>Mirum est notare</h4></a>
+                                                </div>
+                                                <div class="product-bottom-price">
+                                                    <span>$342.00</span> <del>$360.00</del>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="single-product single-featured-product">
+                                        <div class="product-wrapper posr">
+                                            <div class="product-label">
+                                                <div class="label-sale">Sale</div>
+                                            </div>
+                                            <div class="priduct-img-wrapper posr">
+                                                <div class="product-img">
+                                                    <a href="single-product.html"><img src="images/product/p11.jpg" alt="" />
+                                                    </a>
+                                                </div>
+                                                <div class="product-inner-text">
+                                                    <div class="product-social-icon social-icon">
+                                                        <ul>
+                                                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a>
+                                                            </li>
+                                                            <li><a href="#"><i class="fa fa-heart-o"></i></a>
+                                                            </li>
+                                                            <li><a href="#"><i class="fa fa-refresh"></i></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="product-btn">
+                                                        <div class="product-qview-search">
+                                                            <a class="btn-def btn-product-qview q-view" data-toggle="modal" data-target=".modal" href="#"><i class=" product-search fa fa-search" ></i> quick View</a>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-review">
+                                                <ul>
+                                                    <li><a href="#"><i class="fa fa-star-o"></i></a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-star-o"></i></a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-star-o"></i></a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-star-o"></i></a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-star-o"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="product-bottom-text posr">
+                                                <div class="product-bottom-title deft-underline2">
+                                                    <a href="single-product.html" title="Mirum est notare"><h4>Mirum est notare</h4></a>
+                                                </div>
+                                                <div class="product-bottom-price">
+                                                    <span>$342.00</span> <del>$360.00</del>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="single-product single-featured-product">
+                                        <div class="product-wrapper posr">
+                                            <div class="product-label">
+                                                <div class="label-sale">Sale</div>
+                                            </div>
+                                            <div class="priduct-img-wrapper posr">
+                                                <div class="product-img">
+                                                    <a href="single-product.html"><img src="images/product/p7.jpg" alt="" />
+                                                    </a>
+                                                </div>
+                                                <div class="product-inner-text">
+                                                    <div class="product-social-icon social-icon">
+                                                        <ul>
+                                                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a>
+                                                            </li>
+                                                            <li><a href="#"><i class="fa fa-heart-o"></i></a>
+                                                            </li>
+                                                            <li><a href="#"><i class="fa fa-refresh"></i></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="product-btn">
+                                                        <div class="product-qview-search">
+                                                            <a class="btn-def btn-product-qview q-view" data-toggle="modal" data-target=".modal" href="#"><i class=" product-search fa fa-search" ></i> quick View</a>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-review">
+                                                <ul>
+                                                    <li><a href="#"><i class="fa fa-star-o"></i></a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-star-o"></i></a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-star-o"></i></a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-star-o"></i></a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-star-o"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="product-bottom-text posr">
+                                                <div class="product-bottom-title deft-underline2">
+                                                    <a href="single-product.html" title="Mirum est notare"><h4>Mirum est notare</h4></a>
+                                                </div>
+                                                <div class="product-bottom-price">
+                                                    <span>$342.00</span> <del>$360.00</del>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--related product area end-->
+        {{ end }}
+
+{{ partial "footer.html" . }}

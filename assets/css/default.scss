@@ -107,12 +107,17 @@
   transition:.3s;
 }
 .btn-def-checkout:hover {
-  background:#A08D7C;
+  background:$primary-color;
+}
+
+a {
+  cursor: pointer;
+  color: $primary-color;
 }
 
 a.btn-def {
 	background: #fff none repeat scroll 0 0;
-	border: 1px solid #a08d7c;
+	border: 1px solid $primary-color;
 	color: $primary-color;
 	display: inline-block;
 	font-weight: 600;
@@ -148,13 +153,13 @@ a.btn-def-black {
 	letter-spacing: 2px;
 }
 a.btn-def-black:hover{
-	background:#A08D7C;
-	border: 1px solid #A08D7C;
+	background:$primary-color;
+	border: 1px solid $primary-color;
 	color: #fff;
 }
 a.btn-def-color {
-  background: #A08D7C;
-  border: 1px solid #A08D7C;
+  background: $primary-color;
+  border: 1px solid $primary-color;
   color: #fff;
   padding: 11px 18px;
   transition: all 0.3s ease 0s;
@@ -178,13 +183,13 @@ a.btn-def-white {
 	line-height: 26px;
 }
 a.btn-def-white:hover{
-	background:#A08D7C;
-	border: 1px solid #A08D7C;
+	background:$primary-color;
+	border: 1px solid $primary-color;
 	color: #fff;
 }
 
 .def-underline::before {
-  background:#a08d7c;
+  background:$primary-color;
   bottom: 0;
   content: "";
   height: 4px;
@@ -206,7 +211,7 @@ a.btn-def-white:hover{
   width: 40px;
 }
 .deft-underline3::before {
-  background: #a08d7c none repeat scroll 0 0;
+  background: $primary-color none repeat scroll 0 0;
   content: "";
   height: 1px;
   left: 50%;
@@ -228,8 +233,8 @@ a.btn-def-white:hover{
 
 .social-icon a {
   background: #fff none repeat scroll 0 0;
-  border: 1px solid #a08d7c;
-  color: #a08d7c;
+  border: 1px solid $primary-color;
+  color: $primary-color;
   display: block;
   font-size: 20px;
   height: 45px;
@@ -239,7 +244,7 @@ a.btn-def-white:hover{
   transition:.3s;
 }
 .social-icon a:hover{
-  background:#a08d7c;
+  background:$primary-color;
   color: #fff;
 }
 .label-sale {
@@ -274,9 +279,9 @@ a.btn-def-white:hover{
 
 .def-owl.owl-theme .owl-controls .owl-buttons div {
   background: #fff none repeat scroll 0 0;
-  border: 2px solid #a08d7c;
+  border: 2px solid $primary-color;
   border-radius: 0;
-  color: #a08d7c;
+  color: $primary-color;
   display: inline-block;
   font-size: 20px;
   height: 48px;
@@ -285,8 +290,8 @@ a.btn-def-white:hover{
   transition:.3s;
 }
 .def-owl.owl-theme .owl-controls .owl-buttons div:hover {
-  background: #a08d7c;
-  border: 2px solid #a08d7c;
+  background: $primary-color;
+  border: 2px solid $primary-color;
   color: #fff;
  
 }
@@ -302,7 +307,7 @@ a.btn-def-white:hover{
 }
 
 .cart-round span {
-  background: #a08d7c none repeat scroll 0 0;
+  background: $primary-color none repeat scroll 0 0;
   border-radius: 100%;
   color: #fff;
   display: inline-block;
@@ -382,13 +387,13 @@ a.btn-def-white:hover{
   color:#fff;
 }
 .btn-trans:hover{
-	border: 1px solid #a08d7c;
-	color:#a08d7c;
+	border: 1px solid $primary-color;
+	color:$primary-color;
 	
 }
 .btn-nontrans {
    background: transparent none repeat scroll 0 0;
-  border: 1px solid #a08d7c;
+  border: 1px solid $primary-color;
   display: inline-block;
   font-size: 14px;
   padding: 14px 50px;
@@ -396,7 +401,7 @@ a.btn-def-white:hover{
   text-transform: uppercase;
   transition: all 0.3s ease 0s;
   white-space: normal;
-  color:#a08d7c;
+  color:$primary-color;
 }
 .btn-nontrans:hover{
 	border: 1px solid #fff;
@@ -406,10 +411,10 @@ a.btn-def-white:hover{
 
 
 .banner-bbtn {
-  border: 1px solid #a08d7c;
+  border: 1px solid $primary-color;
   padding: 15px 39px;
   text-transform: uppercase;
-  color:#a08d7c;
+  color:$primary-color;
   font-weight: 700;
   background: transparent none repeat scroll 0 0;
   transition:.3s;
@@ -419,7 +424,7 @@ a.btn-def-white:hover{
 	color:#333;
 }
 .text-color{
-	color:#a08d7c;
+	color:$primary-color;
 }
 
 .btn-back2 {
@@ -432,8 +437,8 @@ a.btn-def-white:hover{
 }
 .btn-back2:hover{
 	color:#fff;
-	background:#a08d7c;
-	border:1px solid #a08d7c;
+	background:$primary-color;
+	border:1px solid $primary-color;
 }
 
 /*----------------------------------------*/
@@ -518,7 +523,7 @@ a.btn-def-white:hover{
     border: 1px solid #ddd;
 }
 .quick-add-to-cart .single_add_to_cart_button {
-  background: #a08d7c;
+  background: $primary-color;
   border: medium none;
   color: #fff;
   float: left;
@@ -654,7 +659,7 @@ h3.widget-title-modal {
   transition:.3s;
 }
 .indicator-def a:hover {
-  background: #a08d7c;
+  background: $primary-color;
   color: #fff;
 }
 .indicator-def > a i {

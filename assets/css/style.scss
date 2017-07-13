@@ -2765,7 +2765,7 @@ nav ul.main-menu {
     display: inline-block;
 }
 .compare-items {
-    float: right;
+    text-align: center;
 }
 .category-short .sproduct-tab i {
     background: #999999 none repeat scroll 0 0;
@@ -2809,6 +2809,9 @@ nav ul.main-menu {
     line-height: 30px;
     text-transform: uppercase;
     font-family: Montserrat;
+}
+.quantity-short p {
+    margin: 20px 0 0;
 }
 .selected-items > p {
     color: #404048;
@@ -3344,7 +3347,7 @@ td {
     right: -2.5rem;
     margin-bottom: 20px;
     margin-bottom: 1.25rem;
-    width: 100%;
+    width: 900px;
 }
 .steps-item a {
     color: #333;
@@ -3353,6 +3356,7 @@ td {
     padding: 16px 0;
     display: block;
     text-decoration: none;
+    text-align: center;
 }
 .progress-steps li {
     padding: 0px;
@@ -3367,12 +3371,10 @@ td {
     float: left;
     transition: background-color, .08s ease-out 0s;
     background-color: #ecedef;
-    width: calc(20% -29px);
     height: 55px;
     text-align: left;
     text-decoration: none;
-    width: calc(20% -29px);
-    width: 17%;
+    width: 265px;
 }
 .progress-summery li.steps-item.active a {
     color: $primary-color;
@@ -3969,7 +3971,7 @@ a .confirm-middle {
     padding-bottom: 95px;
 }
 .about-top-area {
-    margin-top: 95px;
+    margin-top: 70px;
 }
 .abt-image {
     overflow: hidden;
@@ -3982,12 +3984,20 @@ a .confirm-middle {
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
 }
-.abt-title.title-head-normal h3 {
-    font-size: 30px;
-    line-height: 21px;
-}
-.abt-title {
-    margin-bottom: 25px;
+
+.abt-content-wrapper {
+    .abt-title {
+        margin-bottom: 25px;
+        &.title-head-normal { 
+            h3 {
+                font-size: 30px;
+                line-height: 21px;
+            }
+            &.second {
+                margin-top: 40px;
+            }
+        }
+    }
 }
 .title-head-normal h3 {
     font-size: 28px;
@@ -3997,7 +4007,17 @@ a .confirm-middle {
 .color-black-def {
     font-weight: 600;
 }
-.abt-content p {
+.abt-content.second {
+    margin-top: 30px;
+    p {
+        margin-top: 20px;
+    }
+}
+.abt-content.bottom-div {
+    margin-bottom: 40px;
+}
+.abt-content p,
+.abt-content ul li {
     color: #4a4d4f;
     letter-spacing: 1px;
     line-height: 25px;
@@ -4019,7 +4039,8 @@ a .confirm-middle {
     margin-top: 30px;
 }
 .abt-middle-content {
-    margin-top: 90px;
+    margin-top: 60px;
+    margin-bottom: 30px;
 }
 /*----------------------------------------*/
 /* 36. counter up
