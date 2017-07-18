@@ -32,11 +32,11 @@
                 <div class="col-xs-12">
                     <div class="progress-summery text-center">
                         <ul class="progress-steps">
-                            <li class="steps-item  litext is-active" data-identifiant="1"><a href="#">ÉTAPE 1</a>
+                            <li class="steps-item  litext is-active" data-identifiant="step1" id="step1"><a href="javascript:;">ÉTAPE 1</a>
                             </li>
-                            <li class="steps-item" data-identifiant="2"><a href="#">ÉTAPE 2</a>
+                            <li class="steps-item" data-identifiant="step2" id="step2"><a href="javascript:;">ÉTAPE 2</a>
                             </li>
-                            <li class="steps-item" data-identifiant="3"><a href="#">ÉTAPE 3</a>
+                            <li class="steps-item" data-identifiant="step3" id="step3"><a href="javascript:;">ÉTAPE 3</a>
                             </li>
                         </ul>
                     </div>
@@ -47,12 +47,164 @@
     <!--Steps end-->
     <div class="multistep-form">
     	<div class="container">
-    		<div class="row">
-    			<div class="col-sm-6 col-xs-12">
-    			</div>
-    			<div class="col-sm-6 col-xs-12"></div>
+			    <div class="assessment-container">
+			        <div class="row">
+			            <div class="col-sm-12 form-box">
+			                <form role="form" class="registration-form" action="/merci/" netlify method="post" netlify-honeypot="bot-field">
+			                    <fieldset id="step1">
+			                        <div class="form-bottom">
+			                            <div class="row">
+			                                <div class="form-group col-md-6 col-sm-6">
+			                                    <input type="text" class="form-control" name="firstname" placeholder="Firstname*" id="fname">
+			                                </div>
+			                                <div class="form-group col-md-6 col-sm-6">
+			                                    <input type="text" class="form-control" name="lastname" placeholder="Lastname*" id="lname">
+			                                    <p class="hidden">
+                                              <label>Don’t fill this out: <input name="bot-field"></label>
+                                          </p>
+			                                </div>
+			                            </div>
+			                            <div class="form-group">
+			                                <input type="text" name="email" placeholder="Email*" class="form-email form-control" id="email" required>
+			                            </div>
+			                            <div class="row">
+			                                <div class="form-group col-md-6 col-sm-6">
+			                                    <input type="text" class="form-control" name="phone" placeholder="Phone*" id="phone">
+			                                </div>
+			                                <div class="form-group col-md-6 col-sm-6">
+			                                    <input type="text" class="form-control not-required" name="mmar" placeholder="MMAR# if applicable" id="mmar">
+			                                </div>
+			                            </div>
+			                            <div class="form-group">
+			                                <input type="date" name="birthdate" placeholder="Date de naissance*" class="form-control" id="birthdate" required>
+			                            </div>
+			                            <div class="form-group" style="margin-bottom:3px;">
+			                                <div class="row">
+			                                		<div class="form-group col-md-9 col-sm-9">
+			                                        <input type="text" class="form-control" name="address" placeholder="Adresse*" id="contact_address">
+			                                    </div>
+			                                    <div class="form-group col-md-3 col-sm-3">
+			                                        <input type="text" class="form-control not-required" name="apartment" placeholder="App.*" id="apartment">
+			                                    </div>
+			                                </div>
+			                            </div>
+			                            <div class="form-group" style="margin-bottom:3px;">
+			                                <div class="row">
+			                                		<div class="form-group col-md-4 col-sm-4">
+			                                        <input type="text" class="form-control" name="postal_code" placeholder="Code postal*" id="postal_code">
+			                                    </div>
+			                                    <div class="form-group col-md-4 col-sm-4">
+			                                        <input type="text" class="form-control" name="city" placeholder="Ville*" id="city">
+			                                    </div>
+			                                    <div class="form-group col-md-4 col-sm-4">
+			                                        <input type="text" class="form-control not-required" name="province" placeholder="Province*" id="province">
+			                                    </div>
+			                                </div>
+			                            </div>
+			                            <div class="form-group">
+			                                <!-- <textarea name="conditions" placeholder="Condition médicale et symptômes*" class="form-control" id="conditions" required> -->
+			                            </div>
+			                            
+			                            <button type="button" class="btn btn-next">Suivant</button>
+			                        </div>
+			                    </fieldset>
+			                    <fieldset id="step2">
+			                        <div class="form-bottom">
+			                            <div class="row">
+			                                <div class="form-group col-md-6 col-sm-6">
+			                                    <input type="text" class="form-control" name="physician_firstname" placeholder="Prénom du médecin*" id="fname">
+			                                </div>
+			                                <div class="form-group col-md-6 col-sm-6">
+			                                    <input type="text" class="form-control" name="physician_lastname" placeholder="Nom de famille du médecin*" id="lname">
+			                                </div>
+			                            </div>
+			                            <div class="row">
+			                                <div class="form-group col-md-4 col-sm-4">
+			                                    <input type="text" class="form-control" name="phone" placeholder="Téléphone*" id="phone">
+			                                </div>
+			                                <div class="form-group col-md-8 col-sm-8">
+			                                    <input type="text" name="email" placeholder="Email*" class="form-email form-control not-required" id="email" required>
+			                                </div>
+			                            </div>
+			                            <div class="form-group" style="margin-bottom:3px;">
+			                                <div class="row">
+			                                		<div class="form-group col-md-9 col-sm-9">
+			                                        <input type="text" class="form-control" name="address" placeholder="Adresse*" id="contact_address">
+			                                    </div>
+			                                    <div class="form-group col-md-3 col-sm-3">
+			                                        <input type="text" class="form-control not-required" name="apartment" placeholder="App.*" id="apartment">
+			                                    </div>
+			                                </div>
+			                            </div>
+			                            <div class="form-group" style="margin-bottom:3px;">
+			                                <div class="row">
+			                                		<div class="form-group col-md-4 col-sm-4">
+			                                        <input type="text" class="form-control" name="postal_code" placeholder="Code postal*" id="postal_code">
+			                                    </div>
+			                                    <div class="form-group col-md-4 col-sm-4">
+			                                        <input type="text" class="form-control" name="city" placeholder="Ville*" id="city">
+			                                    </div>
+			                                    <div class="form-group col-md-4 col-sm-4">
+			                                        <input type="text" class="form-control not-required" name="province" placeholder="Province*" id="province">
+			                                    </div>
+			                                </div>
+			                            </div>
+			                            <div class="form-group" style="margin-left: 2px">
+			                            	<label for="using_prescription">Are you currently taking any prescription pharmaceuticals?</label>
+			                            	<input type="checkbox" data-toggle="toggle" checked data-on="Oui" data-off="Non" name="using_prescription">
+			                            </div>
+			                            <div class="form-group">
+			                                <input type="text" name="how_long" placeholder="How long have you been using cannabis?*" class="form-control" id="how_long" required>
+			                            </div>
+			                            <div class="form-group">
+			                                <!-- <textarea name="effect_symptoms" placeholder="Quel est l'effet du cannabis sur vos symptômes?*" class="form-control" id="conditions" required> -->
+			                            </div>
+			                            <div class="form-group">
+			                                <input type="text" name="often_use" placeholder="How often do you use cannabis?*" class="form-control" id="how_long" required>
+			                            </div>
+			                            <div class="form-group">
+			                                <input type="text" name="alleviate_symptoms" placeholder="Does this dosage alleviate your symptoms?*" class="form-control" id="how_long" required>
+			                            </div>
+			                            <button type="button" class="btn btn-previous">Précédent</button>
+			                            <button type="button" class="btn btn-next">Suivant</button>
+			                        </div>
+			                    </fieldset>
+			                    <fieldset id="step3">
+			                    		<div class="form-bottom">
+			                            <div class="form-group">
+			                                <label for="first_id">First ID Document</label>
+			                                <input type="file" name="first_id" class="form-control">
+			                            </div>
+			                            <div class="form-group">
+			                                <label for="second_id">Second ID Document</label>
+			                                <input type="file" name="second_id" class="form-control">
+			                            </div>
+			                            <div class="form-group">
+			                                <label for="photo">Passport size photo</label>
+			                                <input type="file" name="photo" class="form-control">
+			                            </div>
+			                            <div class="form-group">
+			                                <label for="practitioner_recommandation">Completed practitioner's recommandation form</label>
+			                                <input type="file" name="practitioner_recommandation" class="form-control">
+			                            </div>
+			                            <div class="form-group">
+			                                <label for="release_information">Completed Release of Information Form</label>
+			                                <input type="file" name="release_information" class="form-control">
+			                            </div>
+			                            <div class="form-group">
+			                                <label for="signature">Signature</label>
+			                                <p style="text-transform: uppercase;">By signing below you declare that the information you have provided on this form is factual*</p>
+			                                <input type="text" name="signature" class="form-control">
+			                            </div>
+			                            <button type="button" class="btn btn-previous">Précédent</button>
+			                            <button type="submit" class="btn">Envoyer</button>
+			                        </div>
+			                    </fieldset>
+			                </form>
+			            </div>
+			        </div>
+			    </div>
     		</div>
     	</div>
-    </div>
 
 {{ partial "footer.html" . }}

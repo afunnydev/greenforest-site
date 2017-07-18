@@ -46,17 +46,30 @@
   </url>
   
   <url>
-    <loc>/</loc>
-    <priority>0</priority>
+    <loc>/produits/dummy1/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/"
+                href="/en/produits/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/"
+                href="/produits/dummy1/"
+                />
+  </url>
+  
+  <url>
+    <loc>/produits/dummy2/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/produits/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="/produits/dummy2/"
                 />
   </url>
   
@@ -71,6 +84,20 @@
                 rel="alternate"
                 hreflang="fr"
                 href="/"
+                />
+  </url>
+  
+  <url>
+    <loc>/inscription/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="/inscription/"
                 />
   </url>
   
@@ -99,6 +126,20 @@
                 rel="alternate"
                 hreflang="fr"
                 href="/menu/"
+                />
+  </url>
+  
+  <url>
+    <loc>/merci/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="/merci/"
                 />
   </url>
   

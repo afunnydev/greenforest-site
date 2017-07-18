@@ -19,7 +19,7 @@
                                         <a href="/" title="Return to home"><i class="fa fa-home"></i></a>
                                     </div>
                                 </li>
-                                <li>Nos produits</li>
+                                <li>{{ if eq .Lang "fr" }}Nos produits{{ else if eq .Lang "en" }}Our products{{ end }}</li>
                             </ul>
                         </div>
                     </div>
@@ -65,13 +65,13 @@
                                     <div class="col-md-4 col-sm-4 col-xs-12">
                                         <div class="category-short">
                                             <div class="quantity-short">
-                                                <p>Nous avons 0 produits</p>
+                                                <p>{{ if eq .Lang "fr" }}Nous avons {{ len (where .Site.RegularPages "Type" "==" "produits") }} produit{{ else if eq .Lang "en" }}We have {{ len (where .Site.RegularPages "Type" "==" "produits") }} product{{ end }}</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-3 col-sm-3 col-xs-12">
                                         <div class="compare-items">
-                                            <a href="/menu/" class="btn-def">Notre menu <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                            <a href="/menu/" class="btn-def">{{ if eq .Lang "fr" }}Notre menu{{ else if eq .Lang "en" }}Our menu{{ end }} <i class="fa fa-angle-right" aria-hidden="true"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -89,7 +89,7 @@
                                                     <div class="product-wrapper posr">
                                                         <div class="product-label">
                                                         	{{if .Params.onsale }}
-                                                            <div class="label-sale">Vente</div>
+                                                            <div class="label-sale">{{ if eq .Lang "fr" }}Vente{{ else if eq .Lang "en" }}Sale{{ end }}</div>
                                                           {{ end }}
                                                         </div>
                                                         <div class="priduct-img-wrapper posr">
@@ -108,7 +108,7 @@
                                                                 </div>
                                                                 <div class="product-btn">
                                                                     <div class="product-qview-search">
-                                                                        <a class="btn-def btn-product-qview q-view" data-toggle="modal" data-target=".modal" href="#"><i class=" product-search fa fa-search" ></i> Quick View</a>
+                                                                        <a class="btn-def btn-product-qview q-view" data-toggle="modal" data-target=".modal" href="#"><i class=" product-search fa fa-search" ></i> {{ if eq .Lang "fr" }}Aperçu{{ else if eq .Lang "en" }}Quick View{{ end }}</a>
                                                                     </div>
 
                                                                 </div>

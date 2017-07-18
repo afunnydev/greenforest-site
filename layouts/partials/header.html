@@ -4,6 +4,7 @@
               <div class="row">
                   <div class="col-md-4 col-sm-4 col-xs-12">
                       <div class="header-login posr">
+                      {{ if eq .Lang "fr" }}
                           <ul>
                               <li><a href="#">Mon compte</a>
                               </li>
@@ -12,6 +13,16 @@
                               <!-- <li><a href="login.html">Login</a>
                               </li> -->
                           </ul>
+                      {{ else if eq .Lang "en" }}
+                          <ul>
+                              <li><a href="#">My account</a>
+                              </li>
+                              <li><a href="#">Wishlist</a>
+                              </li>
+                              <!-- <li><a href="login.html">Login</a>
+                              </li> -->
+                          </ul>
+                      {{ end }}
                       </div>
                   </div>
                   <div class="col-md-8 col-sm-8 col-xs-12">
@@ -66,12 +77,21 @@
                   <div class="col-md-9 col-sm-9 col-xs-12">
                       <div class="header-whishlist">
                           <div class="header-whish-compare posr">
+                          {{ if eq .Lang "fr" }}
                               <div class="header-whish">
                                   <a href="#">Coups de coeur</a>
                               </div>
                               <div class="header-compare">
                                   <a href="#">Comparer</a>
                               </div>
+                          {{ else if eq .Lang "en" }}
+                              <div class="header-whish">
+                                  <a href="#">Wishlist</a>
+                              </div>
+                              <div class="header-compare">
+                                  <a href="#">Compare</a>
+                              </div>
+                          {{ end }}
                           </div>
                           <div class="header-middle-phone">
                               <span><i class="fa fa-phone"></i>1-450-477-0503</span>
@@ -88,6 +108,7 @@
               <div class="row">
                   <div class="col-md-9 col-sm-10 hidden-xs">
                       <nav>
+                      {{ if eq .Lang "fr" }}
                           <ul class="main-menu">
                               <li class='{{ if eq .Params.menuposition "accueil"}}active{{end}}'><a href="/">Accueil</a></li>
                               <li class='{{ if eq .Params.menuposition "membres"}}active{{end}}'><a href='/membres/'>Membres</a></li>
@@ -97,17 +118,36 @@
                               <li class='{{ if eq .Params.menuposition "services"}}active{{end}}'><a href='/services/'>Services</a></li>
                               <li class='{{ if eq .Params.menuposition "contact"}}active{{end}}'><a href='/contact/'>Contact</a></li>
                           </ul>
+                      {{ else if eq .Lang "en" }}
+                          <ul class="main-menu">
+                              <li class='{{ if eq .Params.menuposition "accueil"}}active{{end}}'><a href="/en/">Home</a></li>
+                              <li class='{{ if eq .Params.menuposition "membres"}}active{{end}}'><a href='/en/members/'>Members</a></li>
+                              <li class='{{ if eq .Params.menuposition "menu"}}active{{end}}'><a href='/en/menu/'>Menu</a></li>
+                              <li class='{{ if eq .Params.menuposition "produits"}}active{{end}}'><a href='/en/products/'>Products</a></li>
+                              <li class='{{ if eq .Params.menuposition "cannabis"}}active{{end}}'><a href='/en/cannabis/'>Cannabis</a></li>
+                              <li class='{{ if eq .Params.menuposition "services"}}active{{end}}'><a href='/en/services/'>Services</a></li>
+                              <li class='{{ if eq .Params.menuposition "contact"}}active{{end}}'><a href='/en/contact/'>Contact</a></li>
+                          </ul>
+                      {{ end }}
                       </nav>
                   </div>
 
                   <div class="col-md-3 col-sm-2 col-xs-12">
                       <div class="main-cart-area  cart-sticky-display posr">
                           <div class="header-search header-search-position posr">
+                          {{ if eq .Lang "fr" }}
+                              <form action="#">
+                                  <input type="text" value="" placeholder="Recherche de produits" />
+                                  <button type="submit"><i class="fa fa-search"></i>
+                                  </button>
+                              </form>
+                          {{ else if eq .Lang "en" }}
                               <form action="#">
                                   <input type="text" value="" placeholder="Search Product..." />
                                   <button type="submit"><i class="fa fa-search"></i>
                                   </button>
                               </form>
+                          {{ end }}
                           </div>
                           <div class="header-cart-area cart-hover-effect">
                               <div class="shopping-cart style-shopping-bag strong-up">

@@ -4,10 +4,24 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>{{ .Title }}</title>
-    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico" />
+    <title>{{.Title}}</title>
+    <meta name="description" content="{{if .Description }}{{.Description}}{{ else if .Summary }}{{ .Summary }}{{else}}Articles promotionnels locaux et de qualité{{end}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {{ if .Params.noindex }}
+    <meta name="robots" content="noindex,nofollow">
+    {{ end }}
+    <!-- Required Open Graph Info -->
+    <meta property="og:title" content="{{ .Title }}" />
+    <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else if .Summary }}{{ .Summary }}{{ else }}Votre accès fiable et simplifié à du cannabis de haute qualité{{ end }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ .Permalink }}" />
+    {{ if .Params.image }}
+        <meta property="og:image" content="{{ .Params.image }}" />
+    {{ else }}
+        <meta property="og:image" content="/img/logos/site-logo.png" />
+    {{ end }}
     <!-- Place favicon.ico in the root directory -->
     <!-- all css here -->
     <link rel="stylesheet" href="/css/main.min.css">

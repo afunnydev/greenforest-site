@@ -31,6 +31,62 @@
   </url>
   
   <url>
+    <loc>/en/produits/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="/produits/dummy1/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/produits/"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/produits/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="/produits/dummy2/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/produits/"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="/inscription/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="/merci/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/"
+                />
+  </url>
+  
+  <url>
     <loc>/en/cannabis/</loc>
     <xhtml:link
                 rel="alternate"
@@ -70,21 +126,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="/en/contact/"
-                />
-  </url>
-  
-  <url>
-    <loc>/en/</loc>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/"
                 />
   </url>
   

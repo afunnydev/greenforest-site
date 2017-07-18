@@ -377,4 +377,73 @@
        ------------------------------ */
     $('#mix-fil').mixItUp();
 
+
 })(jQuery);
+$(document).ready(function () {
+    $('.registration-form fieldset:first-child').fadeIn('slow').addClass('active-field');
+
+    $('.registration-form input[type="text"]').on('focus', function () {
+        $(this).removeClass('input-error');
+    });
+
+    // next step
+    $('.registration-form .btn-next').on('click', function () {
+        var parent_fieldset = $(this).parents('fieldset');
+        var next_step = true;
+
+        parent_fieldset.find('input[type="text"]:not(.not-required),input[type="email"]:not(.not-required)').each(function () {
+            if ($(this).val() == "") {
+                $(this).addClass('input-error');
+                next_step = false;
+            } else {
+                $(this).removeClass('input-error');
+            }
+        });
+
+        if (next_step) {
+            parent_fieldset.fadeOut(400, function () {
+                var id = $(this).attr('id');
+                $('.progress-steps li.steps-item#'+id).next().addClass('is-active');
+                $(this).removeClass('active-field');
+                $(this).next().fadeIn().addClass('active-field');
+            });
+        }
+
+    });
+
+    // previous step
+    $('.registration-form .btn-previous').on('click', function () {
+        $(this).parents('fieldset').fadeOut(400, function () {
+            var id = $(this).attr('id');
+            $('.progress-steps li.steps-item#'+id).removeClass('is-active');
+            $(this).removeClass('active-field');
+            $(this).prev().fadeIn().addClass('active-field');
+        });
+    });
+    // Steps click
+    $('.progress-steps li.steps-item').on('click', function () {
+        var id = $(this).data('identifiant');
+        $(this).addClass('is-active').prev().addClass('is-active');
+        $(this).next().removeClass('is-active').next().removeClass('is-active');
+        $('fieldset.active-field').fadeOut(400, function () {
+            $(this).removeClass('active-field');
+            $('fieldset#'+id).fadeIn().addClass('active-field');
+        });
+    });
+
+    // submit
+    $('.registration-form').on('submit', function (e) {
+
+        $(this).find('input[type="text"]:not(.not-required),input[type="email"]:not(.not-required)').each(function () {
+            if ($(this).val() == "") {
+                e.preventDefault();
+                $(this).addClass('input-error');
+            } else {
+                $(this).removeClass('input-error');
+            }
+        });
+
+    });
+
+   
+});

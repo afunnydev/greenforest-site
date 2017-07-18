@@ -1211,7 +1211,7 @@
 
 @media (max-width: 767px) {
     .container {
-        width: 300px
+        width: 95%;
     }
     .btn-ac a {
         padding: 15px 21px;
@@ -3006,7 +3006,7 @@
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     .container {
-        width: 450px
+        width: 95%
     }
     .style-shopping-bag::before {
         left: 156px;
@@ -3264,5 +3264,13 @@
     
     .comment-reply-wrap .comment-reply {
         margin-left: 65px;
+    }
+}
+@media (min-width: 992px) {
+    .multistep-form .form-box {
+        width: 900px;
+        margin: auto;
+        right: 1rem;
+        float:none;
     }
 }
