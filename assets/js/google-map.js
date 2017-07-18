@@ -107,7 +107,7 @@ function initialize() {
 }
 if (mapElement){
     google.maps.event.addDomListener(window, 'load', initialize);
-} else {};   
+} else {}   
 
 				
 				

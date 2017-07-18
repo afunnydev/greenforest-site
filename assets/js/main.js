@@ -380,7 +380,7 @@
 
 })(jQuery);
 $(document).ready(function () {
-    $('.registration-form fieldset:first-child').fadeIn('slow').addClass('active-field');
+    $('.registration-form fieldset#step1').fadeIn('slow').addClass('active-field');
 
     $('.registration-form input[type="text"]').on('focus', function () {
         $(this).removeClass('input-error');
