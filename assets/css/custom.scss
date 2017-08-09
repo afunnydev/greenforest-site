@@ -2,7 +2,8 @@
     input[type="text"],
     input[type="email"],
     input[type="date"],
-    select.form-control {
+    select.form-control,
+    textarea {
         height: 50px;
         margin: 0;
         padding: 0 20px;
@@ -26,7 +27,9 @@
         -ms-transition: all .3s;
         transition: all .3s;
     }
-
+    textarea {
+        height: inherit;
+    }
     input[type="file"] {
         height: 35px;
         margin: 0;
@@ -252,5 +255,58 @@
 
     form.registration-form fieldset {
         display: none;
+    }
+}
+
+/* Thank you page */
+div#merci {
+    padding: 40px;
+    margin: auto;
+    max-width: 800px;
+    p {
+        color: #4a4d4f;
+        letter-spacing: 1px;
+        line-height: 25px;
+        font-size: 16px;
+        text-align: justify;
+        a {
+            text-decoration: underline;
+        }
+    }
+}
+
+/* Menu page - rabais sénior */
+div#senior {
+    padding: 20px;
+    margin: auto;
+    max-width: 800px;
+    text-align: center;
+    p {
+        color: #4a4d4f;
+        letter-spacing: 1px;
+        line-height: 25px;
+        font-size: 16px;
+        a {
+            text-decoration: underline;
+        }
+    }
+}
+
+/* Download links */
+ul#documents {
+    li {
+        a {
+            text-decoration: underline;
+        }
+    }
+}
+
+div.footer-bottom-image {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: right;
+    a {
+        color: white;
+        text-decoration: underline;
     }
 }

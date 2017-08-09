@@ -50,7 +50,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/produits/"
+                href="/en/products/dummy1/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -64,7 +64,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/produits/"
+                href="/en/products/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -92,7 +92,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/"
+                href="/en/register/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -134,7 +134,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/"
+                href="/en/thank-you/"
                 />
     <xhtml:link
                 rel="alternate"

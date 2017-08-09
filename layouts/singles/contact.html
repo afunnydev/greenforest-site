@@ -11,7 +11,7 @@
                             <ul>
                                 <li>
                                     <div class="breadcrumbs-icon1">
-                                        <a href="/" target="_blank" title="Return to home"><i class="fa fa-home"></i></a>
+                                        <a href='{{ if eq .Lang "en" }}/en{{end}}/' target="_blank" title="Return to home"><i class="fa fa-home"></i></a>
                                     </div>
                                 </li>
                                 <li>Contact</li>
@@ -34,14 +34,24 @@
         <div class="contact-email-area">
             <div class="container">
                 <div class="row">
-                		<div class="col-xs-12 col-md-2 col-md-push-9">
-                			<h3>Notre adresse</h3>
-                			<p>Téléphone: 450-477-0503</p>
-                			<p>Fax: 450-477-6088</p>
-                			<p>Adresse: 1430 Montée Major, suite 100, J7M 2G3, Terrebonne</p>
-                		</div>
+                {{ if eq .Lang "fr" }}
+            		<div class="col-xs-12 col-md-2 col-md-push-9">
+            			<h3>Notre adresse</h3>
+            			<p>Téléphone: 450-477-0503</p>
+            			<p>Fax: 450-477-6088</p>
+            			<p>Adresse: 1430 Montée Major, suite 100, J7M 2G3, Terrebonne</p>
+            		</div>
+                {{ else if eq .Lang "en" }}
+                    <div class="col-xs-12 col-md-2 col-md-push-9">
+                        <h3>Our address</h3>
+                        <p>Phone: 450-477-0503</p>
+                        <p>Fax: 450-477-6088</p>
+                        <p>Address: 1430 Montée Major, suite 100, J7M 2G3, Terrebonne</p>
+                    </div>
+                {{ end }}
                     <div class="col-xs-12 col-md-8 col-md-pull-2 col-md-offset-1">
                         <div class="row">
+                        {{ if eq .Lang "fr" }}
                             <form id="contact-form" class="contact-form" name="contact-fr" action="/merci/" netlify method="post" netlify-honeypot="bot-field">
                                 <div class="address-wrapper">
                                     <div class="col-xs-12">
@@ -54,7 +64,7 @@
                                     </div>
                                     <div class="col-xs-12">
                                         <div class="address-email">
-                                            <input type="email" name="email" placeholder="Email*" />
+                                            <input type="email" name="email" placeholder="Courriel*" />
                                         </div>
                                     </div>
                                     <div class="col-xs-12">
@@ -75,6 +85,41 @@
                                     </div>
                                 </div>
                             </form>
+                        {{ else if eq .Lang "en" }}
+                            <form id="contact-form" class="contact-form" name="contact-en" action="/en/thank-you/" netlify method="post" netlify-honeypot="bot-field">
+                                <div class="address-wrapper">
+                                    <div class="col-xs-12">
+                                        <div class="address-fname">
+                                            <input type="text" name="name" placeholder="Name*" />
+                                            <p class="hidden">
+                                                <label>Don’t fill this out: <input name="bot-field"></label>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <div class="address-email">
+                                            <input type="email" name="email" placeholder="Email*" />
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <div class="address-subject">
+                                            <input type="text" name="subject" placeholder="Subject*" />
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <div class="address-textarea">
+                                            <textarea name="message" placeholder="Write your message here*"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="form-messege"></p>
+                                <div class="col-xs-12">
+                                    <div class="send-email">
+                                        <button type="submit" class="btn btn-default">Send</button>
+                                    </div>
+                                </div>
+                            </form>
+                        {{ end }}
                         </div>
                     </div>
                 </div>

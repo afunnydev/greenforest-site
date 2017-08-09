@@ -272,6 +272,9 @@ body {}::-moz-selection {
     transition: .3s;
     display: block;
 }
+.cur-text-wrapper.currency-opt .inner-text a.active {
+    text-decoration: underline;
+}
 .cur-text-wrapper.currency-opt .inner-text a:hover {
     color: #fff
 }
@@ -1422,7 +1425,7 @@ nav ul.main-menu {
     background: #3b3b3b none repeat scroll 0 0;
     color: #fff;
     padding-bottom: 28px;
-    padding-top: 88px;
+    padding-top: 60px;
 }
 .footer-content {
     width: 90%;
@@ -3991,7 +3994,7 @@ a .confirm-middle {
         &.title-head-normal { 
             h3 {
                 font-size: 30px;
-                line-height: 21px;
+                line-height: 25px;
             }
             &.second {
                 margin-top: 40px;

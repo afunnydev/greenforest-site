@@ -1,13 +1,15 @@
 {{ partial "head.html" . }}
 
     {{ partial "header.html" . }}
-
-		<div class="clearfix"></div>
+    {{ if getenv "IS_PROD" }}
+    Hello
+    {{ end }}
+	<div class="clearfix"></div>
     <!--slider area are start-->
     <div class="slider-container">
         <!-- Slider Image -->
         <div id="mainSlider" class="nivoSlider slider-image">
-            <img src="img/home/home-ban.jpg" alt="main slider" title="#htmlcaption1" />
+            <img src="/img/home/home-ban.jpg" alt="main slider" title="#htmlcaption1" />
         </div>
         <!-- Slider Caption 1 -->
         <div id="htmlcaption1" class="nivo-html-caption slider-caption-1">
@@ -38,6 +40,7 @@
                 <div class="col-xs-12">
                     <div class="free-offer-wrapper free-border">
                         <div class="row">
+                        {{ if eq .Lang "fr" }}
                             <div class="col-md-4 col-sm-4 col-xs-12">
                                 <div class="single-free-offer text-center">
                                     <div class="title-head">
@@ -68,6 +71,38 @@
                                     </div>
                                 </div>
                             </div>
+                        {{ else if eq .Lang "en" }}
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                <div class="single-free-offer text-center">
+                                    <div class="title-head">
+                                        <h4>FREE DELIVERY</h4>
+                                    </div>
+                                    <div class="free-offer-text">
+                                        <p>Fast and at your doorstep</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                <div class="single-free-offer def-virticle-line posr text-center">
+                                    <div class="title-head">
+                                        <h4>MEDICAL MARIJUANA</h4>
+                                    </div>
+                                    <div class="free-offer-text">
+                                        <p>Become a member and order now</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                <div class="single-free-offer def-virticle-line posr text-center">
+                                    <div class="title-head">
+                                        <h4>ANY QUESTION?</h4>
+                                    </div>
+                                    <div class="free-offer-text">
+                                        <p>Call us: 450-477-0503</p>
+                                    </div>
+                                </div>
+                            </div>
+                        {{ end }}
                         </div>
                     </div>
                 </div>
@@ -84,6 +119,7 @@
                             <div class="discount-img">
                                 <img src="/img/home/home-img1-1.jpg" alt="membre achat marijuana" />
                             </div>
+                        {{ if eq .Lang "fr" }}
                             <div class="discount-text">
                                 <div class="discount-hover-desc desc-head-text uppercase">
                                     <h3>Devenez membre<br />aujourd'hui</h3>
@@ -92,12 +128,23 @@
                                     <a class="btn-def" href="/inscription/">S'inscrire</a>
                                 </div>
                             </div>
+                        {{ else if eq .Lang "en" }}
+                            <div class="discount-text">
+                                <div class="discount-hover-desc desc-head-text uppercase">
+                                    <h3>Become a member<br />today</h3>
+                                </div>
+                                <div class="discount-hover-btn">
+                                    <a class="btn-def" href="/en/register/">Register</a>
+                                </div>
+                            </div>
+                        {{ end }}
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6 col-xs-12">
                     <div class="discount-right-wrapper hp1-dmimage">
                         <div class="discout-right-top-image">
+                        {{ if eq .Lang "fr" }}
                             <a href="/produits/"><div class="single-right-top overlay-margin-10 posr">
                                 <div class="discount-right-img">
                                     <img src="/img/home/home-img2-1.jpg" alt="livraison rapide" />
@@ -108,8 +155,21 @@
                                     </div>
                                 </div>
                             </div></a>
+                        {{ else if eq .Lang "en" }}
+                            <a href="/en/products/"><div class="single-right-top overlay-margin-10 posr">
+                                <div class="discount-right-img">
+                                    <img src="/img/home/home-img2-1.jpg" alt="livraison rapide" />
+                                </div>
+                                <div class="discount-right-text">
+                                    <div class="discount-right-text-top">
+                                        <h3>Fast delivery</h3>
+                                    </div>
+                                </div>
+                            </div></a>
+                        {{ end }}
                         </div>
                         <div class="discout-right-top-image hp1-dmimage">
+                        {{ if eq .Lang "fr" }}
                             <a href="/cannabis/"><div class="single-right-top overlay-margin-10 posr">
                                 <div class="discount-right-img">
                                     <img src="/img/home/home-img3-1.jpg" alt="marijuana medical" />
@@ -123,6 +183,21 @@
                                     </div>
                                 </div>
                             </div></a>
+                        {{ else if eq .Lang "en" }}
+                            <a href="/en/cannabis/"><div class="single-right-top overlay-margin-10 posr">
+                                <div class="discount-right-img">
+                                    <img src="/img/home/home-img3-1.jpg" alt="marijuana medical" />
+                                </div>
+                                <div class="discount-right-text">
+                                    <div class="discount-right-text-top">
+                                        <a href="/en/cannabis/"><h3>Marijuana médicale</h3></a>
+                                    </div>
+                                    <div class="discount-right-text-btm">
+                                        <a href="/en/cannabis/"><span>En savoir plus..</span></a>
+                                    </div>
+                                </div>
+                            </div></a>
+                        {{ end }}
                         </div>
                     </div>
                 </div>
@@ -134,13 +209,14 @@
 
     <div class="text-area">
         <div class="container">
+        {{ if eq .Lang "fr" }}
             <div class="row">
                 <h3>Mission</h3>
-                <p>La Forêt Verte est un dispensaire québécois de cannabis thérapeutique situé sur la région de Montréal. Il offre aux patients un accès fiable et simplifié à du cannabis de haute qualité.</p>
+                <p>La Forêt Verte est un dispensaire québécois de cannabis thérapeutique situé dans la région de Montréal. Il offre aux patients un accès fiable et simplifié à du cannabis et autres produits connexes de haute qualité.</p>
             </div>
             <div class="row">
                 <h3>Bienfaits du cannabis</h3>
-                <p>Utilisé comme plante médicinale depuis l’Egypte ancienne, le cannabis a prouvé de nombreuses vertues thérapeutiques telles que ses propriétés anti-douleurs, anti-spasmes, anti-vomitives, de stimulant pour l’appétit ou d’aide à trouver le sommeil. </p>
+                <p>Utilisé comme plante médicinale depuis l’Egypte ancienne, le cannabis a prouvé de nombreuses vertues thérapeutiques telles que ses propriétés anti-douleurs, anti-spasmes, anti-vomitives, de stimulant pour l’appétit ou d’aide à trouver le sommeil.</p>
             </div>
             <div class="row">
                 <h3>Obtention de la carte de consommation pour des raisons médicales</h3>
@@ -150,6 +226,24 @@
                 <h3>Devenir membre avec Forêt Verte</h3>
                 <p>L’adhésion à La Forêt Verte est entièrement gratuite et vous permet d’avoir accès à un cannabis de grande qualité, directement livré chez vous. </p>
             </div>
+        {{ else if eq .Lang "en" }}
+            <div class="row">
+                <h3>Company mission</h3>
+                <p>GreenForest is a medical marijuana dispensary based in the Montreal area. It provides a reliable and secured access to high quality medical cannabis.</p>
+            </div>
+            <div class="row">
+                <h3>Benefits of cannabis</h3>
+                <p>Since ancient Egypt, cannabis has proven its numerous therapeutic properties and powerful benefits such as pain-killing properties, antispasmodic effects, nausea reduction, appetite stimulants and sleep inducer.</p>
+            </div>
+            <div class="row">
+                <h3>Getting your official access to medical cannabis</h3>
+                <p>The cannabis offer is exclusively reserved for GreenForest’s dispensary members only. Our service provides you with full support throughout your application process, starting by providing you with qualified doctors to every step needed for you to get the official access to medical cannabis documents.</p>
+            </div>
+            <div class="row">
+                <h3>Becoming a member with Greenforest</h3>
+                <p>GreenForest’s membership is completely free and provides access to an outstanding quality cannabis, delivered straight to your home.</p>
+            </div>
+        {{ end }}
         </div>
     </div>
 

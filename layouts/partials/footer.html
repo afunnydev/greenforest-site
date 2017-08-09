@@ -17,11 +17,11 @@
                             </div>
                         {{ else if eq .Lang "en" }}
                             <div id="f-about" class="footer-title def-funderline ftitle-about posr">
-                                <h5 class="active-about">À propos</h5>
+                                <h5 class="active-about">About Us</h5>
                             </div>
                             <div class="footer-text">
-                                <p>La Forêt Verte vous offre l’accès à cannabis fiable et de qualité, un processus d’achat entièrement sécurisé et une livraison rapide. Aussi, une assistance vous aide à être mis en relation avec des médecins qualifiés pouvant vous conseiller, vous informer et vous prescrire du cannabis thérapeutique.</p>
-                                <div class="footer-readmore"><a href="/produits/">Nos produits</a>
+                                <p>GreenForest guarantees a reliable and secured access to high quality cannabis with a fast home-delivery service. Additionally, the compassion club helps you consult with doctors who can answer your questions, give you all the information you need, and to provide you with therapeutic marijuana prescriptions.</p>
+                                <div class="footer-readmore"><a href="/en/products/">Our products</a>
                                 </div>
                             </div>
                         {{ end }}
@@ -62,13 +62,13 @@
                             <h5 class="active">Information</h5>
                         </div>
                         <ul class="footer-list-text jscroll-info">
-                            <li><a href="/produits/" title="Produits">Produits</a>
+                            <li><a href="/en/products/" title="Products">Products</a>
                             </li>
-                            <li><a href="/cannabis/" title="Cannabis">Cannabis</a>
+                            <li><a href="/en/cannabis/" title="Cannabis">Cannabis</a>
                             </li>
-                            <li><a href="/membre/" title="Devenir membre">Devenir membre</a>
+                            <li><a href="/en/members/" title="Member">Become a member</a>
                             </li>
-                            <li><a href="/contact/" title="Nous contacter">Nous contacter</a>
+                            <li><a href="/en/contact/" title="Contact">Contact us</a>
                             </li>
                         </ul>
                     {{ end }}
@@ -78,26 +78,26 @@
                     <div class="footer-list-wrapper">
                     {{ if eq .Lang "fr" }}
                         <div id="f-cussve" class="footer-title def-funderline def-funderline2 ftitle-cus posr">
-                            <h5 class="active">Service</h5>
+                            <h5 class="active">Services</h5>
                         </div>
                         <ul class="footer-list-text jscroll-cussrve">
                             <li><a href="/contact/" title="Nous contacter">Nous contacter</a>
                             </li>
                             <li><a href="/services/" title="Services">Services</a>
                             </li>
-                            <li><a href="/membre/" title="Devenir membre">Devenir membre</a>
+                            <li><a href="/inscription/" title="Devenir membre">Inscription</a>
                             </li>
                         </ul>
                     {{ else if eq .Lang "en" }}
                         <div id="f-cussve" class="footer-title def-funderline def-funderline2 ftitle-cus posr">
-                            <h5 class="active">Service</h5>
+                            <h5 class="active">Services</h5>
                         </div>
                         <ul class="footer-list-text jscroll-cussrve">
-                            <li><a href="/contact/" title="Nous contacter">Nous contacter</a>
+                            <li><a href="/en/contact/" title="Contact us">Contact us</a>
                             </li>
-                            <li><a href="/services/" title="Services">Services</a>
+                            <li><a href="/en/services/" title="Services">Services</a>
                             </li>
-                            <li><a href="/membre/" title="Devenir membre">Devenir membre</a>
+                            <li><a href="/en/register/" title="registration">Registration</a>
                             </li>
                         </ul>
                     {{ end }}
@@ -121,8 +121,7 @@
                 </div>
                 <div class="col-md-4 col-sm-6 col-xs-12 footer-bottom-right">
                     <div class="footer-bottom-image">
-                        <a href="#"><img src="/images/payment/p.png" alt="domino" />
-                        </a>
+                        {{ if eq .Lang "fr" }}Fait avec <i class="fa fa-heart"></i> par {{ else if eq .Lang "en" }}Made with <i class="fa fa-heart"></i> by {{ end }}<a href="http://akiamarketing.ca/">Akia Marketing</a>
                     </div>
                 </div>
             </div>

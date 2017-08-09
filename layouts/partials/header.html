@@ -33,16 +33,38 @@
                                       <div class="currency-dd posr">
                                           <div class="cur-title2 currency-ttl">
                                               <div class="cur-usd">
-                                                  <span>Français</span>
+                                                  <span>{{ if eq .Lang "fr" }}Français{{ else if eq .Lang "en" }}English{{ end }}</span>
                                                   <a href="#"><i class="zmdi zmdi-chevron-down"></i></a>
                                               </div>
                                               <div class="cur-text-wrapper cur-lanpos inner-btn2 currency-opt">
+                                              {{ if eq .Lang "fr" }}
                                                   <div class="inner-text">
-                                                      <span class="usd"><a href="#">Français</a></span>
+                                                      <span class="usd"><a href="#" class="active">Français</a></span>
                                                   </div>
                                                   <div class="inner-text">
-                                                      <span class="cbp"><a href="#">English</a></span>
+                                                  {{ if .Params.translatedslug }}
+                                                      <span class="cbp"><a href="{{ .Params.translatedslug }}" class="">English</a></span>
+                                                  {{ else }}
+                                                    {{ range .Translations }}
+                                                        <span class="cbp"><a href="{{ .Permalink }}" class="">English</a></span>
+                                                    {{ end }}
+                                                  {{ end }}
+                                                  
                                                   </div>
+                                              {{ else if eq .Lang "en" }}
+                                                  <div class="inner-text">
+                                                  {{ if .Params.translatedslug }}
+                                                      <span class="usd"><a href="{{ .Params.translatedslug }}" class="">Français</a></span>
+                                                  {{ else }}
+                                                    {{ range .Translations }}
+                                                        <span class="usd"><a href="{{ .Permalink }}" class="">Français</a></span>
+                                                    {{ end }}
+                                                  {{ end }}
+                                                  </div>
+                                                  <div class="inner-text">
+                                                      <span class="cbp"><a href="#" class="active">English</a></span>
+                                                  </div>
+                                              {{ end }}
                                               </div>
 
                                           </div>
@@ -70,8 +92,11 @@
               <div class="row">
                   <div class="col-md-3 col-sm-3 col-xs-12">
                       <div class="header-logo">
-                          <a href="index.html"><img src="/img/logo.png" alt="greenforest" />
-                          </a>
+                      {{ if eq .Lang "fr" }}
+                          <a href="/"><img src="/img/logo.png" alt="greenforest" /></a>
+                      {{ else if eq .Lang "en" }}
+                          <a href="/en/"><img src="/img/logo.png" alt="greenforest" /></a>
+                      {{ end }}
                       </div>
                   </div>
                   <div class="col-md-9 col-sm-9 col-xs-12">

@@ -1,5 +1,13 @@
 {{ partial "head.html" . }}
 
     {{ partial "header.html" . }}
-
+		{{ if eq .Lang "fr" }}
+		<div id="merci">
+			<p>Nous vous remercions de votre intérêt et vous répondrons le plus rapidement possible. D'ici là, n'hésitez pas à regarder notre <a href="/produits/">gamme de produits</a> en magasin.</p>
+		</div>
+		{{ else if eq .Lang "en" }}
+		<div id="merci">
+			<p>Thanks for your message. We will answer as soon as possible. While we're at it, feel free to take a look at our <a href="/en/products/">online store</a> to see our new items!</p>
+		</div>
+		{{ end }}
 {{ partial "footer.html" . }}

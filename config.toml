@@ -9,7 +9,6 @@ RemovePathAccents = true
 [permalinks]
   	# createurs = "/:slug/"
   	singles = "/:slug/"
-  	produits = "/produits/:slug/"
 [taxonomies]
   category = "categories"
   tag = "tags"
@@ -18,10 +17,16 @@ RemovePathAccents = true
 [Languages]
 [Languages.en]
 [Languages.en.Taxonomies]
-category = "categories"
-# creator = "creators"
+	category = "categories"
+	# creator = "creators"
+[Languages.en.permalinks]
+	produits = "/products/:slug/"
+	singles = "/:slug/"
 
 [Languages.fr]
 [Languages.fr.Taxonomies]
-category = "categories"
-# createur = "createurs"
+	category = "categories"
+	# createur = "createurs"
+[Languages.fr.permalinks]
+	produits = "/produits/:slug/"
+	singles = "/:slug/"

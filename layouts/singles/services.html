@@ -12,10 +12,10 @@
                             <ul>
                                 <li>
                                     <div class="breadcrumbs-icon1">
-                                        <a href="/" target="_blank" title="Return to home"><i class="fa fa-home"></i></a>
+                                        <a href='{{ if eq .Lang "en" }}/en{{end}}/' target="_blank" title="Return to home"><i class="fa fa-home"></i></a>
                                     </div>
                                 </li>
-                                <li>Nos services</li>
+                                <li>{{ if eq .Lang "fr" }}Nos services{{ else if eq .Lang "en" }}Our services{{ end }}</li>
                             </ul>
                         </div>
                     </div>
@@ -28,19 +28,37 @@
 
         <div class="about-top-area">
             <div class="container">
-            		<div class="row">
-            			<div class="col-xs-12">
-            				<div class="abt-content-wrapper">
-	                    <div class="abt-title title-head-normal">
-	                        <h3><span class="color-black-def">Services</span></h3>
-	                    </div>
-	                    <div class="abt-content bottom-div">
-		                    <p>La Forêt Verte vous offre l’accès à cannabis fiable et de qualité, un processus d’achat entièrement sécurisé et une livraison rapide. Aussi, une assistance vous aide à être mis en relation avec des médecins qualifiés pouvant vous conseiller, vous informer et vous prescrire du cannabis thérapeutique.</p>
-		                    <p>Souscrire à La Forêt Verte, c’est l’assurance d’un service fiable et de qualité. Un organisme respectueux et à l’écoute de ses patients afin de pouvoir les satisfaire au maximum.</p>
-		                    <a class="btn-def" href="/inscription/">Devenez membre</a>
+            	<div class="row">
+            		<div class="col-xs-12">
+            			<div class="abt-content-wrapper">
+                        {{ if eq .Lang "fr" }}
+    	                    <div class="abt-title title-head-normal">
+    	                        <h3><span class="color-black-def">Services</span></h3>
+    	                    </div>
+    	                    <div class="abt-content bottom-div">
+    		                    <p>La Forêt Verte vous offre l’accès à cannabis fiable et de qualité, un processus d’achat entièrement sécurisé et une livraison rapide. Aussi, une assistance vous aide à être mis en relation avec des médecins qualifiés pouvant vous conseiller, vous informer et vous prescrire du cannabis thérapeutique.</p>
+                                <p>Notre centre de compassion vous offre donc un accompagnement complet lors de votre adhésion, de la mise en relation avec des médecins qualifiés, au suivi des démarches pour compléter votre dossier.</p>
+                                <p>Toute l’équipe de La Forêt Verte est à votre écoute afin de comprendre vos besoins et pouvoir vous conseiller et trouver des solutions correspondant à vos besoins.</p>
+                                <p>Aussi, La Forêt Verte offre une large gamme d’accessoires permettant de rendre votre consommations de Cannabis plus agréable.</p>
+                                <p>Souscrire à La Forêt Verte, c’est l’assurance d’un service rapide, fiable et de qualité. Un organisme respectueux et à l’écoute de ses patients afin de pouvoir les satisfaire au maximum.</p>
+    		                    <a class="btn-def" href="/inscription/">Devenez membre</a>
+                                <a class="btn-def" href="/contact/">Avez-vous des questions?</a>
 		                	</div>
-	            			</div>
+                        {{ else if eq .Lang "en" }}
+                            <div class="abt-title title-head-normal">
+                                <h3><span class="color-black-def">Services</span></h3>
+                            </div>
+                            <div class="abt-content bottom-div">
+                                <p>GreenForest guarantees a reliable and secured access to high quality cannabis with a fast home-delivery service. Additionally, the compassion club helps you consult with doctors who can answer your questions, give you all the information you need, and to provide you with therapeutic marijuana prescriptions.</p>
+                                <p>Our compassion club provides you with a complete accompaniment throughout your membership application. From linking you with qualified doctors to every step needed for you to get the official access to medical cannabis documents.</p>
+                                <p>The whole Green Forest’s team is dedicated to find the best solution for your needs.</p>
+                                <p>Being a member of GreenForest is being part of a trustworthy community, who cares about their patients and are willing to go the extra mile for their clients satisfaction.</p>
+                                <a class="btn-def" href="/en/register/">Registration</a>
+                                <a class="btn-def" href="/en/contact/">Any questions?</a>
+                            </div>
+                        {{ end }}
 	            		</div>
+	            	</div>
 	            </div>
 	        </div>
 	    </div>

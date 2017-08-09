@@ -1,0 +1,768 @@
+{{ partial "head.html" . }}
+
+    {{ partial "header.html" . }}
+
+    <!--Hair top banner start-->
+
+    <div class="hair-main-wrapper">
+        <div class="page-banner1">
+            <img src="/img/product/ourproduct-ban.jpg" alt="produits cannabis" />
+        </div>
+        <div class="breadcrumbs-wrapper breadcumbs-bg1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="breadcrumbs breadcrumbs-style1 sep1 posr">
+                            <ul>
+                                <li>
+                                    <div class="breadcrumbs-icon1">
+                                        <a href="/" title="Return to home"><i class="fa fa-home"></i></a>
+                                    </div>
+                                </li>
+                                <li>{{ if eq .Lang "fr" }}Nos produits{{ else if eq .Lang "en" }}Our products{{ end }}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Main shop area start-->
+
+        <div class="main-shop-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-xs-12">
+                        <div class="clearfix"></div>
+                        <div class="mainshop-area">
+                            <div class="mainshop-top">
+                                <div class="row">
+                                    <div class="col-md-5 col-sm-5 col-xs-12">
+                                        <div class="category-short">
+                                            <div class="sproduct-tab">
+                                                <ul class="tabcate" role="tablist">
+                                                    <li role="presentation" class="active"><a href="#productWidgets" aria-controls="productWidgets" role="tab" data-toggle="tab"><i class="fa fa-th-large" aria-hidden="true"></i></a>
+                                                    </li>
+                                                    <li role="presentation"><a href="#productList" aria-controls="productList" role="tab" data-toggle="tab"><i class="fa fa-list-alt" aria-hidden="true"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- <div class="sproduct-short">
+                                                <div class="top-product-short">
+                                                    <label for="viewby">Short By</label>
+                                                    <select name="#" id="viewby">
+                                                        <option value="25">Default</option>
+                                                        <option value="20">Name (A-Z)</option>
+                                                        <option value="15">Name (A-Z)</option>
+                                                        <option value="10">Price (Low > High)</option>
+                                                        <option value="10">Price (High> Low)</option>
+                                                        <option value="10">Price (High> Low)</option>
+                                                        <option value="10">Price (High> Low)</option>
+                                                    </select>
+                                                </div>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-12">
+                                        <div class="category-short">
+                                            <div class="quantity-short">
+                                                <p>{{ if eq .Lang "fr" }}Nous avons {{ len (where .Site.RegularPages "Type" "==" "produits") }} produit{{ else if eq .Lang "en" }}We have {{ len (where .Site.RegularPages "Type" "==" "produits") }} product{{ end }}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                        <div class="compare-items">
+                                            <a href="/menu/" class="btn-def">{{ if eq .Lang "fr" }}Notre menu{{ else if eq .Lang "en" }}Our menu{{ end }} <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="shop-mega-category">
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="productWidgets">
+                                    <div class="tab-content-wrapper">
+                                        <div class="row">
+                                        		{{ range  (where .Site.RegularPages "Type" "==" "produits") }}
+                                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                                <div class="single-product">
+                                                    <div class="product-wrapper posr">
+                                                        <div class="product-label">
+                                                        	{{if .Params.onsale }}
+                                                            <div class="label-sale">{{ if eq .Lang "fr" }}Vente{{ else if eq .Lang "en" }}Sale{{ end }}</div>
+                                                          {{ end }}
+                                                        </div>
+                                                        <div class="priduct-img-wrapper posr">
+                                                            <div class="product-img">
+                                                                <a href="{{.Permalink}}"><img src="{{.Params.image}}" alt="{{.Params.titre}}" />
+                                                                </a>
+                                                            </div>
+                                                            <div class="product-inner-text">
+                                                                <div class="product-social-icon social-icon">
+                                                                    <ul>
+                                                                        <li><a href="#"><i class="fa fa-shopping-cart"></i></a>
+                                                                        </li>
+                                                                        <li><a href="#"><i class="fa fa-heart-o"></i></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="product-btn">
+                                                                    <div class="product-qview-search">
+                                                                        <a class="btn-def btn-product-qview q-view" data-toggle="modal" data-target=".modal" href="#"><i class=" product-search fa fa-search" ></i> {{ if eq .Lang "fr" }}Aperçu{{ else if eq .Lang "en" }}Quick View{{ end }}</a>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="product-bottom-text posr">
+                                                            <div class="product-bottom-title deft-underline2">
+                                                                <a href="{{.Permalink}}" title="{{.Params.titre}}"><h4>{{.Params.titre}}</h4></a>
+                                                            </div>
+                                                            <div class="product-bottom-price">
+                                                            	{{if .Params.onsale }}
+                                                                <span>{{ .Params.saleprice }}$</span> <del>{{ .Params.price }}$</del>
+                                                              {{ else }}
+																																<span>{{ .Params.price }}$</span>
+                                                              {{ end }}
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {{ end }}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="productList">
+                                    <div class="tab-content-wrapper tab-listview">
+                                        <div class="row">
+                                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                                <div class="single-product shop-single-tab2">
+                                                    <div class="product-wrapper posr">
+                                                        <div class="priduct-img-wrapper posr">
+                                                            <div class="product-img">
+                                                                <a href="single-product.html"><img src="images/product/p9.jpg" alt="" />
+                                                                </a>
+                                                            </div>
+                                                            <div class="product-inner-text">
+                                                                <div class="product-social-icon social-icon">
+                                                                    <ul>
+                                                                        <li><a href="cart.html"><i class="fa fa-shopping-cart"></i></a>
+                                                                        </li>
+                                                                        <li><a href="index.html"><i class="fa fa-heart-o"></i></a>
+                                                                        </li>
+                                                                        <li><a href="single-product.html"><i class="fa fa-refresh"></i></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="product-btn">
+                                                                    <div class="product-qview-search">
+                                                                        <a class="btn-def btn-product-qview q-view" data-toggle="modal" data-target=".modal" href="#"><i class=" product-search fa fa-search" ></i> quick View</a>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8 col-sm-12 col-xs-12">
+                                                <div class="compare-content-wrap">
+                                                    <div class="cmain-heading cmain-heading-tab2">
+                                                        <h3>Mirum est notare</h3>
+                                                    </div>
+                                                    <div class="compare-conpart">
+                                                        <div class="compare-social">
+                                                            <div class="compare-social">
+                                                                <button class=" btn btn-default com-tw"><i class="fa fa-twitter"></i> Twitter</button>
+                                                                <button class=" btn btn-default com-fb"><i class="fa fa-facebook"></i> Share</button>
+                                                                <button class="btn btn-default com-gp"><i class="fa fa-google-plus"></i> Google +</button>
+                                                                <button class=" btn btn-default com-pi"><i class="fa fa-pinterest"></i> Pinterest</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="skill-rating skill-rating-tab2">
+                                                            <div class="rating-text">
+                                                                <span>Rating</span>
+                                                            </div>
+                                                            <ul class="skill-star-rating">
+                                                                <li><a href="#"><i class="fa fa-star"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i class="fa fa-star"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i class="fa fa-star"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i class="fa fa-star"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i class="fa fa-star"></i></a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="compare-conpart">
+                                                        <div class="skill-long-text">
+                                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendreri</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="compare-conpart-pm compare-tab2">
+                                                        <div class="old-new-price">
+                                                            <span>$342.00 <del class="skill-gray"> $360.00</del></span>
+                                                        </div>
+                                                        <div class="plus-minus-text">Quantity</div>
+                                                        <div class="skill-plusminus-wrap">
+                                                            <div class="skill-plusminus">
+                                                                <div class="skill-minus qtybutton">-</div>
+                                                                <input type="text" name="#" value="1" class="cart-plus-minus-box" />
+                                                                <div class="skill-plus qtybutton">+</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="skill-cart-option skill-sep posr">
+                                                            <a href="cart.html"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content-wrapper tab-listview">
+                                        <div class="row">
+                                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                                <div class="single-product shop-single-tab2">
+                                                    <div class="product-wrapper posr">
+                                                        <div class="priduct-img-wrapper posr">
+                                                            <div class="product-img">
+                                                                <a href="single-product.html"><img src="images/product/p1.jpg" alt="" />
+                                                                </a>
+                                                            </div>
+                                                            <div class="product-inner-text">
+                                                                <div class="product-social-icon social-icon">
+                                                                    <ul>
+                                                                        <li><a href="cart.html"><i class="fa fa-shopping-cart"></i></a>
+                                                                        </li>
+                                                                        <li><a href="index.html"><i class="fa fa-heart-o"></i></a>
+                                                                        </li>
+                                                                        <li><a href="single-product.html"><i class="fa fa-refresh"></i></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="product-btn">
+                                                                    <div class="product-qview-search">
+                                                                        <a class="btn-def btn-product-qview q-view" data-toggle="modal" data-target=".modal" href="#"><i class=" product-search fa fa-search" ></i> quick View</a>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8 col-sm-12 col-xs-12">
+                                                <div class="compare-content-wrap">
+                                                    <div class="cmain-heading cmain-heading-tab2">
+                                                        <h3>Mirum est notare</h3>
+                                                    </div>
+                                                    <div class="compare-conpart">
+                                                        <div class="compare-social">
+                                                            <div class="compare-social">
+                                                                <button class=" btn btn-default com-tw"><i class="fa fa-twitter"></i> Twitter</button>
+                                                                <button class=" btn btn-default com-fb"><i class="fa fa-facebook"></i> Share</button>
+                                                                <button class="btn btn-default com-gp"><i class="fa fa-google-plus"></i> Google +</button>
+                                                                <button class=" btn btn-default com-pi"><i class="fa fa-pinterest"></i> Pinterest</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="skill-rating skill-rating-tab2">
+                                                            <div class="rating-text">
+                                                                <span>Rating</span>
+                                                            </div>
+                                                            <ul class="skill-star-rating">
+                                                                <li><a href="#"><i class="fa fa-star"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i class="fa fa-star"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i class="fa fa-star"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i class="fa fa-star"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i class="fa fa-star"></i></a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="compare-conpart">
+                                                        <div class="skill-long-text">
+                                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendreri</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="compare-conpart-pm compare-tab2">
+                                                        <div class="old-new-price">
+                                                            <span>$342.00 <del class="skill-gray"> $360.00</del></span>
+                                                        </div>
+                                                        <div class="plus-minus-text">Quantity</div>
+                                                        <div class="skill-plusminus-wrap">
+                                                            <div class="skill-plusminus">
+                                                                <div class="skill-minus qtybutton">-</div>
+                                                                <input type="text" name="#" value="1" class="cart-plus-minus-box" />
+                                                                <div class="skill-plus qtybutton">+</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="skill-cart-option skill-sep posr">
+                                                            <a href="cart.html"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content-wrapper tab-listview">
+                                        <div class="row">
+                                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                                <div class="single-product shop-single-tab2">
+                                                    <div class="product-wrapper posr">
+                                                        <div class="priduct-img-wrapper posr">
+                                                            <div class="product-img">
+                                                                <a href="single-product.html"><img src="images/product/p5.jpg" alt="" />
+                                                                </a>
+                                                            </div>
+                                                            <div class="product-inner-text">
+                                                                <div class="product-social-icon social-icon">
+                                                                    <ul>
+                                                                        <li><a href="cart.html"><i class="fa fa-shopping-cart"></i></a>
+                                                                        </li>
+                                                                        <li><a href="index.html"><i class="fa fa-heart-o"></i></a>
+                                                                        </li>
+                                                                        <li><a href="single-product.html"><i class="fa fa-refresh"></i></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="product-btn">
+                                                                    <div class="product-qview-search">
+                                                                        <a class="btn-def btn-product-qview q-view" data-toggle="modal" data-target=".modal" href="#"><i class=" product-search fa fa-search" ></i> quick View</a>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8 col-sm-12 col-xs-12">
+                                                <div class="compare-content-wrap">
+                                                    <div class="cmain-heading cmain-heading-tab2">
+                                                        <h3>Mirum est notare</h3>
+                                                    </div>
+                                                    <div class="compare-conpart">
+                                                        <div class="compare-social">
+                                                            <div class="compare-social">
+                                                                <button class=" btn btn-default com-tw"><i class="fa fa-twitter"></i> Twitter</button>
+                                                                <button class=" btn btn-default com-fb"><i class="fa fa-facebook"></i> Share</button>
+                                                                <button class="btn btn-default com-gp"><i class="fa fa-google-plus"></i> Google +</button>
+                                                                <button class=" btn btn-default com-pi"><i class="fa fa-pinterest"></i> Pinterest</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="skill-rating skill-rating-tab2">
+                                                            <div class="rating-text">
+                                                                <span>Rating</span>
+                                                            </div>
+                                                            <ul class="skill-star-rating">
+                                                                <li><a href="#"><i class="fa fa-star"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i class="fa fa-star"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i class="fa fa-star"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i class="fa fa-star"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i class="fa fa-star"></i></a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="compare-conpart">
+                                                        <div class="skill-long-text">
+                                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendreri</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="compare-conpart-pm compare-tab2">
+                                                        <div class="old-new-price">
+                                                            <span>$342.00 <del class="skill-gray"> $360.00</del></span>
+                                                        </div>
+                                                        <div class="plus-minus-text">Quantity</div>
+                                                        <div class="skill-plusminus-wrap">
+                                                            <div class="skill-plusminus">
+                                                                <div class="skill-minus qtybutton">-</div>
+                                                                <input type="text" name="#" value="1" class="cart-plus-minus-box" />
+                                                                <div class="skill-plus qtybutton">+</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="skill-cart-option skill-sep posr">
+                                                            <a href="cart.html"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content-wrapper tab-listview">
+                                        <div class="row">
+                                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                                <div class="single-product shop-single-tab2">
+                                                    <div class="product-wrapper posr">
+                                                        <div class="priduct-img-wrapper posr">
+                                                            <div class="product-img">
+                                                                <a href="single-product.html"><img src="images/product/p1.jpg" alt="" />
+                                                                </a>
+                                                            </div>
+                                                            <div class="product-inner-text">
+                                                                <div class="product-social-icon social-icon">
+                                                                    <ul>
+                                                                        <li><a href="cart.html"><i class="fa fa-shopping-cart"></i></a>
+                                                                        </li>
+                                                                        <li><a href="index.html"><i class="fa fa-heart-o"></i></a>
+                                                                        </li>
+                                                                        <li><a href="single-product.html"><i class="fa fa-refresh"></i></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="product-btn">
+                                                                    <div class="product-qview-search">
+                                                                        <a class="btn-def btn-product-qview q-view" data-toggle="modal" data-target=".modal" href="#"><i class=" product-search fa fa-search" ></i> quick View</a>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8 col-sm-12 col-xs-12">
+                                                <div class="compare-content-wrap">
+                                                    <div class="cmain-heading cmain-heading-tab2">
+                                                        <h3>Mirum est notare</h3>
+                                                    </div>
+                                                    <div class="compare-conpart">
+                                                        <div class="compare-social">
+                                                            <div class="compare-social">
+                                                                <button class=" btn btn-default com-tw"><i class="fa fa-twitter"></i> Twitter</button>
+                                                                <button class=" btn btn-default com-fb"><i class="fa fa-facebook"></i> Share</button>
+                                                                <button class="btn btn-default com-gp"><i class="fa fa-google-plus"></i> Google +</button>
+                                                                <button class=" btn btn-default com-pi"><i class="fa fa-pinterest"></i> Pinterest</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="skill-rating skill-rating-tab2">
+                                                            <div class="rating-text">
+                                                                <span>Rating</span>
+                                                            </div>
+                                                            <ul class="skill-star-rating">
+                                                                <li><a href="#"><i class="fa fa-star"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i class="fa fa-star"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i class="fa fa-star"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i class="fa fa-star"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i class="fa fa-star"></i></a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="compare-conpart">
+                                                        <div class="skill-long-text">
+                                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendreri</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="compare-conpart-pm compare-tab2">
+                                                        <div class="old-new-price">
+                                                            <span>$342.00 <del class="skill-gray"> $360.00</del></span>
+                                                        </div>
+                                                        <div class="plus-minus-text">Quantity</div>
+                                                        <div class="skill-plusminus-wrap">
+                                                            <div class="skill-plusminus">
+                                                                <div class="skill-minus qtybutton">-</div>
+                                                                <input type="text" name="#" value="1" class="cart-plus-minus-box" />
+                                                                <div class="skill-plus qtybutton">+</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="skill-cart-option skill-sep posr">
+                                                            <a href="cart.html"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content-wrapper tab-listview">
+                                        <div class="row">
+                                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                                <div class="single-product shop-single-tab2">
+                                                    <div class="product-wrapper posr">
+                                                        <div class="priduct-img-wrapper posr">
+                                                            <div class="product-img">
+                                                                <a href="single-product.html"><img src="images/product/p9.jpg" alt="" />
+                                                                </a>
+                                                            </div>
+                                                            <div class="product-inner-text">
+                                                                <div class="product-social-icon social-icon">
+                                                                    <ul>
+                                                                        <li><a href="cart.html"><i class="fa fa-shopping-cart"></i></a>
+                                                                        </li>
+                                                                        <li><a href="index.html"><i class="fa fa-heart-o"></i></a>
+                                                                        </li>
+                                                                        <li><a href="single-product.html"><i class="fa fa-refresh"></i></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="product-btn">
+                                                                    <div class="product-qview-search">
+                                                                        <a class="btn-def btn-product-qview q-view" data-toggle="modal" data-target=".modal" href="#"><i class=" product-search fa fa-search" ></i> quick View</a>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8 col-sm-12 col-xs-12">
+                                                <div class="compare-content-wrap">
+                                                    <div class="cmain-heading cmain-heading-tab2">
+                                                        <h3>Mirum est notare</h3>
+                                                    </div>
+                                                    <div class="compare-conpart">
+                                                        <div class="compare-social">
+                                                            <div class="compare-social">
+                                                                <button class=" btn btn-default com-tw"><i class="fa fa-twitter"></i> Twitter</button>
+                                                                <button class=" btn btn-default com-fb"><i class="fa fa-facebook"></i> Share</button>
+                                                                <button class="btn btn-default com-gp"><i class="fa fa-google-plus"></i> Google +</button>
+                                                                <button class=" btn btn-default com-pi"><i class="fa fa-pinterest"></i> Pinterest</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="skill-rating skill-rating-tab2">
+                                                            <div class="rating-text">
+                                                                <span>Rating</span>
+                                                            </div>
+                                                            <ul class="skill-star-rating">
+                                                                <li><a href="#"><i class="fa fa-star"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i class="fa fa-star"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i class="fa fa-star"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i class="fa fa-star"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i class="fa fa-star"></i></a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="compare-conpart">
+                                                        <div class="skill-long-text">
+                                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendreri</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="compare-conpart-pm compare-tab2">
+                                                        <div class="old-new-price">
+                                                            <span>$342.00 <del class="skill-gray"> $360.00</del></span>
+                                                        </div>
+                                                        <div class="plus-minus-text">Quantity</div>
+                                                        <div class="skill-plusminus-wrap">
+                                                            <div class="skill-plusminus">
+                                                                <div class="skill-minus qtybutton">-</div>
+                                                                <input type="text" name="#" value="1" class="cart-plus-minus-box" />
+                                                                <div class="skill-plus qtybutton">+</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="skill-cart-option skill-sep posr">
+                                                            <a href="cart.html"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content-wrapper tab-listview">
+                                        <div class="row">
+                                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                                <div class="single-product shop-single-tab2">
+                                                    <div class="product-wrapper posr">
+                                                        <div class="priduct-img-wrapper posr">
+                                                            <div class="product-img">
+                                                                <a href="single-product.html"><img src="images/product/p7.jpg" alt="" />
+                                                                </a>
+                                                            </div>
+                                                            <div class="product-inner-text">
+                                                                <div class="product-social-icon social-icon">
+                                                                    <ul>
+                                                                        <li><a href="cart.html"><i class="fa fa-shopping-cart"></i></a>
+                                                                        </li>
+                                                                        <li><a href="index.html"><i class="fa fa-heart-o"></i></a>
+                                                                        </li>
+                                                                        <li><a href="single-product.html"><i class="fa fa-refresh"></i></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="product-btn">
+                                                                    <div class="product-qview-search">
+                                                                        <a class="btn-def btn-product-qview q-view" data-toggle="modal" data-target=".modal" href="#"><i class=" product-search fa fa-search" ></i> quick View</a>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8 col-sm-12 col-xs-12">
+                                                <div class="compare-content-wrap">
+                                                    <div class="cmain-heading cmain-heading-tab2">
+                                                        <h3>Mirum est notare</h3>
+                                                    </div>
+                                                    <div class="compare-conpart">
+                                                        <div class="compare-social">
+                                                            <div class="compare-social">
+                                                                <button class=" btn btn-default com-tw"><i class="fa fa-twitter"></i> Twitter</button>
+                                                                <button class=" btn btn-default com-fb"><i class="fa fa-facebook"></i> Share</button>
+                                                                <button class="btn btn-default com-gp"><i class="fa fa-google-plus"></i> Google +</button>
+                                                                <button class=" btn btn-default com-pi"><i class="fa fa-pinterest"></i> Pinterest</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="skill-rating skill-rating-tab2">
+                                                            <div class="rating-text">
+                                                                <span>Rating</span>
+                                                            </div>
+                                                            <ul class="skill-star-rating">
+                                                                <li><a href="#"><i class="fa fa-star"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i class="fa fa-star"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i class="fa fa-star"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i class="fa fa-star"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i class="fa fa-star"></i></a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="compare-conpart">
+                                                        <div class="skill-long-text">
+                                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendreri</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="compare-conpart-pm compare-tab2">
+                                                        <div class="old-new-price">
+                                                            <span>$342.00 <del class="skill-gray"> $360.00</del></span>
+                                                        </div>
+                                                        <div class="plus-minus-text">Quantity</div>
+                                                        <div class="skill-plusminus-wrap">
+                                                            <div class="skill-plusminus">
+                                                                <div class="skill-minus qtybutton">-</div>
+                                                                <input type="text" name="#" value="1" class="cart-plus-minus-box" />
+                                                                <div class="skill-plus qtybutton">+</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="skill-cart-option skill-sep posr">
+                                                            <a href="cart.html"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content-wrapper tab-listview">
+                                        <div class="row">
+                                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                                <div class="single-product shop-single-tab2">
+                                                    <div class="product-wrapper posr">
+                                                        <div class="priduct-img-wrapper posr">
+                                                            <div class="product-img">
+                                                                <a href="single-product.html"><img src="images/product/p3.jpg" alt="" />
+                                                                </a>
+                                                            </div>
+                                                            <div class="product-inner-text">
+                                                                <div class="product-social-icon social-icon">
+                                                                    <ul>
+                                                                        <li><a href="cart.html"><i class="fa fa-shopping-cart"></i></a>
+                                                                        </li>
+                                                                        <li><a href="index.html"><i class="fa fa-heart-o"></i></a>
+                                                                        </li>
+                                                                        <li><a href="single-product.html"><i class="fa fa-refresh"></i></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="product-btn">
+                                                                    <div class="product-qview-search">
+                                                                        <a class="btn-def btn-product-qview q-view" data-toggle="modal" data-target=".modal" href="#"><i class=" product-search fa fa-search" ></i> quick View</a>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8 col-sm-12 col-xs-12">
+                                                <div class="compare-content-wrap">
+                                                    <div class="cmain-heading cmain-heading-tab2">
+                                                        <h3>Mirum est notare</h3>
+                                                    </div>
+                                                    <div class="compare-conpart">
+                                                        <div class="compare-social">
+                                                            <div class="compare-social">
+                                                                <button class=" btn btn-default com-tw"><i class="fa fa-twitter"></i> Twitter</button>
+                                                                <button class=" btn btn-default com-fb"><i class="fa fa-facebook"></i> Share</button>
+                                                                <button class="btn btn-default com-gp"><i class="fa fa-google-plus"></i> Google +</button>
+                                                                <button class=" btn btn-default com-pi"><i class="fa fa-pinterest"></i> Pinterest</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="skill-rating skill-rating-tab2">
+                                                            <div class="rating-text">
+                                                                <span>Rating</span>
+                                                            </div>
+                                                            <ul class="skill-star-rating">
+                                                                <li><a href="#"><i class="fa fa-star"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i class="fa fa-star"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i class="fa fa-star"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i class="fa fa-star"></i></a>
+                                                                </li>
+                                                                <li><a href="#"><i class="fa fa-star"></i></a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="compare-conpart">
+                                                        <div class="skill-long-text">
+                                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendreri</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="compare-conpart-pm compare-tab2">
+                                                        <div class="old-new-price">
+                                                            <span>$342.00 <del class="skill-gray"> $360.00</del></span>
+                                                        </div>
+                                                        <div class="plus-minus-text">Quantity</div>
+                                                        <div class="skill-plusminus-wrap">
+                                                            <div class="skill-plusminus">
+                                                                <div class="skill-minus qtybutton">-</div>
+                                                                <input type="text" name="#" value="1" class="cart-plus-minus-box" />
+                                                                <div class="skill-plus qtybutton">+</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="skill-cart-option skill-sep posr">
+                                                            <a href="cart.html"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+{{ partial "footer.html" . }}

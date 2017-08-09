@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Greenforest - Votre accès fiable et simplifié à du cannabis de haute qualité</title>
+    <title>Greenforest - Outstanding quality cannabis, delivered straight to your home. on Greenforest - Votre accès fiable et simplifié à du cannabis de haute qualité</title>
     <link>/en/</link>
-    <description>Recent content on Greenforest - Votre accès fiable et simplifié à du cannabis de haute qualité</description>
+    <description>Recent content in Greenforest - Outstanding quality cannabis, delivered straight to your home. on Greenforest - Votre accès fiable et simplifié à du cannabis de haute qualité</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
@@ -12,37 +12,10 @@
     
     <item>
       <title></title>
-      <link>/en/produits/</link>
+      <link>/en/products/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/en/produits/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/en/produits/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/en/produits/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/en/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/en/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/en/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/en/</guid>
+      <guid>/en/products/</guid>
       <description></description>
     </item>
     
@@ -65,6 +38,15 @@
     </item>
     
     <item>
+      <title>Dummy product 1 - Greenforest</title>
+      <link>/en/products/dummy1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/en/products/dummy1/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem non odio suscipit quaerat? Alias corrupti quibusdam, vero animi voluptatibus ducimus ut officiis itaque atque! Consectetur voluptas blanditiis nam voluptatem cupiditate!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam ipsa, nobis dolore distinctio laborum fugit. Ratione architecto atque sequi commodi aperiam eius. Deserunt fuga laborum nobis eos quod rerum corporis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et iure, libero, dolores dicta fugit quibusdam facilis quo est deleniti similique excepturi ipsam, harum, ipsa inventore assumenda quaerat voluptatibus illum voluptates!</description>
+    </item>
+    
+    <item>
       <title>Members - Greenforest</title>
       <link>/en/members/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -83,11 +65,38 @@
     </item>
     
     <item>
+      <title>Products - Greenforest</title>
+      <link>/en/products/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/en/products/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Registration - Greenforest</title>
+      <link>/en/register/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/en/register/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Services - Greenforest</title>
       <link>/en/services/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/en/services/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Thank you - Greenforest</title>
+      <link>/en/thank-you/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/en/thank-you/</guid>
       <description></description>
     </item>
     

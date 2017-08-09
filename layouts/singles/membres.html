@@ -13,10 +13,10 @@
                             <ul>
                                 <li>
                                     <div class="breadcrumbs-icon1">
-                                        <a href="/" target="_blank" title="Return to home"><i class="fa fa-home"></i></a>
+                                        <a href='{{ if eq .Lang "en" }}/en{{end}}/' target="_blank" title="Return to home"><i class="fa fa-home"></i></a>
                                     </div>
                                 </li>
-                                <li>Devenir membre</li>
+                                <li>{{ if eq .Lang "fr" }}Devenir membre{{ else if eq .Lang "en" }}Membership{{ end }} </li>
                             </ul>
                         </div>
                     </div>
@@ -29,32 +29,57 @@
 
         <div class="about-top-area">
             <div class="container">
-            		<div class="row">
-            			<div class="col-xs-12">
-            				<div class="abt-content-wrapper">
-	                    <div class="abt-title title-head-normal">
-	                        <h3><span class="color-black-def">Adhésion</span></h3>
-	                    </div>
-	                    <div class="abt-content">
-		                    <p>La Forêt Verte souhaite rendre votre adhésion aussi simple et rapide que possible.</p>
-		                    <p>Si vous possédez une carte de membre valide d’un autre centre de compassion canadien, il vous est possible de l’utiliser pour vos trois premières visites à La Forêt Verte, après quoi une adhésion sera nécessaire. </p>
-		                    <p>Si vous ne disposez pas actuellement de document médical autorisant l'usage du cannabis à des fins médicales ou de carte de membre valide d’un autre club de compassion, vous pouvez devenir membre de La Forêt Verte en suivant la démarche suivante.</p>
-		                    <p>Pour cela, il vous suffit de remplir et nous envoyer les formulaires suivants accompagnés de documents d’identités.</p>
-		                    <p>Vous pouvez également remplir les formulaires et vous inscrire directement en ligne en <a href="/inscription/">CLIQUANT ICI</a></p>
-		                  <div class="abt-content second">
-		                  	<p>Liste de documents à fournir :</p>
-		                  	<ul>
-		                  		<li>Copies de 2 pièces d’identités issues du gouvernement</li>
-		                  		<li>Photo d’identité format passeport</li>
-		                  		<li>Copie complétée du formulaire de Demande d’adhésion ci-dessous</li>
-		                  		<li>Copie complétée du formulaire de Recommandation du praticien ci-dessous</li>
-		                  		<li>Copie complétée du formulaire de Publication d’information ci-dessous</li>
-		                  	</ul>
-		                  	<p>Ces documents sont au format Adobe PDF. Si vous rencontrez des difficultés à les ouvrir, installez Adobe Reader en <a href="#">cliquant ici</a>.</p>
-		                  </div>
+            	<div class="row">
+            		<div class="col-xs-12">
+            			<div class="abt-content-wrapper">
+                        {{ if eq .Lang "fr" }}
+    	                    <div class="abt-title title-head-normal">
+    	                        <h3><span class="color-black-def">Adhésion</span></h3>
+    	                    </div>
+    	                    <div class="abt-content">
+    		                    <p>La Forêt Verte souhaite rendre votre adhésion aussi simple et rapide que possible.</p>
+    		                    <p>Si vous possédez une carte de membre valide d’un autre centre de compassion canadien, il vous est possible de l’utiliser pour vos trois premières visites à La Forêt Verte, après quoi une adhésion sera nécessaire. </p>
+    		                    <p>Si vous ne disposez pas actuellement de document médical autorisant l'usage du cannabis à des fins médicales ou de carte de membre valide d’un autre club de compassion, vous pouvez devenir membre de La Forêt Verte en suivant la démarche suivante.</p>
+    		                    <p>Pour cela, il vous suffit de remplir et nous envoyer les formulaires suivants accompagnés de documents d’identités.</p>
+    		                    <p>Vous pouvez également remplir les formulaires et vous inscrire directement en ligne en <a href="/inscription/" style="text-decoration: underline;">CLIQUANT ICI</a></p>
+                            </div>
+    		                <div class="abt-content second">
+    		                  	<p>Liste de documents à fournir :</p>
+    		                  	<ul id="documents">
+    		                  		<li>Copies de 2 pièces d’identités issues du gouvernement</li>
+    		                  		<li>Photo d’identité format passeport</li>
+    		                  		<li>Copie complétée du <a href="/img/varia/Form1-MembershipApplication.pdf" target="_blank" class="membership-docs" id="application-fr">formulaire de Demande d’adhésion</a></li>
+    		                  		<li>Copie complétée du <a href="/img/varia/Form2-PractitionerForm.pdf" target="_blank" class="membership-docs" id="recommandation-fr">formulaire de Recommandation du praticien</a></li>
+    		                  		<li>Copie complétée du <a href="/img/varia/Form3-ReleaseOfInformation.pdf" target="_blank" class="membership-docs" id="release-fr">formulaire de Publication d’information</a></li>
+    		                  	</ul>
+		                  	    <p>Ces documents sont au format Adobe PDF. Si vous rencontrez des difficultés à les ouvrir, installez Adobe Reader en <a href="https://get.adobe.com/reader/">cliquant ici</a>.</p>
+		                    </div>
+                        {{ else if eq .Lang "en" }}
+                            <div class="abt-title title-head-normal">
+                                <h3><span class="color-black-def">Membership</span></h3>
+                            </div>
+                            <div class="abt-content">
+                                <p>GreenForest makes membership registration as easy and painless as possible.</p>
+                                <p>If you already have a valid membership at another Canadian compassion club, you may use this membership for your first three visits to GreenForest, after which you will require a membership.</p>
+                                <p>If you do not already possess an authorization to possess dried marijuana, a signed B1 form, a signed B2 form, or hold a valid membership at another Compassion Club and would like to sign up for membership, simply complete the following steps. </p>
+                                <p>To apply to GreenForest, you will have to complete the following forms and send them back to us with valid photo IDs.</p>
+                                <p>You can fill the forms and apply directly online by <a href="/en/register/" style="text-decoration: underline;">CLICKING HERE</a></p>
+                            </div>
+                            <div class="abt-content second">
+                                <p>Documents required:</p>
+                                <ul id="documents">
+                                    <li>2 pieces of government issued ID. One primary and one secondary.</li>
+                                    <li>Passport sized photo</li>
+                                    <li>Completed copy of the <a href="/img/varia/Form1-MembershipApplication.pdf" target="_blank" class="membership-docs" id="application-en">Membership Application form</a></li>
+                                    <li>Completed copy of the <a href="/img/varia/Form2-PractitionerForm.pdf" target="_blank" class="membership-docs" id="recommandation-en">Practitioner’s Recommendation form</a></li>
+                                    <li>Completed copy of the <a href="/img/varia/Form3-ReleaseOfInformation.pdf" target="_blank" class="membership-docs" id="release-en">Release of Information form</a></li>
+                                </ul>
+                                <p>All forms are in Adobe PDF format. If you need Adobe Reader, you can download and install it <a href="https://get.adobe.com/reader/">from here</a>.</p>
+                            </div>
+                        {{ end }}
 	                	</div>
-            			</div>
             		</div>
+            	</div>
             </div>
         </div>
     </div>

@@ -3,49 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/en/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/"
-                />
-  </url>
-  
-  <url>
-    <loc>/en/produits/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="/produits/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/produits/"
-                />
-  </url>
-  
-  <url>
-    <loc>/en/produits/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="/produits/dummy1/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/produits/"
-                />
-  </url>
-  
-  <url>
-    <loc>/en/produits/</loc>
+    <loc>/en/products/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -54,35 +12,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/produits/"
-                />
-  </url>
-  
-  <url>
-    <loc>/en/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="/inscription/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/"
-                />
-  </url>
-  
-  <url>
-    <loc>/en/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="/merci/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/"
+                href="/en/products/"
                 />
   </url>
   
@@ -130,6 +60,34 @@
   </url>
   
   <url>
+    <loc>/en/products/dummy1/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="/produits/dummy1/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/products/dummy1/"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/"
+                />
+  </url>
+  
+  <url>
     <loc>/en/members/</loc>
     <xhtml:link
                 rel="alternate"
@@ -154,6 +112,38 @@
                 rel="alternate"
                 hreflang="en"
                 href="/en/menu/"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/produits/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="/produits/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/produits/"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/products/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/register/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="/inscription/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/register/"
                 />
   </url>
   
@@ -183,6 +173,20 @@
                 rel="alternate"
                 hreflang="en"
                 href="/en/singles/"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/thank-you/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="/merci/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/thank-you/"
                 />
   </url>
   

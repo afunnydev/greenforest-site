@@ -8,8 +8,10 @@
 //@prepros-prepend slider/nivo-active.js
 //@prepros-prepend jquery.counterup.min.js
 //@prepros-prepend jquery.treeview.js
+//@prepros-prepend bootstrap-toggle.js
+//@prepros-prepend jSignature.min.js
 //@prepros-prepend google-map.js
-
+var sigData;
 (function($) {
     "use strict";
 
@@ -380,6 +382,22 @@
 
 })(jQuery);
 $(document).ready(function () {
+    var $signInput = $('#signature_input');
+    var $sigdiv = $('#signature');
+    //return a promise that resolves with a File instance
+    function urltoFile(url, filename, mimeType){
+        return (fetch(url)
+            .then(function(res){return res.arrayBuffer();})
+            .then(function(buf){return new File([buf], filename, {type:mimeType});})
+        );
+    }
+
+    $sigdiv.jSignature({'UndoButton':false, autoFit: true});
+    $sigdiv.bind('change', function(e){ 
+        sigdata = $sigdiv.jSignature('getData');
+    });
+    $('#reset-sign').click(function(){$sigdiv.jSignature('reset');});
+
     $('.registration-form fieldset#step1').fadeIn('slow').addClass('active-field');
 
     $('.registration-form input[type="text"]').on('focus', function () {
@@ -433,7 +451,10 @@ $(document).ready(function () {
 
     // submit
     $('.registration-form').on('submit', function (e) {
-
+        urltoFile(sigdata, 'a.png', 'image/png')
+        .then(function(file){
+            $signInput.val(file);
+        })
         $(this).find('input[type="text"]:not(.not-required),input[type="email"]:not(.not-required)').each(function () {
             if ($(this).val() == "") {
                 e.preventDefault();
