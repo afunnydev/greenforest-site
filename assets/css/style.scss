@@ -635,10 +635,6 @@ nav ul.main-menu {
 }
 /*Sticky header end*/
 
-.header-search {
-    width: 10%;
-    float: left;
-}
 .header-cart-area {
     width: 90%;
     float: right;
@@ -708,7 +704,7 @@ nav ul.main-menu {
     transition: all 0.2s ease-out;
 }
 .header-search-position:hover input {
-    width: 165px;
+    width: 200px;
     padding-left: 20px;
     background: #e8e8e8;
 }
@@ -1412,7 +1408,7 @@ nav ul.main-menu {
 /*----------------------------------------*/
 
 .text-area {
-    margin: 50px 0;
+    margin: 25px 0;
     .row {
         margin: 0;
     }

@@ -4,25 +4,6 @@
               <div class="row">
                   <div class="col-md-4 col-sm-4 col-xs-12">
                       <div class="header-login posr">
-                      {{ if eq .Lang "fr" }}
-                          <ul>
-                              <li><a href="#">Mon compte</a>
-                              </li>
-                              <li><a href="#">Mes coups de coeur</a>
-                              </li>
-                              <!-- <li><a href="login.html">Login</a>
-                              </li> -->
-                          </ul>
-                      {{ else if eq .Lang "en" }}
-                          <ul>
-                              <li><a href="#">My account</a>
-                              </li>
-                              <li><a href="#">Wishlist</a>
-                              </li>
-                              <!-- <li><a href="login.html">Login</a>
-                              </li> -->
-                          </ul>
-                      {{ end }}
                       </div>
                   </div>
                   <div class="col-md-8 col-sm-8 col-xs-12">
@@ -101,23 +82,6 @@
                   </div>
                   <div class="col-md-9 col-sm-9 col-xs-12">
                       <div class="header-whishlist">
-                          <div class="header-whish-compare posr">
-                          {{ if eq .Lang "fr" }}
-                              <div class="header-whish">
-                                  <a href="#">Coups de coeur</a>
-                              </div>
-                              <div class="header-compare">
-                                  <a href="#">Comparer</a>
-                              </div>
-                          {{ else if eq .Lang "en" }}
-                              <div class="header-whish">
-                                  <a href="#">Wishlist</a>
-                              </div>
-                              <div class="header-compare">
-                                  <a href="#">Compare</a>
-                              </div>
-                          {{ end }}
-                          </div>
                           <div class="header-middle-phone">
                               <a href="tel:+14504770503" class="hidden-md hidden-lg"><span><i class="fa fa-phone"></i>1-450-477-0503</span></a>
                               <span class="hidden-sm hidden-xs"><i class="fa fa-phone"></i>1-450-477-0503</span>
@@ -162,81 +126,14 @@
                       <div class="main-cart-area  cart-sticky-display posr">
                           <div class="header-search header-search-position posr">
                           {{ if eq .Lang "fr" }}
-                              <form action="#">
-                                  <input type="text" value="" placeholder="Recherche de produits" />
-                                  <button type="submit"><i class="fa fa-search"></i>
-                                  </button>
-                              </form>
+                              <button type="submit"><a href="/inscription/"><i class="fa fa-user-plus"></i></a>
+                              </button>
                           {{ else if eq .Lang "en" }}
-                              <form action="#">
-                                  <input type="text" value="" placeholder="Search Product..." />
-                                  <button type="submit"><i class="fa fa-search"></i>
-                                  </button>
-                              </form>
+                              <button type="submit"><a href="/en/register/"><i class="fa fa-user-plus"></i></a>
+                              </button>
                           {{ end }}
                           </div>
                           <div class="header-cart-area cart-hover-effect">
-                              <div class="shopping-cart style-shopping-bag strong-up">
-                                  <a href="cart.html"><span><strong>Shopping cart</strong></span></a>
-                              </div>
-                              <div class="shopping-cart">
-                                  <a href="cart.html"><span class="cart-item">0 item(s)</span><span class="cart-amount"> - $0.00</span></a>
-                              </div>
-
-                              <div class="header-cart-box-wrapper cart-position-style1">
-                                  <div class="single-cart-box">
-                                      <div class="cart-image">
-                                          <a href="cart.html"><img src="/images/product/saving-tool.jpg" alt="" />
-                                          </a>
-                                      </div>
-                                      <div class="cart-content">
-                                          <div class="cart-heading">
-                                              <a href="cart.html"> <span class="cart-qty">2 x</span> soluta dress</a>
-                                          </div>
-                                          <div class="cart-dress-color"><span>s, yellow</span>
-                                          </div>
-                                          <div class="cart-price">$200.00</div>
-                                      </div>
-                                      <div class="cart-remove deft-remove-icon">
-                                          <a href="#"><i class="zmdi zmdi-close"></i></a>
-                                      </div>
-                                      <div class="cart-shipping-cost">
-                                          <span class="shipping-text">Shipping </span>
-                                          <span class="shipping-amt">$7.00</span>
-                                      </div>
-                                  </div>
-                                  <div class="clearfix"></div>
-                                  <div class="single-cart-box">
-                                      <div class="cart-image">
-                                          <a href="cart.html"><img src="/images/product/saving-tool.jpg" alt="" />
-                                          </a>
-                                      </div>
-                                      <div class="cart-content">
-                                          <div class="cart-heading">
-                                              <a href="cart.html"> <span class="cart-qty">2 x</span> soluta dress</a>
-                                          </div>
-                                          <div class="cart-dress-color"><span>s, yellow</span>
-                                          </div>
-                                          <div class="cart-price">$250.00</div>
-                                      </div>
-                                      <div class="cart-remove deft-remove-icon">
-                                          <a href="#"><i class="zmdi zmdi-close"></i></a>
-                                      </div>
-                                      <div class="cart-shipping-cost">
-                                          <span class="shipping-text">Shipping</span>
-                                          <span class="shipping-amt">$8.00</span>
-                                      </div>
-                                  </div>
-                                  <div class="cart-subtotal">
-                                      <span class="subttl-text">Grand total</span>
-                                      <span class="subttl-amt">$465.00</span>
-                                  </div>
-
-                                  <div class="cart-checkout-btn btn-def-checkout">
-                                      <a href="checkout.html">Check out <i class="checkout-dir-icon zmdi zmdi-chevron-right "></i></a>
-                                  </div>
-                              </div>
-
                           </div>
                       </div>
                   </div>

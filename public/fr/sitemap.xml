@@ -46,34 +46,6 @@
   </url>
   
   <url>
-    <loc>/produits/dummy1/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/products/dummy1/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="/produits/dummy1/"
-                />
-  </url>
-  
-  <url>
-    <loc>/produits/dummy2/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/products/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="/produits/dummy2/"
-                />
-  </url>
-  
-  <url>
     <loc>/</loc>
     <xhtml:link
                 rel="alternate"

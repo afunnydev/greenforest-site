@@ -3,20 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/en/products/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="/produits/dummy2/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/products/"
-                />
-  </url>
-  
-  <url>
     <loc>/en/cannabis/</loc>
     <xhtml:link
                 rel="alternate"
@@ -56,20 +42,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="/en/contact/"
-                />
-  </url>
-  
-  <url>
-    <loc>/en/products/dummy1/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="/produits/dummy1/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/products/dummy1/"
                 />
   </url>
   
