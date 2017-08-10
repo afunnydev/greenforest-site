@@ -1,9 +1,6 @@
 {{ partial "head.html" . }}
 
     {{ partial "header.html" . }}
-    {{ if getenv "IS_PROD" }}
-    Hello
-    {{ end }}
 	<div class="clearfix"></div>
     <!--slider area are start-->
     <div class="slider-container">
@@ -18,13 +15,13 @@
                 <div class="slider3-cap-wrapper3 slide-text">
                     <div class="slide-one-text slide-def hp1-cap1">
                         <div class="slide-one-title wow fadeInDown" data-wow-duration=".9s" data-wow-delay="0.8s">
-                            <h2>Devenez membre</h2>
+                            <h2>{{ if eq .Lang "fr" }}Devenez membre{{ else if eq .Lang "en" }}Become a member{{ end }}</h2>
                         </div>
                         <div class="slide-one-title wow fadeInDown" data-wow-duration=".9s" data-wow-delay="0.8s">
-                            <h4>et commandez par téléphone</h1>
+                            <h4>{{ if eq .Lang "fr" }}et commandez par téléphone{{ else if eq .Lang "en" }}and order on the phone{{ end }}</h4>
                         </div>
                         <div class="check-it-out slide2btn-check1 wow fadeInDown" data-wow-duration=".9s" data-wow-delay="0.8s">
-                            <a class="btn-def" href="/inscription/">Devenez membre</a>
+                            <a class="btn-def" href="/inscription/">{{ if eq .Lang "fr" }}Devenez membre{{ else if eq .Lang "en" }}Become a member{{ end }}</a>
                         </div>
                     </div>
                 </div>
@@ -190,10 +187,10 @@
                                 </div>
                                 <div class="discount-right-text">
                                     <div class="discount-right-text-top">
-                                        <a href="/en/cannabis/"><h3>Marijuana médicale</h3></a>
+                                        <a href="/en/cannabis/"><h3>Medical Marijuana</h3></a>
                                     </div>
                                     <div class="discount-right-text-btm">
-                                        <a href="/en/cannabis/"><span>En savoir plus..</span></a>
+                                        <a href="/en/cannabis/"><span>More..</span></a>
                                     </div>
                                 </div>
                             </div></a>
