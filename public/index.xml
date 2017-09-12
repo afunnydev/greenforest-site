@@ -2,74 +2,74 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Greenforest - Votre accès fiable et simplifié à du cannabis de haute qualité</title>
-    <link>/</link>
+    <link>https://www.laforetverte.ca/</link>
     <description>Recent content on Greenforest - Votre accès fiable et simplifié à du cannabis de haute qualité</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.laforetverte.ca/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Cannabis - Greenforest</title>
-      <link>/cannabis/</link>
+      <link>https://www.laforetverte.ca/cannabis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/cannabis/</guid>
+      <guid>https://www.laforetverte.ca/cannabis/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Contact - Greenforest</title>
-      <link>/contact/</link>
+      <link>https://www.laforetverte.ca/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/contact/</guid>
+      <guid>https://www.laforetverte.ca/contact/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Inscription - Greenforest</title>
-      <link>/inscription/</link>
+      <link>https://www.laforetverte.ca/inscription/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/inscription/</guid>
+      <guid>https://www.laforetverte.ca/inscription/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Membres - Greenforest</title>
-      <link>/membres/</link>
+      <link>https://www.laforetverte.ca/membres/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/membres/</guid>
+      <guid>https://www.laforetverte.ca/membres/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Menu - Greenforest</title>
-      <link>/menu/</link>
+      <link>https://www.laforetverte.ca/menu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/menu/</guid>
+      <guid>https://www.laforetverte.ca/menu/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Merci - Greenforest</title>
-      <link>/merci/</link>
+      <link>https://www.laforetverte.ca/merci/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/merci/</guid>
+      <guid>https://www.laforetverte.ca/merci/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Services - Greenforest</title>
-      <link>/services/</link>
+      <link>https://www.laforetverte.ca/services/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/services/</guid>
+      <guid>https://www.laforetverte.ca/services/</guid>
       <description></description>
     </item>
     
