@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Greenforest - Votre accès fiable et simplifié à du cannabis de haute qualité</title>
+    <title>Centre De Compassion La Forêt Verte | Montréal et Terrebonne on Greenforest - Votre accès fiable et simplifié à du cannabis de haute qualité</title>
     <link>https://www.laforetverte.ca/</link>
-    <description>Recent content on Greenforest - Votre accès fiable et simplifié à du cannabis de haute qualité</description>
+    <description>Recent content in Centre De Compassion La Forêt Verte | Montréal et Terrebonne on Greenforest - Votre accès fiable et simplifié à du cannabis de haute qualité</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
@@ -11,16 +11,16 @@
     
     
     <item>
-      <title>Cannabis - Greenforest</title>
-      <link>https://www.laforetverte.ca/cannabis/</link>
+      <title>Centre De Compassion La Forêt Verte | Marijuana légale à Montréal et Terrebonne</title>
+      <link>https://www.laforetverte.ca/services/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.laforetverte.ca/cannabis/</guid>
+      <guid>https://www.laforetverte.ca/services/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Contact - Greenforest</title>
+      <title>Contactez-nous pour avoir de l&#39;information sur notre centre de compassion</title>
       <link>https://www.laforetverte.ca/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -29,16 +29,7 @@
     </item>
     
     <item>
-      <title>Inscription - Greenforest</title>
-      <link>https://www.laforetverte.ca/inscription/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.laforetverte.ca/inscription/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Membres - Greenforest</title>
+      <title>Devenez membre du Centre de Compassion la Forêt verte</title>
       <link>https://www.laforetverte.ca/membres/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -47,11 +38,20 @@
     </item>
     
     <item>
-      <title>Menu - Greenforest</title>
+      <title>Découvrez nos produits de marijuana à Terrebonne et à Montréal</title>
       <link>https://www.laforetverte.ca/menu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.laforetverte.ca/menu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Inscrivez-vous à notre centre de compassion pour votre marijuana médicale</title>
+      <link>https://www.laforetverte.ca/inscription/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.laforetverte.ca/inscription/</guid>
       <description></description>
     </item>
     
@@ -65,11 +65,11 @@
     </item>
     
     <item>
-      <title>Services - Greenforest</title>
-      <link>https://www.laforetverte.ca/services/</link>
+      <title>Tout savoir sur le cannabis avec le centre de compassion la forêt verte</title>
+      <link>https://www.laforetverte.ca/cannabis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.laforetverte.ca/services/</guid>
+      <guid>https://www.laforetverte.ca/cannabis/</guid>
       <description></description>
     </item>
     

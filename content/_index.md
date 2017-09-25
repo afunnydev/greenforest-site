@@ -1,4 +1,4 @@
 ---
-title: Greenforest - Votre accès fiable et simplifié à du cannabis de haute qualité
-description: Dispensaire de cannabis thérapeutique situé dans la région de Montréal offrant un accès fiable et simplifié à du cannabis.
+title: "Centre De Compassion La Forêt Verte | Montréal et Terrebonne"
+description: "Le centre de compassion la forêt verte vous offre un accès 24/7 à du cannabis médical. Appelez-nous pour avoir plus d'informations"
 ---

@@ -3,16 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.laforetverte.ca/en/cannabis/</loc>
+    <loc>https://www.laforetverte.ca/en/members/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://www.laforetverte.ca/cannabis/"
+                href="https://www.laforetverte.ca/membres/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.laforetverte.ca/en/cannabis/"
+                href="https://www.laforetverte.ca/en/members/"
                 />
   </url>
   
@@ -46,48 +46,6 @@
   </url>
   
   <url>
-    <loc>https://www.laforetverte.ca/en/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://www.laforetverte.ca/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.laforetverte.ca/en/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://www.laforetverte.ca/en/members/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://www.laforetverte.ca/membres/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.laforetverte.ca/en/members/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://www.laforetverte.ca/en/menu/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://www.laforetverte.ca/menu/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.laforetverte.ca/en/menu/"
-                />
-  </url>
-  
-  <url>
     <loc>https://www.laforetverte.ca/en/produits/</loc>
     <xhtml:link
                 rel="alternate"
@@ -106,16 +64,16 @@
   </url>
   
   <url>
-    <loc>https://www.laforetverte.ca/en/register/</loc>
+    <loc>https://www.laforetverte.ca/en/menu/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://www.laforetverte.ca/inscription/"
+                href="https://www.laforetverte.ca/menu/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.laforetverte.ca/en/register/"
+                href="https://www.laforetverte.ca/en/menu/"
                 />
   </url>
   
@@ -130,6 +88,48 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://www.laforetverte.ca/en/services/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.laforetverte.ca/en/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://www.laforetverte.ca/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.laforetverte.ca/en/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.laforetverte.ca/en/cannabis/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://www.laforetverte.ca/cannabis/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.laforetverte.ca/en/cannabis/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.laforetverte.ca/en/register/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://www.laforetverte.ca/inscription/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.laforetverte.ca/en/register/"
                 />
   </url>
   
