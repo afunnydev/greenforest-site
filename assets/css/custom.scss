@@ -310,3 +310,26 @@ div.footer-bottom-image {
         text-decoration: underline;
     }
 }
+.header-middle-phone.sticky-phone {
+    margin-top: 10px;
+    display:none;
+}
+.sticky .header-middle-phone.sticky-phone {
+    display: block;
+}
+.main-cart-area {
+    padding-top: 0 !important;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .header-middle-phone.sticky-phone {
+
+    }
+}
+@media (min-width: 768px) {
+    .header-middle-phone.sticky-phone {
+        margin-top:0;
+        float: right;
+        padding: 10px;
+        background:none;
+    }
+}
