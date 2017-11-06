@@ -3,6 +3,7 @@
     {{ partial "header.html" . }}
     <div class="container" style="margin-bottom: 20px;">
 			<div id="senior">
+        <h1 style="margin-top: 20px;"><span class="color-black-def">{{ .Params.titre }}</span></h1>
 				<p>{{ if eq .Lang "fr" }}10% de rabais pour les vétérans et les séniors{{ else if eq .Lang "en" }}10% discount for Veterans & Seniors{{ end }}</p>
 			</div>
   		<div id="leafly-menu"></div>

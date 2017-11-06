@@ -5,23 +5,22 @@
     <!--slider area are start-->
     <div class="slider-container">
         <!-- Slider Image -->
-        <div id="mainSlider" class="nivoSlider slider-image">
+        <div id="mainSlider" class="slider-image" style="position: relative">
             <img src="/img/home/home-ban.jpg" alt="main slider" title="#htmlcaption1" />
-        </div>
-        <!-- Slider Caption 1 -->
-        <div id="htmlcaption1" class="nivo-html-caption slider-caption-1">
-            <div class="slider-progress"></div>
-            <div class="container">
-                <div class="slider3-cap-wrapper3 slide-text">
-                    <div class="slide-one-text slide-def hp1-cap1">
-                        <div class="slide-one-title wow fadeInDown" data-wow-duration=".9s" data-wow-delay="0.8s">
-                            <h2>{{ if eq .Lang "fr" }}Devenez membre{{ else if eq .Lang "en" }}Become a member{{ end }}</h2>
-                        </div>
-                        <div class="slide-one-title wow fadeInDown" data-wow-duration=".9s" data-wow-delay="0.8s">
-                            <h4>{{ if eq .Lang "fr" }}et commandez par téléphone{{ else if eq .Lang "en" }}and order on the phone{{ end }}</h4>
-                        </div>
-                        <div class="check-it-out slide2btn-check1 wow fadeInDown" data-wow-duration=".9s" data-wow-delay="0.8s">
-                            <a class="btn-def" href="/inscription/">{{ if eq .Lang "fr" }}Devenez membre{{ else if eq .Lang "en" }}Become a member{{ end }}</a>
+            <!-- Slider Caption 1 -->
+            <div id="htmlcaption1" class="slider-caption-1">
+                <div class="container">
+                    <div class="slider3-cap-wrapper3 slide-text">
+                        <div class="slide-one-text slide-def hp1-cap1">
+                            <div class="slide-one-title">
+                                <h1>{{ .Params.titre }}</h1>
+                            </div>
+                            <div class="slide-one-title">
+                                <h4 class="hide-xs">{{ if eq .Lang "fr" }}Vous pouvez même le commander par téléphone{{ else if eq .Lang "en" }}You can even order it on the phone{{ end }}</h4>
+                            </div>
+                            <div class="check-it-out slide2btn-check1">
+                                <a class="btn-def" href="/inscription/">{{ if eq .Lang "fr" }}Devenez membre{{ else if eq .Lang "en" }}Become a member{{ end }}</a>
+                            </div>
                         </div>
                     </div>
                 </div>

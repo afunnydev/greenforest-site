@@ -30,6 +30,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
+                		<div class="abt-title title-head-normal">
+                        <h1 style="margin-bottom: 20px;"><span class="color-black-def">{{ .Params.titre }}</span></h1>
+                    </div>
                     <div class="progress-summery text-center">
                         <ul class="progress-steps">
                             <li class="steps-item  litext is-active" data-identifiant="step1" id="step1"><a href="javascript:;">{{ if eq .Lang "fr" }}ÉTAPE 1{{ else if eq .Lang "en" }}STEP 1{{ end }}</a>

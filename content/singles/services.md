@@ -4,4 +4,5 @@ description: "Découvrez tous les services qu'offre notre dispensaire de cannabi
 slug: services
 layout: services
 menuposition: services
+titre: "Nos services relatifs à la marijuana médicale. Nous sommes les experts à Montréal et à Terrebonne"
 ---

@@ -4,4 +4,5 @@ slug: membres
 layout: membres
 menuposition: membres
 description: "Le centre de compassion la forêt verte compte plusieurs membres consommant de la marijuana médicale. Joignez-vous à nous."
+titre: "Devenir membre du centre de compassion"
 ---

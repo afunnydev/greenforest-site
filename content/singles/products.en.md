@@ -5,4 +5,5 @@ layout: products
 slug: products
 translatedslug: /produits/
 description: "We offer top of the line marijuana products in Montreal and Terrebonne through our weed dispensary (compassion center). Call us now."
+titre: "Our Compassion club offers high end products all over Quebec"
 ---

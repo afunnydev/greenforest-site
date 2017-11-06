@@ -3,9 +3,8 @@
 //@prepros-prepend jquery.meanmenu.js
 //@prepros-prepend wow.min.js
 //@prepros-prepend plugins.js
-//@prepros-prepend slider/jquery.nivo.slider.pack.js
 //@prepros-prepend jquery.fancybox.js
-//@prepros-prepend slider/nivo-active.js
+
 //@prepros-prepend jquery.counterup.min.js
 //@prepros-prepend jquery.treeview.js
 //@prepros-prepend bootstrap-toggle.js

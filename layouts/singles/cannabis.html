@@ -34,7 +34,7 @@
             				<div class="abt-content-wrapper">
                             {{ if eq .Lang "fr" }}
                                 <div class="abt-title title-head-normal">
-                                    <h3>Le <span class="color-black-def">Cannabis</span></h3>
+                                    <h1><span class="color-black-def">{{ .Params.titre }}</span></h1>
                                 </div>
                                 <div class="abt-content">
                                     <p>Il existe deux grandes familles de cannabis : Sativa et Indica, pouvant être mélangées afin de créer des variétés hybrides. Chaque variété provoque différents effets sur le corps et l’esprit, créant ainsi un large éventail de produits aux bienfaits médicaux extrêmement variés.</p>
@@ -44,7 +44,7 @@
                                 </div>
                             {{ else if eq .Lang "en" }}
                                 <div class="abt-title title-head-normal">
-                                    <h3><span class="color-black-def">Cannabis</span></h3>
+                                    <h1><span class="color-black-def">{{ .Params.titre }}</span></h1>
                                 </div>
                                 <div class="abt-content">
                                     <p>Sativa and Indica are the two major types of cannabis plants, which are often mixed together to create hybrid strains. Each strain has its own range of effects on the body and the mind,  resulting in a wide range of medicinal benefits.</p>

@@ -33,7 +33,7 @@
             			<div class="abt-content-wrapper">
                         {{ if eq .Lang "fr" }}
     	                    <div class="abt-title title-head-normal">
-    	                        <h3><span class="color-black-def">Services</span></h3>
+    	                        <h1><span class="color-black-def">{{ .Params.titre }}</span></h1>
     	                    </div>
     	                    <div class="abt-content bottom-div">
     		                    <p>La Forêt Verte vous offre l’accès à du cannabis fiable et de qualité, un processus d’achat entièrement sécurisé et une livraison rapide. Aussi, une assistance vous aide à être mis en relation avec des médecins qualifiés pouvant vous conseiller, vous informer et vous prescrire du cannabis thérapeutique.</p>
@@ -46,7 +46,7 @@
 		                	</div>
                         {{ else if eq .Lang "en" }}
                             <div class="abt-title title-head-normal">
-                                <h3><span class="color-black-def">Services</span></h3>
+                                <h1><span class="color-black-def">{{ .Params.titre }}</span></h1>
                             </div>
                             <div class="abt-content bottom-div">
                                 <p>GreenForest guarantees a reliable and secured access to high quality cannabis with a fast home-delivery service. Additionally, the compassion club helps you consult with doctors who can answer your questions, give you all the information you need, and to provide you with therapeutic marijuana prescriptions.</p>

@@ -106,6 +106,20 @@
   </url>
   
   <url>
+    <loc>https://www.laforetverte.ca/en/singles/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://www.laforetverte.ca/singles/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.laforetverte.ca/en/singles/"
+                />
+  </url>
+  
+  <url>
     <loc>https://www.laforetverte.ca/en/cannabis/</loc>
     <xhtml:link
                 rel="alternate"
@@ -130,21 +144,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://www.laforetverte.ca/en/register/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://www.laforetverte.ca/en/singles/</loc>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://www.laforetverte.ca/singles/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.laforetverte.ca/en/singles/"
                 />
   </url>
   

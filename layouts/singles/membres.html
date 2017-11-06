@@ -34,7 +34,7 @@
             			<div class="abt-content-wrapper">
                         {{ if eq .Lang "fr" }}
     	                    <div class="abt-title title-head-normal">
-    	                        <h3><span class="color-black-def">Adhésion</span></h3>
+    	                        <h1 ><span class="color-black-def">{{ .Params.titre }}</span></h1>
     	                    </div>
     	                    <div class="abt-content">
     		                    <p>La Forêt Verte souhaite rendre votre adhésion aussi simple et rapide que possible.</p>
@@ -57,7 +57,7 @@
 		                    </div>
                         {{ else if eq .Lang "en" }}
                             <div class="abt-title title-head-normal">
-                                <h3><span class="color-black-def">Membership</span></h3>
+                                <h1 ><span class="color-black-def">{{ .Params.titre }}</span></h1>
                             </div>
                             <div class="abt-content">
                                 <p>GreenForest makes membership registration as easy and painless as possible.</p>

@@ -34,10 +34,12 @@
                     <div class="col-sm-12 col-xs-12">
                         {{ if eq .Lang "fr" }}
                             <div id="merci">
+                                <h1><span class="color-black-def">{{ .Params.titre }}</span></h1>
                                 <p>Nous travaillons présentement sur notre boutique en ligne. D'ici là, n'hésitez pas à regarder notre <a href="/menu/">menu</a>.</p>
                             </div>
                         {{ else if eq .Lang "en" }}
                             <div id="merci">
+                                <h1><span class="color-black-def">{{ .Params.titre }}</span></h1>
                                 <p>We're currently working on our e-commerce. While we're at it, feel free to take a look at our <a href="/en/menu/">menu</a>.</p>
                             </div>
                         {{ end }}

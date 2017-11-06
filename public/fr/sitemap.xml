@@ -46,6 +46,20 @@
   </url>
   
   <url>
+    <loc>https://www.laforetverte.ca/singles/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.laforetverte.ca/en/singles/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://www.laforetverte.ca/singles/"
+                />
+  </url>
+  
+  <url>
     <loc>https://www.laforetverte.ca/contact/</loc>
     <xhtml:link
                 rel="alternate"
@@ -126,21 +140,6 @@
                 rel="alternate"
                 hreflang="fr"
                 href="https://www.laforetverte.ca/merci/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://www.laforetverte.ca/singles/</loc>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.laforetverte.ca/en/singles/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://www.laforetverte.ca/singles/"
                 />
   </url>
   
