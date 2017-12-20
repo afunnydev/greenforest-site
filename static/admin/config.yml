@@ -176,7 +176,7 @@ collections:
     fields:
       - {label: "Titre", name: "title", widget: "string"}
       - {label: "Lien", name: "slug", widget: "string", default: "ceci-est-un-example", pattern: ["^[a-z0-9]+(?:-[a-z0-9/]+)*$", "Svp utilisez le format ceci-est-un-test"]}
-      - {label: "Identifiant", name: "identifiant", default: "04-exemple-article", pattern: ["^[a-z0-9]+(?:-[a-z0-9]+)*$", "Svp utilisez le format 04-exemple-article"], widget: "relation", collection: "articles-vapo-fr", searchFields: ["identifiant","title"], valueField: "identifiant"}
+      - {label: "Identifiant", name: "identifiant", default: "04-exemple-article", pattern: ["^[a-z0-9]+(?:-[a-z0-9]+)*$", "Svp utilisez le format 04-exemple-article"], widget: "relation", collection: "articles-fr", searchFields: ["identifiant","title"], valueField: "identifiant"}
       - {label: "Image", name: "image", widget: "image"}
       - {label: "Date de publication", name: "date", widget: "datetime", format: "YYYY-MM-DD"}
       - {label: "Langue", name: "i18nlanguage", widget: "hidden", default: "en"}
@@ -199,7 +199,7 @@ collections:
     fields:
       - {label: "Titre", name: "title", widget: "string"}
       - {label: "Lien", name: "slug", widget: "string", default: "ceci-est-un-example", pattern: ["^[a-z0-9]+(?:-[a-z0-9/]+)*$", "Svp utilisez le format ceci-est-un-test"]}
-      - {label: "Identifiant", name: "identifiant", default: "04-exemple-article", pattern: ["^[a-z0-9]+(?:-[a-z0-9]+)*$", "Svp utilisez le format 04-exemple-article"], widget: "relation", collection: "articles-vapo-fr", searchFields: ["identifiant","title"], valueField: "identifiant"}
+      - {label: "Identifiant", name: "identifiant", default: "04-exemple-article", pattern: ["^[a-z0-9]+(?:-[a-z0-9]+)*$", "Svp utilisez le format 04-exemple-article"], widget: "relation", collection: "articles-en", searchFields: ["identifiant","title"], valueField: "identifiant"}
       - {label: "Image", name: "image", widget: "image"}
       - {label: "Date de publication", name: "date", widget: "datetime", format: "YYYY-MM-DD"}
       - {label: "Langue", name: "i18nlanguage", widget: "hidden", default: "fr"}
