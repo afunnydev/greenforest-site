@@ -9,6 +9,7 @@ i18nlanguage: en
 weight: 1
 menuposition: blogue
 type: articles
+date: 2017-12-19
 ---
 
 Tel que mentionné à la page [cannabis](/cannabis), le cannabis peut vous aider à domir. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate quibusdam ducimus fuga minima sint, tenetur, vero modi, a natus obcaecati nam unde maiores. Perferendis labore recusandae, cupiditate debitis quam iusto!
