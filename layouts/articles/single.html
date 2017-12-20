@@ -1,0 +1,64 @@
+{{ partial "head.html" . }}
+
+    {{ partial "header.html" . }}
+		<div class="blog-main-area" style="max-width: 800px; margin: 40px auto;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-xs-12">
+                    <div class="row">
+                        <div class="blog-main-wrapper">
+                            <div class="col-xs-12">
+                                <!--Normal Post-->
+                                <div class="blog-area-wrapper">
+                                    <div class="single-blog-post">
+                                        <!-- <div class="author-des">
+                                            <div class="author-left">
+                                                <div class="author-img"> <img src="images/blog/w3.jpg" alt="Domino html" />
+                                                </div>
+                                                <div class="author-description">
+                                                    <div class="author-des"> Posted by: <a href="#"><span class="color-bold">Admin</span></a> in <a href="#">Fashion, </a><a href="#">Fashion, </a><a href="#">Fashion</a>
+                                                    </div>
+                                                    <div class="blog-date"> <span class="blog-month">May</span><span class="blog-day">15</span><span class="blog-year">2017</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="author-right">
+                                                <div class="blog-share"><span>Share this:</span>
+                                                </div>
+                                                <ul class="single-blog-social socile-icon-tooltip text-right">
+                                                    <li><a href="#"><i class="fa fa-facebook"></i></a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-twitter"></i></a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-dribbble"></i> </a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-google-plus"></i> </a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-instagram"></i> </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div> -->
+                                        <div class="clearfix"></div>
+                                        <div class="blog-image2">
+                                            <img src="{{.Params.image}}" alt="" />
+                                        </div>
+                                        <div class="single-content-wrap">
+                                            <div class="singleblog-title title-head-normal">
+                                                <h1>{{.Title}}</h1>
+                                            </div>
+                                            <div class="blog-single-content">
+                                                {{.Content}}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Brand slider area css start-->
+{{ partial "footer.html" . }}

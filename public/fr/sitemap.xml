@@ -3,6 +3,20 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.laforetverte.ca/articles/article1/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.laforetverte.ca/en/articles/article1/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://www.laforetverte.ca/articles/article1/"
+                />
+  </url>
+  
+  <url>
     <loc>https://www.laforetverte.ca/categories/</loc>
     <priority>0</priority>
     <xhtml:link
@@ -42,6 +56,20 @@
                 rel="alternate"
                 hreflang="fr"
                 href="https://www.laforetverte.ca/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.laforetverte.ca/articles/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.laforetverte.ca/en/articles/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://www.laforetverte.ca/articles/"
                 />
   </url>
   

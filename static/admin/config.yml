@@ -78,6 +78,14 @@ collections:
           - {label: "Description SEO", name: "description", widget: "text", required: false}
           - {label: "Titre - H1", name: "titre", widget: "string", required: false}
           - {label: "Retirer des moteurs de recherche", name: "noindex", widget: "boolean", required: false, default: false}
+      - name: "blog"
+        label: "Blogue"
+        file: "content/articles/_index.en.md"
+        fields:
+          - {label: "Titre SEO", name: "title", widget: "string"}
+          - {label: "Description SEO", name: "description", widget: "text", required: false}
+          - {label: "Titre - H1", name: "titre", widget: "string", required: false}
+          - {label: "Retirer des moteurs de recherche", name: "noindex", widget: "boolean", required: false, default: false}
   - name: "pages-fr"
     label: "Pages - FR"
     editor:
@@ -147,3 +155,58 @@ collections:
           - {label: "Description SEO", name: "description", widget: "text", required: false}
           - {label: "Titre - H1", name: "titre", widget: "string", required: false}
           - {label: "Retirer des moteurs de recherche", name: "noindex", widget: "boolean", required: false, default: false}
+      - name: "blogue"
+        label: "Blogue"
+        file: "content/articles/_index.md"
+        fields:
+          - {label: "Titre SEO", name: "title", widget: "string"}
+          - {label: "Description SEO", name: "description", widget: "text", required: false}
+          - {label: "Titre - H1", name: "titre", widget: "string", required: false}
+          - {label: "Retirer des moteurs de recherche", name: "noindex", widget: "boolean", required: false, default: false}
+  - name: "articles-en" # Used in routes, e.g. /admin/collections/blog
+    label: "Articles - EN" # Used in the UI
+    folder: "content/articles" # The path to the folder where the documents are stored
+    slug: "{{identifiant}}.{{i18nlanguage}}"
+    editor:
+      preview: false
+    create: true # Allow users to create new documents in this collection
+    filter: 
+      field: "i18nlanguage"
+      value: "en"
+    fields:
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Lien", name: "slug", widget: "string", default: "ceci-est-un-example", pattern: ["^[a-z0-9]+(?:-[a-z0-9/]+)*$", "Svp utilisez le format ceci-est-un-test"]}
+      - {label: "Identifiant", name: "identifiant", default: "04-exemple-article", pattern: ["^[a-z0-9]+(?:-[a-z0-9]+)*$", "Svp utilisez le format 04-exemple-article"], widget: "relation", collection: "articles-vapo-fr", searchFields: ["identifiant","title"], valueField: "identifiant"}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Date de publication", name: "date", widget: "datetime", format: "YYYY-MM-DD"}
+      - {label: "Langue", name: "i18nlanguage", widget: "hidden", default: "en"}
+      - {label: "Type", name: "type", widget: "hidden", default: "articles"}
+      - {label: "Menu", name: "menuposition", widget: "hidden", default: "blogue"}
+      - {label: "Weight", name: "weight", widget: "hidden", default: "1"}
+      - {label: "Texte", name: "body", widget: "markdown"}
+      - {label: "Rendre l'article invisible?", name: "draft", widget: "boolean", required: false, default: false}
+      - {label: "Retirer des moteurs de recherche", name: "noindex", widget: "boolean", required: false, default: false}
+  - name: "articles-fr" # Used in routes, e.g. /admin/collections/blog
+    label: "Articles - FR" # Used in the UI
+    folder: "content/articles" # The path to the folder where the documents are stored
+    slug: "{{identifiant}}"
+    editor:
+      preview: false
+    create: true # Allow users to create new documents in this collection
+    filter: 
+      field: "i18nlanguage"
+      value: "fr"
+    fields:
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Lien", name: "slug", widget: "string", default: "ceci-est-un-example", pattern: ["^[a-z0-9]+(?:-[a-z0-9/]+)*$", "Svp utilisez le format ceci-est-un-test"]}
+      - {label: "Identifiant", name: "identifiant", default: "04-exemple-article", pattern: ["^[a-z0-9]+(?:-[a-z0-9]+)*$", "Svp utilisez le format 04-exemple-article"], widget: "relation", collection: "articles-vapo-fr", searchFields: ["identifiant","title"], valueField: "identifiant"}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Date de publication", name: "date", widget: "datetime", format: "YYYY-MM-DD"}
+      - {label: "Langue", name: "i18nlanguage", widget: "hidden", default: "fr"}
+      - {label: "Type", name: "type", widget: "hidden", default: "articles"}
+      - {label: "Menu", name: "menuposition", widget: "hidden", default: "blogue"}
+      - {label: "Weight", name: "weight", widget: "hidden", default: "1"}
+      - {label: "Texte", name: "body", widget: "markdown"}
+      - {label: "Rendre l'article invisible?", name: "draft", widget: "boolean", required: false, default: false}
+      - {label: "Retirer des moteurs de recherche", name: "noindex", widget: "boolean", required: false, default: false}
+
