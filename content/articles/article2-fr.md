@@ -1,6 +1,6 @@
 ---
 title: Soulager l’arthrite grâce aux merveilles de l’huile de Cannabidiol (CBD)
-slug: article2-fr
+slug: soulager-arthrite-grace-au-cannabis
 identifiant: article2-fr
 image: /img/uploads/greenforest-blog-04.jpg
 date: '2017-12-31'
