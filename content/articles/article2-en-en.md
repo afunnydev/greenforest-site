@@ -25,16 +25,10 @@ The goal of dispensaries is to offer the best quality cannabis, adapted to clien
 
 Cannabis can relieve the symptoms of the following diseases:
 
-* 
-
-**AIDS/HIV:** medical cannabis’ use helps increase appetite and relieves nausea. Cannabis also acts as an antidepressant and an analgesic.
-
+* **AIDS/HIV:** medical cannabis’ use helps increase appetite and relieves nausea. Cannabis also acts as an antidepressant and an analgesic.
 * **Cancer:** helps increase appetite, relieves nausea and sleeping troubles. It also calms nausea and vomiting caused by chemotherapy.
 * **Hepatitis C:** helps increase appetite and relieves nausea and vomiting.
-* 
-
-**Multiple sclerosis:** acts as an anti-inflammatory. Reduces the frequency and intensity of seizures and muscular spasms. Marijuana also provides antidepressant properties.
-
+* **Multiple sclerosis:** acts as an anti-inflammatory. Reduces the frequency and intensity of seizures and muscular spasms. Marijuana also provides antidepressant properties.
 * **Epilepsy:** reduces seizures and convulsions, decreases frequency and length of seizures.
 
 ## What kind of products can we find in a dispensary?
