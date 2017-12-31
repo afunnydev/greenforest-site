@@ -1,7 +1,7 @@
 ---
 title: What is a marijuana dispensary?
-slug: article2-en
-identifiant: article2-en
+slug: what-is-marijuana-dispensary
+identifiant: article2-fr
 image: /img/uploads/greenforest-blog-02.jpg
 date: '2017-12-31'
 i18nlanguage: en
