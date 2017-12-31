@@ -1,15 +1,14 @@
 ---
-title: "Comment le cannabis peut vous aider à dormir"
-description: "Green Forest Compassion Center is your reference when it comes to weed dispensaries. Visit us if you're in Montreal and Terrebonne"
-noindex: true
+title: Comment le cannabis peut vous aider à dormir
+slug: article1-fr
+identifiant: article1-fr
 image: /img/home/home-ban.jpg
-identifiant: article1
-slug: article1
+date: 2017-12-19T00:00:00.000Z
 i18nlanguage: fr
-weight: 1
-menuposition: blogue
 type: articles
-date: 2017-12-19
+menuposition: blogue
+weight: 1
+noindex: true
 ---
 
 Tel que mentionné à la page [cannabis](/cannabis), le cannabis peut vous aider à domir. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate quibusdam ducimus fuga minima sint, tenetur, vero modi, a natus obcaecati nam unde maiores. Perferendis labore recusandae, cupiditate debitis quam iusto!
