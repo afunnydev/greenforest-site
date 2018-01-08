@@ -166,7 +166,7 @@ collections:
   - name: "articles-en" # Used in routes, e.g. /admin/collections/blog
     label: "Articles - EN" # Used in the UI
     folder: "content/articles" # The path to the folder where the documents are stored
-    slug: "{{identifiant}}.{{i18nlanguage}}"
+    slug: "{{identifiant}}.en"
     editor:
       preview: false
     create: true # Allow users to create new documents in this collection
