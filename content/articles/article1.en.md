@@ -1,13 +1,14 @@
 ---
-title: How weed can help you sleep
+title: How weed can help you sleep - EXAMPLE NOT ACTIVE
 slug: article1-en
-identifiant: article1-en
+identifiant: article1-fr
 image: /img/home/home-ban.jpg
 date: 2017-12-19T00:00:00.000Z
 i18nlanguage: en
 type: articles
 menuposition: blogue
 weight: 1
+draft: true
 noindex: true
 ---
 
