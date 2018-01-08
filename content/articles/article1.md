@@ -1,5 +1,5 @@
 ---
-title: Comment le cannabis peut vous aider à dormir
+title: Comment le cannabis peut vous aider à dormir - EXAMPLE NOT ACTIVE
 slug: article1-fr
 identifiant: article1-fr
 image: /img/home/home-ban.jpg
@@ -8,6 +8,7 @@ i18nlanguage: fr
 type: articles
 menuposition: blogue
 weight: 1
+draft: true
 noindex: true
 ---
 
