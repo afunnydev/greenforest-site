@@ -74,9 +74,9 @@
                   <div class="col-md-3 col-sm-3 col-xs-12">
                       <div class="header-logo">
                       {{ if eq .Lang "fr" }}
-                          <a href="/"><img src="/img/logo.png" alt="greenforest" /></a>
+                          <a href="{{.Site.BaseURL}}"><img src="/img/logo.png" alt="greenforest" /></a>
                       {{ else if eq .Lang "en" }}
-                          <a href="/en/"><img src="/img/logo.png" alt="greenforest" /></a>
+                          <a href="{{.Site.BaseURL}}en/"><img src="/img/logo.png" alt="greenforest" /></a>
                       {{ end }}
                       </div>
                   </div>
@@ -100,25 +100,25 @@
                       <nav>
                       {{ if eq .Lang "fr" }}
                           <ul class="main-menu">
-                              <li class='{{ if eq .Params.menuposition "accueil"}}active{{end}}'><a href="/">Accueil</a></li>
-                              <li class='{{ if eq .Params.menuposition "membres"}}active{{end}}'><a href='/membres/'>Membres</a></li>
-                              <li class='{{ if eq .Params.menuposition "menu"}}active{{end}}'><a href='/menu/'>Menu</a></li>
-                              <li class='{{ if eq .Params.menuposition "produits"}}active{{end}}'><a href='/produits/'>Produits</a></li>
-                              <li class='{{ if eq .Params.menuposition "cannabis"}}active{{end}}'><a href='/cannabis/'>Cannabis</a></li>
-                              <li class='{{ if eq .Params.menuposition "services"}}active{{end}}'><a href='/services/'>Services</a></li>
-                              <!-- <li class='{{ if eq .Params.menuposition "blogue"}}active{{end}}'><a href='/articles/'>Blogue</a></li> -->
-                              <li class='{{ if eq .Params.menuposition "contact"}}active{{end}}'><a href='/contact/'>Contact</a></li>
+                              <li class='{{ if eq .Params.menuposition "accueil"}}active{{end}}'><a href="{{.Site.BaseURL}}">Accueil</a></li>
+                              <li class='{{ if eq .Params.menuposition "membres"}}active{{end}}'><a href='{{.Site.BaseURL}}membres/'>Membres</a></li>
+                              <li class='{{ if eq .Params.menuposition "menu"}}active{{end}}'><a href='{{.Site.BaseURL}}menu/'>Menu</a></li>
+                              <li class='{{ if eq .Params.menuposition "produits"}}active{{end}}'><a href='{{.Site.BaseURL}}produits/'>Produits</a></li>
+                              <li class='{{ if eq .Params.menuposition "cannabis"}}active{{end}}'><a href='{{.Site.BaseURL}}cannabis/'>Cannabis</a></li>
+                              <li class='{{ if eq .Params.menuposition "services"}}active{{end}}'><a href='{{.Site.BaseURL}}services/'>Services</a></li>
+                              <li class='{{ if eq .Params.menuposition "blogue"}}active{{end}}'><a href='{{.Site.BaseURL}}articles/'>Blogue</a></li>
+                              <li class='{{ if eq .Params.menuposition "contact"}}active{{end}}'><a href='{{.Site.BaseURL}}contact/'>Contact</a></li>
                           </ul>
                       {{ else if eq .Lang "en" }}
                           <ul class="main-menu">
-                              <li class='{{ if eq .Params.menuposition "accueil"}}active{{end}}'><a href="/en/">Home</a></li>
-                              <li class='{{ if eq .Params.menuposition "membres"}}active{{end}}'><a href='/en/members/'>Members</a></li>
-                              <li class='{{ if eq .Params.menuposition "menu"}}active{{end}}'><a href='/en/menu/'>Menu</a></li>
-                              <li class='{{ if eq .Params.menuposition "produits"}}active{{end}}'><a href='/en/products/'>Products</a></li>
-                              <li class='{{ if eq .Params.menuposition "cannabis"}}active{{end}}'><a href='/en/cannabis/'>Cannabis</a></li>
-                              <li class='{{ if eq .Params.menuposition "services"}}active{{end}}'><a href='/en/services/'>Services</a></li>
-                              <!-- <li class='{{ if eq .Params.menuposition "blogue"}}active{{end}}'><a href='/en/articles/'>Blog</a></li> -->
-                              <li class='{{ if eq .Params.menuposition "contact"}}active{{end}}'><a href='/en/contact/'>Contact</a></li>
+                              <li class='{{ if eq .Params.menuposition "accueil"}}active{{end}}'><a href="{{.Site.BaseURL}}en/">Home</a></li>
+                              <li class='{{ if eq .Params.menuposition "membres"}}active{{end}}'><a href='{{.Site.BaseURL}}en/members/'>Members</a></li>
+                              <li class='{{ if eq .Params.menuposition "menu"}}active{{end}}'><a href='{{.Site.BaseURL}}en/menu/'>Menu</a></li>
+                              <li class='{{ if eq .Params.menuposition "produits"}}active{{end}}'><a href='{{.Site.BaseURL}}en/products/'>Products</a></li>
+                              <li class='{{ if eq .Params.menuposition "cannabis"}}active{{end}}'><a href='{{.Site.BaseURL}}en/cannabis/'>Cannabis</a></li>
+                              <li class='{{ if eq .Params.menuposition "services"}}active{{end}}'><a href='{{.Site.BaseURL}}en/services/'>Services</a></li>
+                              <li class='{{ if eq .Params.menuposition "blogue"}}active{{end}}'><a href='{{.Site.BaseURL}}en/articles/'>Blog</a></li>
+                              <li class='{{ if eq .Params.menuposition "contact"}}active{{end}}'><a href='{{.Site.BaseURL}}en/contact/'>Contact</a></li>
                           </ul>
                       {{ end }}
                       </nav>
@@ -128,10 +128,10 @@
                       <div class="main-cart-area cart-sticky-display posr">
                           <div class="header-search header-search-position posr" style="display: none;">
                           {{ if eq .Lang "fr" }}
-                              <button type="submit"><a href="/inscription/"><i class="fa fa-user-plus"></i></a>
+                              <button type="submit"><a href="{{.Site.BaseURL}}inscription/"><i class="fa fa-user-plus"></i></a>
                               </button>
                           {{ else if eq .Lang "en" }}
-                              <button type="submit"><a href="/en/register/"><i class="fa fa-user-plus"></i></a>
+                              <button type="submit"><a href="{{.Site.BaseURL}}en/register/"><i class="fa fa-user-plus"></i></a>
                               </button>
                           {{ end }}
                           </div>
@@ -151,26 +151,26 @@
                       <div class="col-xs-12">
                           <nav class="active-mobile-menu">
                           {{ if eq .Lang "fr" }}
-                          <ul>
-                              <li class='{{ if eq .Params.menuposition "accueil"}}active{{end}}'><a href="/">Accueil</a></li>
-                              <li class='{{ if eq .Params.menuposition "membres"}}active{{end}}'><a href='/membres/'>Membres</a></li>
-                              <li class='{{ if eq .Params.menuposition "menu"}}active{{end}}'><a href='/menu/'>Menu</a></li>
-                              <li class='{{ if eq .Params.menuposition "produits"}}active{{end}}'><a href='/produits/'>Produits</a></li>
-                              <li class='{{ if eq .Params.menuposition "cannabis"}}active{{end}}'><a href='/cannabis/'>Cannabis</a></li>
-                              <li class='{{ if eq .Params.menuposition "services"}}active{{end}}'><a href='/services/'>Services</a></li>
-                              <!-- <li class='{{ if eq .Params.menuposition "blogue"}}active{{end}}'><a href='/articles/'>Blogue</a></li> -->
-                              <li class='{{ if eq .Params.menuposition "contact"}}active{{end}}'><a href='/contact/'>Contact</a></li>
+                          <ul class="main-menu">
+                              <li class='{{ if eq .Params.menuposition "accueil"}}active{{end}}'><a href="{{.Site.BaseURL}}">Accueil</a></li>
+                              <li class='{{ if eq .Params.menuposition "membres"}}active{{end}}'><a href='{{.Site.BaseURL}}membres/'>Membres</a></li>
+                              <li class='{{ if eq .Params.menuposition "menu"}}active{{end}}'><a href='{{.Site.BaseURL}}menu/'>Menu</a></li>
+                              <li class='{{ if eq .Params.menuposition "produits"}}active{{end}}'><a href='{{.Site.BaseURL}}produits/'>Produits</a></li>
+                              <li class='{{ if eq .Params.menuposition "cannabis"}}active{{end}}'><a href='{{.Site.BaseURL}}cannabis/'>Cannabis</a></li>
+                              <li class='{{ if eq .Params.menuposition "services"}}active{{end}}'><a href='{{.Site.BaseURL}}services/'>Services</a></li>
+                              <li class='{{ if eq .Params.menuposition "blogue"}}active{{end}}'><a href='{{.Site.BaseURL}}articles/'>Blogue</a></li>
+                              <li class='{{ if eq .Params.menuposition "contact"}}active{{end}}'><a href='{{.Site.BaseURL}}contact/'>Contact</a></li>
                           </ul>
                       {{ else if eq .Lang "en" }}
-                          <ul>
-                              <li class='{{ if eq .Params.menuposition "accueil"}}active{{end}}'><a href="/en/">Home</a></li>
-                              <li class='{{ if eq .Params.menuposition "membres"}}active{{end}}'><a href='/en/members/'>Members</a></li>
-                              <li class='{{ if eq .Params.menuposition "menu"}}active{{end}}'><a href='/en/menu/'>Menu</a></li>
-                              <li class='{{ if eq .Params.menuposition "produits"}}active{{end}}'><a href='/en/products/'>Products</a></li>
-                              <li class='{{ if eq .Params.menuposition "cannabis"}}active{{end}}'><a href='/en/cannabis/'>Cannabis</a></li>
-                              <li class='{{ if eq .Params.menuposition "services"}}active{{end}}'><a href='/en/services/'>Services</a></li>
-                              <!-- <li class='{{ if eq .Params.menuposition "blogue"}}active{{end}}'><a href='/en/articles/'>Blog</a></li> -->
-                              <li class='{{ if eq .Params.menuposition "contact"}}active{{end}}'><a href='/en/contact/'>Contact</a></li>
+                          <ul class="main-menu">
+                              <li class='{{ if eq .Params.menuposition "accueil"}}active{{end}}'><a href="{{.Site.BaseURL}}en/">Home</a></li>
+                              <li class='{{ if eq .Params.menuposition "membres"}}active{{end}}'><a href='{{.Site.BaseURL}}en/members/'>Members</a></li>
+                              <li class='{{ if eq .Params.menuposition "menu"}}active{{end}}'><a href='{{.Site.BaseURL}}en/menu/'>Menu</a></li>
+                              <li class='{{ if eq .Params.menuposition "produits"}}active{{end}}'><a href='{{.Site.BaseURL}}en/products/'>Products</a></li>
+                              <li class='{{ if eq .Params.menuposition "cannabis"}}active{{end}}'><a href='{{.Site.BaseURL}}en/cannabis/'>Cannabis</a></li>
+                              <li class='{{ if eq .Params.menuposition "services"}}active{{end}}'><a href='{{.Site.BaseURL}}en/services/'>Services</a></li>
+                              <li class='{{ if eq .Params.menuposition "blogue"}}active{{end}}'><a href='{{.Site.BaseURL}}en/articles/'>Blog</a></li>
+                              <li class='{{ if eq .Params.menuposition "contact"}}active{{end}}'><a href='{{.Site.BaseURL}}en/contact/'>Contact</a></li>
                           </ul>
                       {{ end }}
                           </nav>
