@@ -15,6 +15,14 @@ noindex: false
 
 L’arthrite désigne plusieurs types d’affections différentes qui se caractérisent le plus souvent par des douleurs aux articulations, tendons ou os. Ces douleurs sont dues à l’inflammation de l’articulation, provoquant une sécrétion de quinine, qui détruit peu à peu l’articulation. Outre les douleurs, gonflements et raideurs peuvent aussi être ressentis.
 
+## Trouver du CBD Oil dans les alentours de Montréal
+
+Si vous désirez vous procurrez du [CBD oil à Montréal](https://laforetverte.ca), contactez notre centre de compassion.
+
+
+
+### Plus d'informations sur l'arthrite
+
 Les formes les plus courantes sont l’arthrite rhumatoïde osseuse, la goutte, le lupus, la fibromyalgie et l’arthrite septique. Chacune ayant des symptômes particuliers:
 
 * l’arthrite rhumatoïde osseuse :
@@ -73,9 +81,3 @@ De plus, les effets antidépresseurs du CBD ainsi que sa capacité à faciliter 
 Le CBD doit toutefois être prescrit à des doses adaptées aux nécessités de chaque et un avis médical vous aidera à y voir également plus clair quant à l’utilisation du CBD pour soulager l’arthrite. 
 
 Le CBD sous toutes ses formes est efficace pour soulager l’arthrite, qu’il soit utilisé en gélules, crèmes, pommades ou encore en huile.
-
-
-
-Voici quelques docteurs qui parlent du CBD oil de façon générale :
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Fh-s64RNtz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
