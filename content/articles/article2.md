@@ -73,3 +73,9 @@ De plus, les effets antidépresseurs du CBD ainsi que sa capacité à faciliter 
 Le CBD doit toutefois être prescrit à des doses adaptées aux nécessités de chaque et un avis médical vous aidera à y voir également plus clair quant à l’utilisation du CBD pour soulager l’arthrite. 
 
 Le CBD sous toutes ses formes est efficace pour soulager l’arthrite, qu’il soit utilisé en gélules, crèmes, pommades ou encore en huile.
+
+
+
+Voici quelques docteurs qui parlent du CBD oil de façon générale :
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Fh-s64RNtz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
