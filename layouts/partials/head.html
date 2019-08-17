@@ -4,11 +4,11 @@
 <head>
     {{ if getenv "IS_PROD" }}
     <!-- Google Tag Manager -->
-    <!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-5SWPR7Q');</script> -->
+    })(window,document,'script','dataLayer','GTM-5SWPR7Q');</script>
     <!-- End Google Tag Manager -->
     {{ end }}
     <meta charset="utf-8">
@@ -17,7 +17,6 @@
     <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico" />
     <title>{{.Title}}</title>
     <meta name="description" content="{{if .Description }}{{.Description}}{{ else if .Summary }}{{ .Summary }}{{else}}Articles promotionnels locaux et de qualité{{end}}">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     {{ if .Params.noindex }}
     <meta name="robots" content="noindex,nofollow">
     {{ end }}
@@ -31,22 +30,58 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ .Permalink }}" />
     {{ if .Params.image }}
-        <meta property="og:image" content="{{ .Params.image }}" />
+        <meta property="og:image" content="https://www.laforetverte.ca{{ .Params.image }}" />
     {{ else }}
-        <meta property="og:image" content="/img/logo.png" />
+        <meta property="og:image" content="https://www.laforetverte.ca/img/logo.png" />
     {{ end }}
     <!-- Place favicon.ico in the root directory -->
+    <!-- Under construction header -->
+    <link href="assets/fonts/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="assets/fonts/elegant-fonts.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/trackpad-scroll-emulator.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/theme-light.css" type="text/css">
+    <style>
+    h1 {
+      color: {{.Site.Data.settings.pcolor}};
+    }
+    .btn.btn-framed:hover, .btn.btn-framed:active, .btn.btn-framed:focus {
+      color: {{.Site.Data.settings.pcolor}};
+      border-color: {{.Site.Data.settings.pcolor}};
+    }
+    </style>
+    <!-- end under construction -->
     <!-- all css here -->
     <link rel="stylesheet" href="/css/main.min.css">
     <!-- modernizr css -->
+    <script type="application/ld+json"> { 
+        "@context" : "http://schema.org",
+        "@type" : "LocalBusiness", 
+        "name":"La Forêt Verte",
+        "url":"https://www.laforetverte.ca/",
+        "email":"info@laforetverte.ca",
+        "openingHours": [ 
+        "Mon-Fri 10:00-17:00"], 
+        "aggregateRating":{
+        "@type":"AggregateRating",
+        "ratingValue":"5",
+        "reviewCount":"12"},
+        "priceRange":"2",
+        "telephone":"450-477-0503",
+        "address":"1430 Montée Major, suite 100, J7M 2G3, Terrebonne",
+        "image":"https://www.laforetverte.ca/img/logo.png"
+        } </script>
     <script src="/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
-<body>
+<body class="frame">
     {{ if getenv "IS_PROD" }}
     <!-- Google Tag Manager (noscript) -->
-    <!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5SWPR7Q"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5SWPR7Q"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     {{ end }}
 	{{ `

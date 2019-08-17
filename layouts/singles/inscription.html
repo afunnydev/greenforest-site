@@ -30,6 +30,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
+                		<div class="abt-title title-head-normal">
+                        <h1 style="margin-bottom: 20px;"><span class="color-black-def">{{ .Params.titre }}</span></h1>
+                    </div>
                     <div class="progress-summery text-center">
                         <ul class="progress-steps">
                             <li class="steps-item  litext is-active" data-identifiant="step1" id="step1"><a href="javascript:;">{{ if eq .Lang "fr" }}ÉTAPE 1{{ else if eq .Lang "en" }}STEP 1{{ end }}</a>
@@ -202,10 +205,12 @@
 			                            </div>
 			                            <div class="form-group">
 			                                <label for="signature">Signature</label>
-			                                <p style="text-transform: uppercase;">{{ if eq .Lang "fr" }}En signant ce document, vous déclaré que toutes les informations fournises sont vraies*{{ else if eq .Lang "en" }}By signing below you declare that the information you have provided on this form is factual*{{ end }}</p>
-			                                <div id="signature" style="width: 100%;"></div>
-			                                <button class="btn reset-btn" id="reset-sign">{{ if eq .Lang "fr" }}Recommencer{{ else if eq .Lang "en" }}Restart{{ end }}</button>
-			                           			<input type="hidden" id="signature_input" name="signature">
+			                                <p style="text-transform: uppercase;">{{ if eq .Lang "fr" }}En cochant  cette case, vous déclaré que toutes les informations fournises sont vraies*{{ else if eq .Lang "en" }}By checking this box below you declare that the information you have provided on this form is factual*{{ end }}</p>
+			                                {{ if eq .Lang "fr" }}
+					                            	<input type="checkbox" data-toggle="toggle" data-on="Oui" data-off="Non" name="signature_confirmation">
+					                            {{ else if eq .Lang "en" }}
+					                            	<input type="checkbox" data-toggle="toggle" data-on="Yes" data-off="No" name="signature_confirmation">
+					                            {{ end }}
 			                            </div>
 			                            <button type="button" class="btn btn-previous">{{ if eq .Lang "fr" }}Précédent{{ else if eq .Lang "en" }}Previous{{ end }}</button>
 			                            <button type="submit" class="btn">{{ if eq .Lang "fr" }}Envoyer{{ else if eq .Lang "en" }}Send{{ end }}</button>

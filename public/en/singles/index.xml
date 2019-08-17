@@ -1,84 +1,84 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Singles on Greenforest - Votre accès fiable et simplifié à du cannabis de haute qualité</title>
-    <link>/en/singles/</link>
-    <description>Recent content in Singles on Greenforest - Votre accès fiable et simplifié à du cannabis de haute qualité</description>
+    <title>Green Forest Compassion Center | Montreal and Terrebonne on Greenforest - Votre accès fiable et simplifié à du cannabis de haute qualité</title>
+    <link>https://www.laforetverte.ca/en/singles/</link>
+    <description>Recent content in Green Forest Compassion Center | Montreal and Terrebonne on Greenforest - Votre accès fiable et simplifié à du cannabis de haute qualité</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="/en/singles/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.laforetverte.ca/en/singles/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Cannabis - Greenforest</title>
-      <link>/en/cannabis/</link>
+      <title>Become a member of our marijuana dispensary in Montreal and Terrebonne</title>
+      <link>https://www.laforetverte.ca/en/members/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/en/cannabis/</guid>
+      <guid>https://www.laforetverte.ca/en/members/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Contact - Greenforest</title>
-      <link>/en/contact/</link>
+      <title>Contact us for more information on Green Forest Compassion Center</title>
+      <link>https://www.laforetverte.ca/en/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/en/contact/</guid>
+      <guid>https://www.laforetverte.ca/en/contact/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Members - Greenforest</title>
-      <link>/en/members/</link>
+      <title>Discover our marijuana products in Terrebonne and Montreal</title>
+      <link>https://www.laforetverte.ca/en/products/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/en/members/</guid>
+      <guid>https://www.laforetverte.ca/en/products/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Menu - Greenforest</title>
-      <link>/en/menu/</link>
+      <title>Discover our products by strains and cannabis particularities</title>
+      <link>https://www.laforetverte.ca/en/menu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/en/menu/</guid>
+      <guid>https://www.laforetverte.ca/en/menu/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Products - Greenforest</title>
-      <link>/en/products/</link>
+      <title>Green Forest Compassion Center | Legal Weed in Montreal and Terrebonne</title>
+      <link>https://www.laforetverte.ca/en/services/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/en/products/</guid>
+      <guid>https://www.laforetverte.ca/en/services/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Registration - Greenforest</title>
-      <link>/en/register/</link>
+      <title>Learn about weed and marijuana dispensaries in Montreal and Terrebonne</title>
+      <link>https://www.laforetverte.ca/en/cannabis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/en/register/</guid>
+      <guid>https://www.laforetverte.ca/en/cannabis/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Services - Greenforest</title>
-      <link>/en/services/</link>
+      <title>Register to have complete access to our compassion center all over Quebec</title>
+      <link>https://www.laforetverte.ca/en/register/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/en/services/</guid>
+      <guid>https://www.laforetverte.ca/en/register/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Thank you - Greenforest</title>
-      <link>/en/thank-you/</link>
+      <link>https://www.laforetverte.ca/en/thank-you/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/en/thank-you/</guid>
+      <guid>https://www.laforetverte.ca/en/thank-you/</guid>
       <description></description>
     </item>
     

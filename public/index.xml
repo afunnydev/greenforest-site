@@ -1,93 +1,85 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Greenforest - Votre accès fiable et simplifié à du cannabis de haute qualité</title>
-    <link>/</link>
-    <description>Recent content on Greenforest - Votre accès fiable et simplifié à du cannabis de haute qualité</description>
+    <title>Centre De Compassion La Forêt Verte | Montréal et Terrebonne on Greenforest - Votre accès fiable et simplifié à du cannabis de haute qualité</title>
+    <link>https://www.laforetverte.ca/</link>
+    <description>Recent content in Centre De Compassion La Forêt Verte | Montréal et Terrebonne on Greenforest - Votre accès fiable et simplifié à du cannabis de haute qualité</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.laforetverte.ca/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Cannabis - Greenforest</title>
-      <link>/cannabis/</link>
+      <title>Comment le cannabis peut vous aider à dormir</title>
+      <link>https://www.laforetverte.ca/articles/article1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/cannabis/</guid>
+      <guid>https://www.laforetverte.ca/articles/article1/</guid>
+      <description>Tel que mentionné à la page cannabis, le cannabis peut vous aider à domir. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate quibusdam ducimus fuga minima sint, tenetur, vero modi, a natus obcaecati nam unde maiores. Perferendis labore recusandae, cupiditate debitis quam iusto!
+Lorem Ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium perspiciatis eius, in. Illo consequuntur debitis harum architecto quas ea impedit similique a delectus vitae labore eos, ad cumque accusantium tempore.</description>
+    </item>
+    
+    <item>
+      <title>Centre De Compassion La Forêt Verte | Marijuana légale à Montréal et Terrebonne</title>
+      <link>https://www.laforetverte.ca/services/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.laforetverte.ca/services/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Contact - Greenforest</title>
-      <link>/contact/</link>
+      <title>Contactez-nous pour avoir de l&#39;information sur notre centre de compassion</title>
+      <link>https://www.laforetverte.ca/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/contact/</guid>
+      <guid>https://www.laforetverte.ca/contact/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Dummy product 1 - Greenforest</title>
-      <link>/produits/dummy1/</link>
+      <title>Devenez membre du Centre de Compassion la Forêt verte</title>
+      <link>https://www.laforetverte.ca/membres/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/produits/dummy1/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem non odio suscipit quaerat? Alias corrupti quibusdam, vero animi voluptatibus ducimus ut officiis itaque atque! Consectetur voluptas blanditiis nam voluptatem cupiditate!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam ipsa, nobis dolore distinctio laborum fugit. Ratione architecto atque sequi commodi aperiam eius. Deserunt fuga laborum nobis eos quod rerum corporis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et iure, libero, dolores dicta fugit quibusdam facilis quo est deleniti similique excepturi ipsam, harum, ipsa inventore assumenda quaerat voluptatibus illum voluptates!</description>
-    </item>
-    
-    <item>
-      <title>Dummy product 2 - Greenforest</title>
-      <link>/produits/dummy2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/produits/dummy2/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem non odio suscipit quaerat? Alias corrupti quibusdam, vero animi voluptatibus ducimus ut officiis itaque atque! Consectetur voluptas blanditiis nam voluptatem cupiditate!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam ipsa, nobis dolore distinctio laborum fugit. Ratione architecto atque sequi commodi aperiam eius. Deserunt fuga laborum nobis eos quod rerum corporis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et iure, libero, dolores dicta fugit quibusdam facilis quo est deleniti similique excepturi ipsam, harum, ipsa inventore assumenda quaerat voluptatibus illum voluptates!</description>
-    </item>
-    
-    <item>
-      <title>Inscription - Greenforest</title>
-      <link>/inscription/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/inscription/</guid>
+      <guid>https://www.laforetverte.ca/membres/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Membres - Greenforest</title>
-      <link>/membres/</link>
+      <title>Découvrez nos produits de marijuana à Terrebonne et à Montréal</title>
+      <link>https://www.laforetverte.ca/menu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/membres/</guid>
+      <guid>https://www.laforetverte.ca/menu/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Menu - Greenforest</title>
-      <link>/menu/</link>
+      <title>Inscrivez-vous à notre centre de compassion pour votre marijuana médicale</title>
+      <link>https://www.laforetverte.ca/inscription/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/menu/</guid>
+      <guid>https://www.laforetverte.ca/inscription/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Merci - Greenforest</title>
-      <link>/merci/</link>
+      <link>https://www.laforetverte.ca/merci/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/merci/</guid>
+      <guid>https://www.laforetverte.ca/merci/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Services - Greenforest</title>
-      <link>/services/</link>
+      <title>Tout savoir sur le cannabis avec le centre de compassion la forêt verte</title>
+      <link>https://www.laforetverte.ca/cannabis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/services/</guid>
+      <guid>https://www.laforetverte.ca/cannabis/</guid>
       <description></description>
     </item>
     

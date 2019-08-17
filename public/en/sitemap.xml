@@ -3,190 +3,189 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/en/products/</loc>
+    <loc>https://www.laforetverte.ca/en/articles/article1/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/produits/dummy2/"
+                href="https://www.laforetverte.ca/articles/article1/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/products/"
+                href="https://www.laforetverte.ca/en/articles/article1/"
                 />
   </url>
   
   <url>
-    <loc>/en/cannabis/</loc>
+    <loc>https://www.laforetverte.ca/en/members/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/cannabis/"
+                href="https://www.laforetverte.ca/membres/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/cannabis/"
+                href="https://www.laforetverte.ca/en/members/"
                 />
   </url>
   
   <url>
-    <loc>/en/categories/</loc>
+    <loc>https://www.laforetverte.ca/en/categories/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/categories/"
+                href="https://www.laforetverte.ca/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/categories/"
+                href="https://www.laforetverte.ca/en/categories/"
                 />
   </url>
   
   <url>
-    <loc>/en/contact/</loc>
+    <loc>https://www.laforetverte.ca/en/contact/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/contact/"
+                href="https://www.laforetverte.ca/contact/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/contact/"
+                href="https://www.laforetverte.ca/en/contact/"
                 />
   </url>
   
   <url>
-    <loc>/en/products/dummy1/</loc>
+    <loc>https://www.laforetverte.ca/en/produits/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/produits/dummy1/"
+                href="https://www.laforetverte.ca/produits/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/products/dummy1/"
+                href="https://www.laforetverte.ca/en/produits/"
                 />
   </url>
   
   <url>
-    <loc>/en/</loc>
+    <loc>https://www.laforetverte.ca/en/products/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.laforetverte.ca/en/menu/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/"
+                href="https://www.laforetverte.ca/menu/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/"
+                href="https://www.laforetverte.ca/en/menu/"
                 />
   </url>
   
   <url>
-    <loc>/en/members/</loc>
+    <loc>https://www.laforetverte.ca/en/services/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/membres/"
+                href="https://www.laforetverte.ca/services/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/members/"
+                href="https://www.laforetverte.ca/en/services/"
                 />
   </url>
   
   <url>
-    <loc>/en/menu/</loc>
+    <loc>https://www.laforetverte.ca/en/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/menu/"
+                href="https://www.laforetverte.ca/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/menu/"
+                href="https://www.laforetverte.ca/en/"
                 />
   </url>
   
   <url>
-    <loc>/en/produits/</loc>
+    <loc>https://www.laforetverte.ca/en/articles/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/produits/"
+                href="https://www.laforetverte.ca/articles/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/produits/"
+                href="https://www.laforetverte.ca/en/articles/"
                 />
   </url>
   
   <url>
-    <loc>/en/products/</loc>
-  </url>
-  
-  <url>
-    <loc>/en/register/</loc>
+    <loc>https://www.laforetverte.ca/en/singles/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/inscription/"
+                href="https://www.laforetverte.ca/singles/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/register/"
+                href="https://www.laforetverte.ca/en/singles/"
                 />
   </url>
   
   <url>
-    <loc>/en/services/</loc>
+    <loc>https://www.laforetverte.ca/en/cannabis/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/services/"
+                href="https://www.laforetverte.ca/cannabis/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/services/"
+                href="https://www.laforetverte.ca/en/cannabis/"
                 />
   </url>
   
   <url>
-    <loc>/en/singles/</loc>
-    <priority>0</priority>
+    <loc>https://www.laforetverte.ca/en/register/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/singles/"
+                href="https://www.laforetverte.ca/inscription/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/singles/"
+                href="https://www.laforetverte.ca/en/register/"
                 />
   </url>
   
   <url>
-    <loc>/en/thank-you/</loc>
+    <loc>https://www.laforetverte.ca/en/thank-you/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/merci/"
+                href="https://www.laforetverte.ca/merci/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/thank-you/"
+                href="https://www.laforetverte.ca/en/thank-you/"
                 />
   </url>
   

@@ -34,20 +34,20 @@
             				<div class="abt-content-wrapper">
                             {{ if eq .Lang "fr" }}
                                 <div class="abt-title title-head-normal">
-                                    <h3>Le <span class="color-black-def">Cannabis</span></h3>
+                                    <h1><span class="color-black-def">{{ .Params.titre }}</span></h1>
                                 </div>
                                 <div class="abt-content">
-                                    <p>Il existe deux grandes familles de cannabis : Sativa et Indica, pouvant être mélangées afin de créer des variétés hybrides. Chaque variété provoque différents effets sur le corps et l’esprit, créant ainsi un large éventail de produits aux bienfaits médicaux extrêmement variés.</p>
+                                    <p>Il existe deux grandes familles de cannabis : Sativa et Indica, pouvant être mélangées afin de créer des variétés hybrides. Chaque variété provoque différents effets sur le corps et l’esprit, créant ainsi un large éventail de produits aux bienfaits extrêmement variés.</p>
                                     <p>La création de variété hybrides, mélangeant Indica et Sativa selon des proportions précises (par exemple 30% indica - 70% sativa, 50% - 50% chaque, 80% indica - 20% sativa) permettent de cibler différents effets thérapeutiques bien précis permettant de traiter des maladies spécifiques.</p>
                                     <p>L’effet provoqué par l’Indica résulte généralement en une sensation de profonde relaxation mentale et physique, voire d’endormissement. Son usage est souvent recommandé pour des cas de troubles anxieux, de douleurs chroniques ou encore d’insomnies.</p>
                                     <p>La Sativa, quant à elle, procure plutôt une sensation énergique, elle est généralement source de créativité et d’envies de rire. Son effet est souvent défini comme “cérébral”, et, contrairement à l’indica, sa consommation n’a pas un effet soporifique, ce qui rend son utilisation plus adaptée à une consommation de jour.</p>
                                 </div>
                             {{ else if eq .Lang "en" }}
                                 <div class="abt-title title-head-normal">
-                                    <h3><span class="color-black-def">Cannabis</span></h3>
+                                    <h1><span class="color-black-def">{{ .Params.titre }}</span></h1>
                                 </div>
                                 <div class="abt-content">
-                                    <p>Sativa and Indica are the two major types of cannabis plants, which are often mixed together to create hybrid strains. Each strain has its own range of effects on the body and the mind,  resulting in a wide range of medicinal benefits.</p>
+                                    <p>Sativa and Indica are the two major types of cannabis plants, which are often mixed together to create hybrid strains. Each strain has its own range of effects on the body and the mind, resulting in a wide range of benefits.</p>
                                     <p>Marijuana strains range from pure sativas and pure indicas to hybrid strains consisting of both indica and sativa in very specific proportions (30% indica and 70% sativa, 50% of both combinations, 80% indica and 20% sativa). By carefully choosing the right strains, it is possible to have particular therapeutic effects to treat specific illnesses.</p>
                                     <p>Indica dominant marijuana strains tend to have a strong sweet or sour odour to the buds and provide a very relaxing and strong body high that is helpful in treating general anxiety, bodily pains, and sleeping disorders. Indicas are very effective for overall pain relief and is often used to treat chronic pains. Indica buds are most commonly smoked or consumed in the late evening or right before bed because of the sleep inducing and drowsy effects of these strains (such as in the strain Kush).</p>
                                     <p>On the other hand, sativa dominant marijuana strains tend to have a more grassy type odour and provide an uplifting, energetic and “cerebral” high that is best suited for daytime smoking. A sativa high is one filled with creativity and energy and can spark new ideas and creations, as well as laughter. Many artists take advantage of the creative powers of cannabis sativa to create paintings.</p>
@@ -119,20 +119,20 @@
                     <div class="col col-sm-12 col-md-12 col-xs-12">
                     {{ if eq .Lang "fr" }}
                         <div class="abt-content">
-                            <p>Le cannabis thérapeutique démontre de nombreux effets positifs concernants plusieurs cas de maladies. En plus de ces bienfaits, l’usage de la marijuana médicale permet de soulager bon nombre d’effets secondaires provoqués par le traitement de ces maladies.</p> 
+                            <p>Le cannabis démontre de nombreux effets positifs concernants plusieurs cas de maladies. En plus de ces bienfaits, l’usage de la marijuana permet de soulager bon nombre d’effets secondaires provoqués par le traitement de ces maladies.</p> 
                             <ul>
-                                <li>SIDA/VIH : l’usage du cannabis médical permet de retrouver l’appétit et de soulager les nausées. Le cannabis agit également comme anti-dépresseur et analgésique.</li>
-                                <li>Cancer : permet de retrouver l’appétit, de soulager les nausées, de dormir plus aisément. Calme également les nausées et vomissements causées par la chimiothérapie. </li>
-                                <li>Hépatite C : aide à retrouver l’appétit et à calmer les nausées et vomissements.</li>
-                                <li>Sclérose en plaques : agit comme anti-inflammatoire, permet de réduire la fréquence et l’intensité des spasmes musculaires. Le cannabis agit aussi comme anti-dépresseur.</li>
-                                <li>Epilepsie : réduit les crises convulsives, permet de diminuer la fréquence et la durée des crises convulsives et non-convulsives.</li>
+                                <li>SIDA/VIH: l’usage du cannabis permet de retrouver l’appétit et de soulager les nausées. Le cannabis agit également comme anti-dépresseur et analgésique.</li>
+                                <li>Cancer: permet de retrouver l’appétit, de soulager les nausées, de dormir plus aisément. Calme également les nausées et vomissements causées par la chimiothérapie. </li>
+                                <li>Hépatite C: aide à retrouver l’appétit et à calmer les nausées et vomissements.</li>
+                                <li>Sclérose en plaques: agit comme anti-inflammatoire, permet de réduire la fréquence et l’intensité des spasmes musculaires. Le cannabis agit aussi comme anti-dépresseur.</li>
+                                <li>Epilepsie: réduit les crises convulsives, permet de diminuer la fréquence et la durée des crises convulsives et non-convulsives.</li>
                             </ul> 
                         </div>
                     {{ else if eq .Lang "en" }}
                         <div class="abt-content">
-                            <p>Therapeutic marijuana has proven many positive effects regarding several diseases. Besides, its use relieves and help coping with numbers of strong medication’s side effects.</p> 
+                            <p>Marijuana has proven many positive effects regarding several diseases. Besides, its use relieves and help coping with numbers of strong medication’s side effects.</p> 
                             <ul>
-                                <li>AIDS/HIV : medical cannabis’ use helps increasing appetite and relieves nauseas. Cannabis also acts as an antidepressant and analgesic.</li>
+                                <li>AIDS/HIV : cannabis’ use helps increasing appetite and relieves nauseas. Cannabis also acts as an antidepressant and analgesic.</li>
                                 <li>Cancer : helps increasing appetite, relieves nauseas and sleeping troubles. It also calms nauseas or vomiting caused by chemotherapy. </li>
                                 <li>Hepatitis C : helps increasing appetite and relieves nauseas and vomiting.</li>
                                 <li>Multiple sclerosis: acts as an anti-inflammatory, reduces frequency and intensity of seizures and muscular spasms. Marijuana also benefits with its antidepressant properties.</li>
@@ -153,14 +153,14 @@
                             <h3>Consommation</h3>
                         </div>
                         <div class="abt-content">
-                            <p>Le cannabis fumé reste la forme de consommation la plus répandue, cependant, de plus en plus de formes de consommations se développent, afin de prévenir les effets néfastes de la fumée sur les poumons. Le cannabis comestible par exemple, sous formes de cookies ou brownies devient de plus en plus populaire, tout comme l’utilisation de vaporisateurs permettant d’inhaler le principe actif du cannabis ou encore les sprays buccaux.</p>
+                            <p>Le cannabis fumé reste la forme de consommation la plus répandue, cependant, de plus en plus de formes de consommations se développent, afin de prévenir les effets néfastes de la fumée sur les poumons. Le cannabis comestible par exemple, sous formes de cookies ou brownies devient de plus en plus populaire.</p>
                         </div>
                     {{ else if eq .Lang "en" }}
                         <div class="abt-title title-head-normal">
                             <h3>Consumption</h3>
                         </div>
                         <div class="abt-content">
-                            <p>Smoking remains the most popular form of marijuana consumption, though more and more alternative consumption methods are becoming popular to prevent the harmful effects on the lungs from smoking. Edible cannabis, in the form of cookies or brownies, are becoming more and more widespread, as is the use of vaporizers and buccal sprays.</p>
+                            <p>Smoking remains the most popular form of marijuana consumption, though more and more alternative consumption methods are becoming popular to prevent the harmful effects on the lungs from smoking. Edible cannabis, in the form of cookies or brownies, are becoming more and more widespread.</p>
                         </div>
                     {{ end }}
                     </div>

@@ -1,256 +1,62 @@
-{{ partial "head.html" . }}
+{{- partial "head.html" . -}}
 
-    {{ partial "header.html" . }}
-	<div class="clearfix"></div>
-    <!--slider area are start-->
-    <div class="slider-container">
-        <!-- Slider Image -->
-        <div id="mainSlider" class="nivoSlider slider-image">
-            <img src="/img/home/home-ban.jpg" alt="main slider" title="#htmlcaption1" />
-        </div>
-        <!-- Slider Caption 1 -->
-        <div id="htmlcaption1" class="nivo-html-caption slider-caption-1">
-            <div class="slider-progress"></div>
+<!-- <body class=" frame"> -->
+
+<div id="outer-wrapper" class="animate translate-z-in">
+    <div id="inner-wrapper">
+        <div id="table-wrapper" class="center">
             <div class="container">
-                <div class="slider3-cap-wrapper3 slide-text">
-                    <div class="slide-one-text slide-def hp1-cap1">
-                        <div class="slide-one-title wow fadeInDown" data-wow-duration=".9s" data-wow-delay="0.8s">
-                            <h2>{{ if eq .Lang "fr" }}Devenez membre{{ else if eq .Lang "en" }}Become a member{{ end }}</h2>
-                        </div>
-                        <div class="slide-one-title wow fadeInDown" data-wow-duration=".9s" data-wow-delay="0.8s">
-                            <h4>{{ if eq .Lang "fr" }}et commandez par téléphone{{ else if eq .Lang "en" }}and order on the phone{{ end }}</h4>
-                        </div>
-                        <div class="check-it-out slide2btn-check1 wow fadeInDown" data-wow-duration=".9s" data-wow-delay="0.8s">
-                            <a class="btn-def" href="/inscription/">{{ if eq .Lang "fr" }}Devenez membre{{ else if eq .Lang "en" }}Become a member{{ end }}</a>
-                        </div>
-                    </div>
+                <div id="row-header">
+                    <header><a href="#home" id="brand" class="animate animate fade-in animation-time-3s"><img src="/img/logo.png" alt=""></a></header>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <!--slider area are end-->
-
-    <div class="free-offer ptb-95">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="free-offer-wrapper free-border">
-                        <div class="row">
-                        {{ if eq .Lang "fr" }}
-                            <div class="col-md-4 col-sm-4 col-xs-12">
-                                <div class="single-free-offer text-center">
-                                    <div class="title-head">
-                                        <h4>LIVRAISON GRATUITE</h4>
-                                    </div>
-                                    <div class="free-offer-text">
-                                        <p>Rapide et à votre porte</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-4 col-xs-12">
-                                <div class="single-free-offer def-virticle-line posr text-center">
-                                    <div class="title-head">
-                                        <h4>MARIJUANA MÉDICALE</h4>
-                                    </div>
-                                    <div class="free-offer-text">
-                                        <p>Devenez membre pour commander</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-4 col-xs-12">
-                                <div class="single-free-offer def-virticle-line posr text-center">
-                                    <div class="title-head">
-                                        <h4>UNE QUESTION?</h4>
-                                    </div>
-                                    <div class="free-offer-text">
-                                        <p>Appelez au 450-477-0503</p>
-                                    </div>
-                                </div>
-                            </div>
-                        {{ else if eq .Lang "en" }}
-                            <div class="col-md-4 col-sm-4 col-xs-12">
-                                <div class="single-free-offer text-center">
-                                    <div class="title-head">
-                                        <h4>FREE DELIVERY</h4>
-                                    </div>
-                                    <div class="free-offer-text">
-                                        <p>Fast and at your doorstep</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-4 col-xs-12">
-                                <div class="single-free-offer def-virticle-line posr text-center">
-                                    <div class="title-head">
-                                        <h4>MEDICAL MARIJUANA</h4>
-                                    </div>
-                                    <div class="free-offer-text">
-                                        <p>Become a member and order now</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-4 col-xs-12">
-                                <div class="single-free-offer def-virticle-line posr text-center">
-                                    <div class="title-head">
-                                        <h4>ANY QUESTION?</h4>
-                                    </div>
-                                    <div class="free-offer-text">
-                                        <p>Call us: 450-477-0503</p>
-                                    </div>
-                                </div>
-                            </div>
-                        {{ end }}
+                <!--end row-header-->
+                <div id="row-content">
+                    <div id="content-wrapper">
+                        <div id="content" class="animate translate-z-in animation-time-2s delay-03s">
+                            <h1 class="opacity-70">En construction!</h1>
+                            <h2 class="opacity-50">Nous travaillons fort pour vous donner une meilleure expérience</h2>
+                            <!-- <a href="#services" class="open-side-panel btn btn-default btn-framed">Services</a>
+                            <a href="#about-us" class="open-side-panel btn btn-default btn-framed">À propos</a> -->
+                            <!-- <a href="#contact" class="open-side-panel btn btn-default btn-framed">Contactez-nous</a> -->
                         </div>
+                        <!--end content-->
                     </div>
+                    <!--end content-wrapper-->
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="middle-discount-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <div class="discount-left-image">
-                        <div class="single-discount overlay-margin-22 posr">
-                            <div class="discount-img">
-                                <img src="/img/home/home-img1-1.jpg" alt="membre achat marijuana" />
-                            </div>
-                        {{ if eq .Lang "fr" }}
-                            <div class="discount-text">
-                                <div class="discount-hover-desc desc-head-text uppercase">
-                                    <h3>Devenez membre<br />aujourd'hui</h3>
-                                </div>
-                                <div class="discount-hover-btn">
-                                    <a class="btn-def" href="/inscription/">S'inscrire</a>
-                                </div>
-                            </div>
-                        {{ else if eq .Lang "en" }}
-                            <div class="discount-text">
-                                <div class="discount-hover-desc desc-head-text uppercase">
-                                    <h3>Become a member<br />today</h3>
-                                </div>
-                                <div class="discount-hover-btn">
-                                    <a class="btn-def" href="/en/register/">Register</a>
-                                </div>
-                            </div>
-                        {{ end }}
-                        </div>
-                    </div>
+                <!--end row-content-->
+                <div id="row-footer">
+                    <footer>
+                        <!-- <div class="social-icons">
+                            <a href="https://www.facebook.com/Creadditive-1055895711108021/?ref=br_rs" class="animate fade-in animation-time-1s delay-08s" target="_blank"><i class="fa fa-facebook"></i></a>
+                        </div> -->
+                    </footer>
                 </div>
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <div class="discount-right-wrapper hp1-dmimage">
-                        <div class="discout-right-top-image">
-                        {{ if eq .Lang "fr" }}
-                            <a href="/produits/"><div class="single-right-top overlay-margin-10 posr">
-                                <div class="discount-right-img">
-                                    <img src="/img/home/home-img2-1.jpg" alt="livraison rapide" />
-                                </div>
-                                <div class="discount-right-text">
-                                    <div class="discount-right-text-top">
-                                        <h3>Livraison rapide</h3>
-                                    </div>
-                                </div>
-                            </div></a>
-                        {{ else if eq .Lang "en" }}
-                            <a href="/en/products/"><div class="single-right-top overlay-margin-10 posr">
-                                <div class="discount-right-img">
-                                    <img src="/img/home/home-img2-1.jpg" alt="livraison rapide" />
-                                </div>
-                                <div class="discount-right-text">
-                                    <div class="discount-right-text-top">
-                                        <h3>Fast delivery</h3>
-                                    </div>
-                                </div>
-                            </div></a>
-                        {{ end }}
-                        </div>
-                        <div class="discout-right-top-image hp1-dmimage">
-                        {{ if eq .Lang "fr" }}
-                            <a href="/cannabis/"><div class="single-right-top overlay-margin-10 posr">
-                                <div class="discount-right-img">
-                                    <img src="/img/home/home-img3-1.jpg" alt="marijuana medical" />
-                                </div>
-                                <div class="discount-right-text">
-                                    <div class="discount-right-text-top">
-                                        <a href="/cannabis/"><h3>Marijuana médicale</h3></a>
-                                    </div>
-                                    <div class="discount-right-text-btm">
-                                        <a class="" href="/cannabis/"><span class="">En savoir plus..</span></a>
-                                    </div>
-                                </div>
-                            </div></a>
-                        {{ else if eq .Lang "en" }}
-                            <a href="/en/cannabis/"><div class="single-right-top overlay-margin-10 posr">
-                                <div class="discount-right-img">
-                                    <img src="/img/home/home-img3-1.jpg" alt="marijuana medical" />
-                                </div>
-                                <div class="discount-right-text">
-                                    <div class="discount-right-text-top">
-                                        <a href="/en/cannabis/"><h3>Medical Marijuana</h3></a>
-                                    </div>
-                                    <div class="discount-right-text-btm">
-                                        <a href="/en/cannabis/"><span>More..</span></a>
-                                    </div>
-                                </div>
-                            </div></a>
-                        {{ end }}
-                        </div>
-                    </div>
-                </div>
+                <!--end row-footer-->
             </div>
+            <!--end container-->
         </div>
-    </div>
-   
-    <!--Text area start-->
-
-    <div class="text-area">
-        <div class="container">
-        {{ if eq .Lang "fr" }}
-            <div class="row">
-                <h3>Mission</h3>
-                <p>La Forêt Verte est un dispensaire québécois de cannabis thérapeutique situé dans la région de Montréal. Il offre aux patients un accès fiable et simplifié à du cannabis et autres produits connexes de haute qualité.</p>
-            </div>
-            <div class="row">
-                <h3>Bienfaits du cannabis</h3>
-                <p>Utilisé comme plante médicinale depuis l’Egypte ancienne, le cannabis a prouvé de nombreuses vertues thérapeutiques telles que ses propriétés anti-douleurs, anti-spasmes, anti-vomitives, de stimulant pour l’appétit ou d’aide à trouver le sommeil.</p>
-            </div>
-            <div class="row">
-                <h3>Obtention de la carte de consommation pour des raisons médicales</h3>
-                <p>L’offre de cannabis est ici exclusivement réservée aux membres du dispensaire La Forêt Verte. Son service vous offre un accompagnement complet lors de votre adhésion, de la mise en relation avec des médecins qualifiés, au suivi des démarches pour compléter votre dossier.</p>
-            </div>
-            <div class="row">
-                <h3>Devenir membre avec Forêt Verte</h3>
-                <p>L’adhésion à La Forêt Verte est entièrement gratuite et vous permet d’avoir accès à un cannabis de grande qualité, directement livré chez vous. </p>
-            </div>
-        {{ else if eq .Lang "en" }}
-            <div class="row">
-                <h3>Company mission</h3>
-                <p>GreenForest is a medical marijuana dispensary based in the Montreal area. It provides a reliable and secured access to high quality medical cannabis.</p>
-            </div>
-            <div class="row">
-                <h3>Benefits of cannabis</h3>
-                <p>Since ancient Egypt, cannabis has proven its numerous therapeutic properties and powerful benefits such as pain-killing properties, antispasmodic effects, nausea reduction, appetite stimulants and sleep inducer.</p>
-            </div>
-            <div class="row">
-                <h3>Getting your official access to medical cannabis</h3>
-                <p>The cannabis offer is exclusively reserved for GreenForest’s dispensary members only. Our service provides you with full support throughout your application process, starting by providing you with qualified doctors to every step needed for you to get the official access to medical cannabis documents.</p>
-            </div>
-            <div class="row">
-                <h3>Becoming a member with Greenforest</h3>
-                <p>GreenForest’s membership is completely free and provides access to an outstanding quality cannabis, delivered straight to your home.</p>
-            </div>
-        {{ end }}
+        <!--end table-wrapper-->
+        <div class="background-wrapper has-vignette">
+            <div id="particles-js" class="opacity-40"></div>
+            <div class="bg-transfer opacity-20"><img src="assets/img/background-08.jpg" alt=""></div>
         </div>
+        <!--end background-wrapper-->
     </div>
+    <!--end inner-wrapper-->
+</div>
+<!--end outer-wrapper-->
 
-    <!--Text area end-->
-    <!-- Google map area start-->
 
-    <div class="map-area">
-        <div id="googleMap"></div>
-    </div>
+<div class="backdrop"></div>
 
-    <!-- Google map area end-->
+<script type="text/javascript" src="assets/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.trackpad-scroll-emulator.min.js"></script>
+<script type="text/javascript" src="assets/js/particles.min.js"></script>
+<script type="text/javascript" src="assets/js/custom.js"></script>
 
-{{ partial "footer.html" . }}
+
+</body>
